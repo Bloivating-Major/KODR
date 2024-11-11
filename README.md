@@ -16,7 +16,9 @@ git clone https://github.com/Bloivating-Major/KODR.git
 **📌 `Note:` Click on the arrow sign to expand to see each topics in details with link.**
 
 
-- [Getting Started](#getting-started)
+- [Getting Started](#-getting-started)
+- [Progress and Goals](#-progress-and-goals)
+- [Connect with the Community](#-connect-with-the-community)
 
 ---
 
