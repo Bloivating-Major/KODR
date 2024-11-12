@@ -27,7 +27,7 @@ git clone https://github.com/Bloivating-Major/KODR.git
 To clone this repository for your local use, use the following commands:
 
 ```bash
-git clone https://github.com/yourusername/KODR-Bootcamp.git
+git clone https://github.com/Bloivating-Major/KODR.git
 cd KODR-Bootcamp
 ```
 
