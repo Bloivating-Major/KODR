@@ -1,0 +1,21 @@
+Basic Installation of Git and Github
+
+Locally setup Git and Github using CMD
+    git config --global user.name TestObject
+    git config --global user.email testObject@gmail.com
+
+Initializing Repository
+
+Adding Commits to Repository
+
+Reverting the Changes to Repository
+
+Discarding Changes to Repository
+
+Clone Repository
+
+Connect your local Repository to Remote Repository
+
+Pushing Changes to Repository
+
+Pulling Changes from Repository

@@ -40,6 +40,14 @@ cd KODR-Bootcamp
 - **Documenting Daily Progress**: Updates shared on GitHub, LinkedIn, and Twitter
 - **Goal-setting**: Setting and reviewing goals every three days for accountability
 
+## 📚 [ Week 01 - Basics of Git and Github and Collaboration](./Week%201/)
+
+### 💻 [**1.1 - Git and Github**](./Week%201/Week%201.1/)
+
+> **`Topics Covered:` Git and Github Basics -** Installation of Git and Github, Setting username and useremail, Initializing a repository, Making commits, Pull requests, Collaboration, Git status, Push.
+
+-   👨‍💻 [**Lecture Codes**](./Week%201/Week%201.1/Lecture%20Code/notes.txt)
+-   📖 [**Notes/Slides & Articles/Blogs Link**](./Week%201/Week%201.1/Notes-Slides-Video_Links/README.md)
 ---
 
 ## 🤝 **Connect with the Community**
