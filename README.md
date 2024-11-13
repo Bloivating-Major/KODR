@@ -40,8 +40,10 @@ cd KODR-Bootcamp
 - **Documenting Daily Progress**: Updates shared on GitHub, LinkedIn, and Twitter
 - **Goal-setting**: Setting and reviewing goals every three days for accountability
 
+# Week 01 - Basics of Git and Github and Collaboration
+
 <details>
-<summary style="display: inline; font-size: 20px; font-weight: 700; cursor: pointer;" title="Click on me to Expand">Week 01 - Basics of Git and Github and Collaboration</summary>
+<summary style="display: inline; font-size: 20px; font-weight: 700; cursor: pointer;" title="Click on me to Expand">Click to Expand Week 01 Details</summary>
 
 ## 📚 [ Week 01 - Basics of Git and Github and Collaboration](./Week%201/)
 
@@ -49,19 +51,21 @@ cd KODR-Bootcamp
 
 > **`Topics Covered:` Git and Github Basics -** Installation of Git and Github, Setting username and useremail, Initializing a repository, Making commits, Pull requests, Collaboration, Git status, Push.
 
--   👨‍💻 [**Lecture Codes**](./Week%201/Week%201.1/Lecture%20Code/notes.txt)
--   📖 [**Notes/Slides & Articles/Blogs Link**](./Week%201/Week%201.1/Notes-Slides-Video_Links/README.md)
+- 👨‍💻 [**Lecture Codes**](./Week%201/Week%201.1/Lecture%20Code/notes.txt)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%201/Week%201.1/Notes-Slides-Video_Links/README.md)
 
 ### 💻 [**1.2 - Git Conflicts and Git Branching**](./Week%201/Week%201.2/)
 
 > **`Topics Covered:` Git Conflicts and Git Branching -** Revision of Previous Class and then creating a conflict and resolving those conflicts manually using Accept Incoming, Accept Current, Accept Both, Ignore and then Git Branching. 
 
--   👨‍💻 [**Lecture Codes**](./Week%201/Week%201.2/Lecture%20Code/README.md)
--   📖 [**Notes/Slides & Articles/Blogs Link**](./Week%201/Week%201.2/Notes-Slides-Video_Links/README.md)
+- 👨‍💻 [**Lecture Codes**](./Week%201/Week%201.2/Lecture%20Code/README.md)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%201/Week%201.2/Notes-Slides-Video_Links/README.md)
 
+</details>
+
+---
 
 ## 🤝 **Connect with the Community**
-
 
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/sheryians_coding_school/#)
 [![Youtube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@sheryians)
