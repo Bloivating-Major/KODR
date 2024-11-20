@@ -1,0 +1,762 @@
+@font-face {
+  font-family: InterRegular;
+  src: url(./Assets/Fonts/Inter-Regular.woff2);
+}
+@font-face {
+  font-family: InterMedium;
+  src: url(./Assets/Fonts/Inter-Medium.woff2);
+}
+@font-face {
+  font-family: InterItalic;
+  src: url(./Assets/Fonts/Inter-Italic.woff2);
+}
+@font-face {
+  font-family: StyleItalic;
+  src: url(./Assets/Fonts/Font2.otf);
+}
+@font-face {
+  font-family: Curly;
+  src: url(./Assets/Fonts/Curly.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: clamp(12px, 1vw, 20px);
+  font-family: InterRegular;
+}
+
+nav {
+  width: 100%;
+  padding: 4vh 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 5;
+}
+nav #right {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+nav #right button {
+  background-color: #f5f5e7;
+  font-weight: 500;
+  border-radius: 0.4em;
+  font-family: InterRegular;
+  font-size: 0.9em;
+  border: none;
+  padding: 0.7em 1.2em;
+  transition: all 0.3s ease-in-out;
+}
+nav #right button:hover {
+  background-color: black;
+  transform: scale(1.05);
+  color: white;
+}
+nav #right a {
+  text-decoration: none;
+  font-family: InterRegular;
+  color: black;
+  font-size: 0.8em;
+}
+
+#backGround {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+}
+#backGround #VideoDesktop {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#backGround #VideoMobile {
+  display: none;
+}
+
+main {
+  position: relative;
+}
+main #page1 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: end;
+  padding: 4vh 5vw;
+}
+main #page1 h1 {
+  font-family: InterRegular;
+  font-weight: 500;
+  color: white;
+  font-size: 3.3em;
+}
+main #page2 {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  background-color: white;
+}
+main #page2 h1 {
+  font-size: 0.8em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+main #page2 h2 {
+  width: 50%;
+  font-size: 3.4em;
+  font-weight: 500;
+  text-align: center;
+  line-height: 0.9em;
+  letter-spacing: -0.04em;
+}
+main #page2 h2 span {
+  font-family: Curly;
+}
+main #page2 p {
+  width: 36%;
+  text-align: center;
+}
+main #page3 {
+  width: 100%;
+  padding: 0 5vw;
+  background-color: white;
+}
+main #page3 #top {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  margin-bottom: 1em;
+  border-radius: 1.2em;
+  bottom: 0%;
+}
+main #page3 #top img {
+  display: none;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2em;
+}
+main #page3 #top img.active {
+  display: block; /* Show the active image */
+}
+main #page3 #top #btnGroup {
+  position: absolute;
+  padding: 1.6em;
+}
+main #page3 #top #btnGroup button {
+  background-color: #545558;
+  font-weight: 500;
+  border-radius: 0.4em;
+  text-transform: uppercase;
+  font-family: InterRegular;
+  font-size: 0.9em;
+  border: none;
+  padding: 0.3em 1em;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+main #page3 #top #btnGroup button:hover {
+  background-color: black;
+  transform: scale(1.05);
+  color: white;
+}
+main #page3 #bottom {
+  display: flex;
+  width: 80%;
+  gap: 18em;
+}
+main #page3 #bottom h1 {
+  width: 50%;
+  font-size: 2.2em;
+  font-weight: 600;
+  text-align: left;
+}
+main #page3 #bottom h1 span {
+  font-family: Curly;
+}
+main #page3 #bottom p {
+  width: 40%;
+  font-size: 0.9em;
+}
+main #page4 {
+  width: 100%;
+  background: white;
+}
+main #page4 #main {
+  display: flex;
+  padding: 10vh 5vw;
+  gap: 6em;
+}
+main #page4 #main #card {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 50%;
+}
+main #page4 #main #card #navigationpage4 {
+  display: flex;
+  gap: 0.4em;
+  align-items: center;
+}
+main #page4 #main #card #navigationpage4 #red {
+  height: 0.3em;
+  width: 0.3em;
+  background-color: red;
+}
+main #page4 #main #card #navigationpage4 #gray {
+  height: 0.3em;
+  width: 0.3em;
+  background-color: rgb(172, 170, 170);
+}
+main #page4 #main #card #navigationpage4 h3 {
+  font-size: 0.6em;
+  color: red;
+}
+main #page4 #main #card #images {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+main #page4 #main #card #images img {
+  display: none;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 3/1.6;
+}
+main #page4 #main #card #images img.part4Active {
+  display: block; /* Show the active image */
+}
+main #page4 #main #card #images #btnGrouppage4 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+}
+main #page4 #main #card #images #btnGrouppage4 a {
+  text-decoration: none;
+  color: black;
+}
+main #page4 #main #card h3 {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+main #page4 #main #card #mid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+main #page4 #main #card #mid h1 {
+  font-size: 1.5em;
+}
+main #page4 #main #card #mid h2 {
+  font-size: 1em;
+}
+main #page4 #main #card #mid h2 sup {
+  color: red;
+}
+main #page4 #main #card #colors {
+  display: flex;
+  gap: 0.5em;
+}
+main #page4 #main #card #colors #dark {
+  border-radius: 50%;
+  height: 1.6em;
+  width: 1.6em;
+  background-color: black;
+  transition: all 0.4s ease-in-out;
+  border: 0.2em solid white;
+  box-shadow: 0 0 0 0.05em rgb(0, 0, 0);
+}
+main #page4 #main #card #colors #dark:hover {
+  border: none;
+  box-shadow: 0 0 0 0;
+  scale: 0.7;
+}
+main #page4 #main #card #colors #light {
+  border: 0.2em solid rgb(255, 255, 255);
+  box-shadow: 0 0 0 0.05em rgb(0, 0, 0);
+  border-radius: 50%;
+  height: 1.6em;
+  width: 1.6em;
+  transition: all 0.4s ease-in-out;
+  background-color: #f5f5e7;
+}
+main #page4 #main #card #colors #light:hover {
+  border: none;
+  box-shadow: 0 0 0 0;
+  scale: 0.7;
+}
+main #page4 #main #card #details {
+  width: 100%;
+  display: flex;
+  gap: 1em;
+}
+main #page4 #main #card #details #left {
+  width: 50%;
+}
+main #page4 #main #card #details #left h3 {
+  font-weight: 600;
+}
+main #page4 #main #card #details #left h4 {
+  font-size: 0.7em;
+  opacity: 0.6;
+}
+main #page4 #main #card #details #right {
+  width: 35%;
+}
+main #page4 #main #card #details #right p {
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+main #page5 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 10vh 0vw;
+  background-color: #fff;
+}
+main #page5 h1 {
+  font-size: 3em;
+  font-weight: 500;
+  word-spacing: -0.1em;
+  line-height: 1em;
+  text-align: center;
+}
+main #page5 button {
+  background-color: #ff3b36;
+  font-weight: 500;
+  color: white;
+  border-radius: 0.4em;
+  font-family: InterRegular;
+  font-size: 0.9em;
+  border: none;
+  padding: 0.7em 1.2em;
+  transition: all 0.3s ease-in-out;
+}
+main #page5 button:hover {
+  background-color: #cc2f2b;
+  transform: scale(1.05);
+  color: white;
+}
+main #page6 {
+  width: 100%;
+}
+main #page6 h1 {
+  letter-spacing: -0.04em;
+  padding: 4vh 4vw;
+  font-size: 2.5em;
+  font-weight: 500;
+  position: absolute;
+  color: white;
+}
+main #page6 #image {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+main #page6 #image img {
+  display: none;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main #page6 #image img.page6Active {
+  height: 100vh;
+  display: block; /* Show the active image */
+}
+main #page6 #image #btnGroupPage6 {
+  position: absolute;
+  padding: 1.6em;
+}
+main #page6 #image #btnGroupPage6 button {
+  background-color: #545558;
+  font-weight: 500;
+  border-radius: 0.4em;
+  text-transform: uppercase;
+  font-family: InterRegular;
+  font-size: 0.9em;
+  border: none;
+  padding: 0.3em 1em;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+main #page6 #image #btnGroupPage6 button:hover {
+  background-color: black;
+  transform: scale(1.05);
+  color: white;
+}
+main #page7 {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  background-color: white;
+}
+main #page7 h1 {
+  font-size: 0.8em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+main #page7 h2 {
+  width: 50%;
+  font-size: 3.4em;
+  font-weight: 500;
+  text-align: center;
+  line-height: 0.9em;
+  letter-spacing: -0.04em;
+}
+main #page7 h2 span {
+  font-family: Curly;
+}
+main #page7 p {
+  width: 36%;
+  text-align: center;
+}
+main #page8 {
+  width: 100%;
+  padding: 6vh 1vw;
+  background-color: #ffffff;
+  display: flex;
+  gap: 4em;
+  justify-content: center;
+}
+main #page8 #left {
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  justify-content: center;
+  width: 38%;
+}
+main #page8 #left #part {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main #page8 #left #part h1 {
+  width: 90%;
+  font-family: StyleItalic;
+  font-weight: 400;
+  font-size: 1.8em;
+}
+main #page8 #left #part p {
+  width: 90%;
+  font-size: 0.8em;
+}
+main #page8 #right {
+  display: flex;
+  width: 40%;
+  gap: 1em;
+  flex-direction: column;
+}
+main #page8 #right #top img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1em;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+main #page8 #right #top img.active {
+  display: block;
+}
+main #page8 #right #bottom {
+  display: flex;
+  gap: 0.7em;
+  justify-content: end;
+}
+main #page8 #right #bottom button {
+  width: 4.3em;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: none;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0.6em;
+}
+main #page8 #right #bottom button:hover {
+  transform: scale(1.05);
+}
+main #page8 #right #bottom button img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+main #page8 #right #bottom button img:hover {
+  transform: scale(1.1);
+}
+main #page8Responsive {
+  display: none;
+}
+main #page9 {
+  width: 100%;
+}
+main #page9 h1 {
+  letter-spacing: -0.04em;
+  padding: 4vh 4vw;
+  font-size: 2.5em;
+  font-weight: 500;
+  position: absolute;
+  color: white;
+}
+main #page9 #image {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+main #page9 #image img {
+  display: none;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main #page9 #image img.page9Active {
+  height: 100vh;
+  display: block; /* Show the active image */
+}
+main #page9 #image #btnGroupPage9 {
+  position: absolute;
+  padding: 1.6em;
+}
+main #page9 #image #btnGroupPage9 button {
+  background-color: #545558;
+  font-weight: 500;
+  border-radius: 0.4em;
+  text-transform: uppercase;
+  font-family: InterRegular;
+  font-size: 0.9em;
+  border: none;
+  padding: 0.3em 1em;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+main #page9 #image #btnGroupPage9 button:hover {
+  background-color: black;
+  transform: scale(1.05);
+  color: white;
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 0 5vw;
+    height: 10vh;
+  }
+  nav #left svg {
+    height: 10em;
+    width: 10em;
+  }
+  nav #right button {
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  nav #right a {
+    display: none;
+  }
+  #backGround {
+    height: 135vmin;
+  }
+  #backGround #VideoDesktop {
+    display: none;
+  }
+  #backGround #VideoMobile {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+  }
+  main #page1 {
+    height: 135vmin;
+  }
+  main #page1 h1 {
+    font-size: 2.3em;
+  }
+  main #page2 {
+    height: 50vmin;
+    padding: 2vh 4vw;
+  }
+  main #page2 h1 {
+    font-size: 1em;
+  }
+  main #page2 h2 {
+    width: 100%;
+    font-size: 2.3em;
+  }
+  main #page2 p {
+    width: 95%;
+    font-size: 1em;
+  }
+  main #page3 {
+    padding: 0 4vw;
+  }
+  main #page3 #top {
+    justify-content: start;
+  }
+  main #page3 #top img {
+    border-radius: 1em;
+  }
+  main #page3 #bottom {
+    flex-direction: column;
+    width: 100%;
+    gap: 1.2em;
+  }
+  main #page3 #bottom h1 {
+    width: 100%;
+    font-size: 1.7em;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+  }
+  main #page3 #bottom p {
+    width: 100%;
+    font-size: 1.2em;
+    opacity: 0.7;
+  }
+  main #page4 #main {
+    flex-direction: column;
+  }
+  main #page4 #main #card {
+    width: 100%;
+  }
+  main #page4 #main #card #navigationpage4 {
+    display: none;
+  }
+  main #page4 #main #card #images #btnGrouppage4 {
+    display: none;
+  }
+  main #page4 #main #card h3 {
+    font-size: 1em;
+  }
+  main #page4 #main #card #mid h1 {
+    font-size: 1.7em;
+  }
+  main #page4 #main #card #mid h2 {
+    font-size: 1.2em;
+  }
+  main #page4 #main #card #details {
+    flex-direction: column;
+  }
+  main #page4 #main #card #details #left {
+    width: 100%;
+  }
+  main #page4 #main #card #details #left h3 {
+    font-weight: 400;
+    font-size: 1.2em;
+  }
+  main #page4 #main #card #details #left h4 {
+    font-size: 1.1em;
+  }
+  main #page4 #main #card #details #right {
+    width: 100%;
+  }
+  main #page4 #main #card #details #right p {
+    font-size: 1.2em;
+    font-weight: 200;
+    opacity: 0.7;
+  }
+  main #page5 {
+    padding-top: 0;
+    padding-bottom: 5vh;
+  }
+  main #page5 h1 {
+    font-size: 2.3em;
+  }
+  main #page5 button {
+    border-radius: 0.2em;
+    padding: 0.5em 0.8em;
+    font-size: 1.3em;
+  }
+  main #page6 h1 {
+    padding: 1em 1em;
+    color: black;
+    font-size: 1.7em;
+    position: static;
+    background-color: #fff;
+  }
+  main #page6 #image {
+    justify-content: start;
+  }
+  main #page6 #image img.page6Active {
+    height: 60vmin;
+  }
+  main #page7 {
+    height: 80vmin;
+    padding: 2vh 4vw;
+  }
+  main #page7 h1 {
+    font-size: 1em;
+  }
+  main #page7 h2 {
+    width: 100%;
+    font-size: 2.6em;
+  }
+  main #page7 p {
+    width: 95%;
+    font-size: 1.1em;
+    opacity: 0.7;
+  }
+  main #page8 {
+    display: none;
+  }
+  main #page8Responsive {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    width: 100%;
+    background-color: #fff;
+    padding: 0 1.5em;
+    padding-bottom: 3vh;
+  }
+  main #page8Responsive #part {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  main #page8Responsive #part h1 {
+    width: 100%;
+    font-family: StyleItalic;
+    font-size: 1.5em;
+  }
+  main #page8Responsive #part img {
+    border-radius: 0.6em;
+    width: 100%;
+  }
+  main #page8Responsive #part p {
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  main #page9 h1 {
+    padding: 1em 1em;
+    color: black;
+    font-size: 1.7em;
+    position: static;
+    background-color: #f5f5e7;
+  }
+  main #page9 #image {
+    justify-content: start;
+  }
+  main #page9 #image img.page9Active {
+    height: 60vmin;
+  }
+}/*# sourceMappingURL=style.css.map */

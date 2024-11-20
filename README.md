@@ -1,7 +1,6 @@
-
 # **KODR Bootcamp - MERN Stack, DSA, System Design & Collaboration**
 
-> #### **_[KODR](https://sheryians.com/kodr) 🚀 by [Sheriyance Coding School](https://www.linkedin.com/company/the-sheryians-coding-school/posts/?feedView=all). Welcome to the **KODR Bootcamp** repository! This repo documents the 180-day journey in mastering MERN Stack Development, Data Structures & Algorithms (DSA), System Design, and collaboration skills for full-stack development. Each phase of the bootcamp is documented, with regular updates, assignments, and resources for easy reference.
+> #### **\_[KODR](https://sheryians.com/kodr) 🚀 by [Sheriyance Coding School](https://www.linkedin.com/company/the-sheryians-coding-school/posts/?feedView=all). Welcome to the **KODR Bootcamp\*\* repository! This repo documents the 180-day journey in mastering MERN Stack Development, Data Structures & Algorithms (DSA), System Design, and collaboration skills for full-stack development. Each phase of the bootcamp is documented, with regular updates, assignments, and resources for easy reference.
 
 ## 🔥 **Clone this Repository** 💫
 
@@ -14,7 +13,6 @@ git clone https://github.com/Bloivating-Major/KODR.git
 ## 📂 **Table of Contents**
 
 **📌 `Note:` Click on the arrow sign to expand to see each topics in details with link.**
-
 
 - [Getting Started](#-getting-started)
 - [Progress and Goals](#-progress-and-goals)
@@ -30,8 +28,6 @@ To clone this repository for your local use, use the following commands:
 git clone https://github.com/Bloivating-Major/KODR.git
 cd KODR-Bootcamp
 ```
-
-
 
 ---
 
@@ -56,10 +52,31 @@ cd KODR-Bootcamp
 
 ### 💻 [**1.2 - Git Conflicts and Git Branching**](./Week%201/Week%201.2/)
 
-> **`Topics Covered:` Git Conflicts and Git Branching -** Revision of Previous Class and then creating a conflict and resolving those conflicts manually using Accept Incoming, Accept Current, Accept Both, Ignore and then Git Branching. 
+> **`Topics Covered:` Git Conflicts and Git Branching -** Revision of Previous Class and then creating a conflict and resolving those conflicts manually using Accept Incoming, Accept Current, Accept Both, Ignore and then Git Branching.
 
 - 👨‍💻 [**Lecture Codes**](./Week%201/Week%201.2/Lecture%20Code/README.md)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%201/Week%201.2/Notes-Slides-Video_Links/README.md)
+
+### 💻 [**1.3 - CSS Responsive Design: Units**](./Week%201/Week%201.3/)
+
+> **`Topics Covered:` CSS Responsive Design: Units -** CSS Units: Percentage (%), rem, em. Introduction to responsive layouts using CSS units. Hands-on project: Flutter Dev Landing Page.
+
+- 👨‍💻 [**Lecture Codes**](./Week%201/Week%201.3/Lecture%20Code/Task1/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%201/Week%201.3/Notes-Slides-Video_Links/Readme.md)
+
+### 💻 [**1.4 - CSS Responsive Design: Functions**](./Week%201/Week%201.4/)
+
+> **`Topics Covered:` CSS Responsive Design: Functions -** CSS Functions: min, max, and clamp. Applying CSS functions for better responsiveness. Restyling and refining the Flutter Dev Landing Page project.
+
+- 👨‍💻 [**Lecture Codes**](./Week%201/Week%201.4/Lecture%20Code/Readme.md)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%201/Week%201.4/Notes-Slides-Video_Links/Readme.md)
+
+### 💻 [**1.5 -  Awwwards Website: Building and Responsiveness**](./Week%201/Week%201.5/)
+
+> **`Topics Covered:`  Awwwards Website: Building and Responsiveness -** CSS Functions: min, max, and clamp. Applying CSS functions for better responsiveness. Restyling and refining the Flutter Dev Landing Page project.
+
+- 👨‍💻 [**Lecture Codes**](./Week%201/Week%201.5/Lecture%20Code/Landing%20Page/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%201/Week%201.5/Notes-Slides-Video_Links/Readme.md)
 
 </details>
 
