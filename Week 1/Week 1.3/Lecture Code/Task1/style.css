@@ -1,0 +1,517 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: clamp(12px, 1vw, 20px);
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+nav #top {
+  padding: 1.6vh 0;
+  background: linear-gradient(to left, #813ff2, #036cdb);
+  display: flex;
+  justify-content: center;
+}
+nav #top p {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  color: white;
+  font-size: 0.9em;
+}
+nav #top p img {
+  width: 0.8em;
+}
+nav #navbar {
+  display: flex;
+  padding: 2vh 3vw;
+  justify-content: space-between;
+  background-color: white;
+  top: 0;
+}
+nav #navbar #left img {
+  width: 8em;
+}
+nav #navbar #right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.2em;
+}
+nav #navbar #right #links {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+nav #navbar #right #links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  opacity: 0.8;
+}
+nav #navbar #right #links a:hover {
+  color: royalblue;
+}
+nav #navbar #right button {
+  border-radius: 2em;
+  border: 0.15em solid royalblue;
+  padding: 0.7vh 2vw;
+  font-size: 1em;
+  color: royalblue;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  background-color: transparent;
+}
+nav #navbar #right button:hover {
+  background-color: royalblue;
+  color: white;
+}
+
+main {
+  width: 100%;
+}
+main #section1 {
+  background: linear-gradient(45deg, #fcdee9, #f3fcff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 5vh 21vw;
+  padding-top: 20vh;
+}
+main #section1 #top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #section1 #top > * {
+  flex-basis: 50%;
+}
+main #section1 #top #text {
+  display: flex;
+  padding: 0 2vw;
+}
+main #section1 #top #text h1 {
+  font-size: 3.4em;
+  color: #000000;
+  font-weight: 700;
+  line-height: 1em;
+}
+main #section1 #top #media img {
+  width: 30em;
+  -o-object-fit: contain;
+     object-fit: contain;
+  aspect-ratio: 3/2.5;
+}
+main #section1 #bottom {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+main #section1 #bottom p {
+  width: 80%;
+  font-size: 1.4em;
+  color: black;
+  font-weight: 600;
+}
+main #section2 {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main #section2 #center {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  padding: 7vh 22vw;
+  align-items: center;
+  justify-content: center;
+}
+main #section2 #center .card {
+  display: flex;
+  border-top: 0.2em solid #e8eaed;
+  flex-direction: column;
+  gap: 2em;
+  padding-right: 1.3vw;
+  padding-top: 1.4vh;
+}
+main #section2 #center .card h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+main #section2 #center .card p {
+  font-size: 1.1em;
+  font-weight: 300;
+  opacity: 0.8;
+}
+main #section2 #center .card img {
+  width: 20em;
+  -o-object-fit: contain;
+     object-fit: contain;
+  aspect-ratio: 3/2.5;
+}
+main #section2 #center2 {
+  display: flex;
+  padding: 5vh 21vw;
+  align-items: center;
+}
+main #section2 #center2 #text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+main #section2 #center2 #text h4 {
+  font-size: 1.5em;
+  font-weight: 600;
+  opacity: 0.6;
+}
+main #section2 #center2 #text h3 {
+  font-size: 3em;
+  font-weight: 700;
+}
+main #section2 #center2 #text p {
+  font-size: 1em;
+  font-weight: 600;
+  opacity: 0.6;
+}
+main #section2 #center2 #text #bottomgroup {
+  display: flex;
+  gap: 0.3em;
+}
+main #section2 #center2 #text #bottomgroup #btn1 {
+  color: royalblue;
+  transition: background-color 0.3s;
+  background-color: transparent;
+  padding: 0.4rem 2rem;
+  border-radius: 3rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: 0.15rem solid royalblue;
+  transition: background-color 0.3s;
+}
+main #section2 #center2 #text #bottomgroup #btn1:hover {
+  background-color: royalblue;
+  color: white;
+}
+main #section2 #center2 #text #bottomgroup #btn2 {
+  font-size: 0.9rem;
+  padding: 0.4rem 2rem;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+main #section2 #center2 #text #bottomgroup #btn2 img {
+  width: 1em;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main #section2 #center2 #media img {
+  width: 26rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main #section3 {
+  padding: 2vh 0;
+}
+main #section3 #feature {
+  background: linear-gradient(to left, #ffffff, #fcfce2);
+  padding: 7vh 20vw;
+  display: flex;
+  flex-direction: row-reverse;
+}
+main #section3 #feature #text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 7vw;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-right: 3vw;
+}
+main #section3 #feature #text h4 {
+  font-size: 1em;
+  font-weight: 600;
+  opacity: 0.6;
+}
+main #section3 #feature #text h3 {
+  font-size: 3.8em;
+  font-weight: 600;
+}
+main #section3 #feature #text p {
+  font-size: 1.2em;
+  font-weight: 600;
+  opacity: 0.6;
+}
+main #section3 #feature #text #buttonGroup button {
+  border-radius: 2em;
+  border: 0.15em solid royalblue;
+  padding: 0.7vh 2vw;
+  font-size: 1em;
+  color: royalblue;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  background-color: transparent;
+}
+main #section3 #feature #text #buttonGroup button:hover {
+  background-color: royalblue;
+  color: white;
+}
+main #section3 #feature #media img {
+  width: 25rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  aspect-ratio: 3/2.5;
+}
+main #section3 #featureEvent {
+  display: flex;
+  padding: 5vh 20vw;
+  align-items: center;
+}
+main #section3 #featureEvent #text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+main #section3 #featureEvent #text h4 {
+  font-size: 1.5em;
+  font-weight: 600;
+  opacity: 0.6;
+}
+main #section3 #featureEvent #text h3 {
+  font-size: 3.8em;
+  font-weight: 600;
+}
+main #section3 #featureEvent #text p {
+  font-size: 1.2em;
+  font-weight: 600;
+  opacity: 0.6;
+}
+main #section3 #featureEvent #text #bottomgroup {
+  display: flex;
+  gap: 0.3em;
+}
+main #section3 #featureEvent #text #bottomgroup #btn1 {
+  border-radius: 2em;
+  border: 0.15em solid royalblue;
+  padding: 0.7vh 2vw;
+  font-size: 1em;
+  color: royalblue;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  background-color: transparent;
+}
+main #section3 #featureEvent #text #bottomgroup #btn1:hover {
+  background-color: royalblue;
+  color: white;
+}
+main #section3 #featureEvent #media img {
+  width: 32rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main #section4 {
+  padding: 2vh 0;
+}
+main #section4 #feature {
+  background: linear-gradient(to left, #ffffff, #fcfce2);
+  padding: 5vh 20vw;
+  display: flex;
+  flex-direction: row-reverse;
+}
+main #section4 #feature #text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 7vw;
+  justify-content: center;
+  gap: 1rem;
+  padding-right: 3vw;
+}
+main #section4 #feature #text h4 {
+  font-size: 1.5em;
+  font-weight: 600;
+  opacity: 0.6;
+}
+main #section4 #feature #text h3 {
+  font-size: 3.8em;
+  font-weight: 600;
+}
+main #section4 #feature #text p {
+  font-size: 1.2em;
+  font-weight: 600;
+  opacity: 0.6;
+}
+main #section4 #feature #text #buttonGroup button {
+  border-radius: 2em;
+  border: 0.15em solid royalblue;
+  padding: 0.7vh 2vw;
+  font-size: 1em;
+  color: royalblue;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  background-color: transparent;
+}
+main #section4 #feature #text #buttonGroup button:hover {
+  background-color: royalblue;
+  color: white;
+}
+main #section4 #feature #media img {
+  width: 30rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  aspect-ratio: 3/2.5;
+}
+main #section4 #callToAction {
+  padding: 5vh 0vw;
+  display: flex;
+  justify-content: center;
+}
+main #section4 #callToAction #text {
+  width: 50em;
+  background-color: #042449;
+  border-radius: 3em 0em 0em 3em;
+  display: flex;
+  flex-direction: column;
+  padding-left: 7vw;
+  justify-content: center;
+  gap: 1rem;
+  padding-right: 3vw;
+}
+main #section4 #callToAction #text h3 {
+  font-size: 3.8em;
+  font-weight: 600;
+  color: white;
+}
+main #section4 #callToAction #text p {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: white;
+}
+main #section4 #callToAction #text #bottomgroup {
+  display: flex;
+  gap: 0.3em;
+}
+main #section4 #callToAction #text #bottomgroup #btn1 {
+  border-radius: 2em;
+  padding: 0.7vh 2vw;
+  font-size: 1em;
+  font-weight: 600;
+  color: royalblue;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  background-color: white;
+}
+main #section4 #callToAction #text #bottomgroup #btn2 {
+  font-size: 1em;
+  padding: 0.5vh 3vw;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+main #section4 #callToAction #text #bottomgroup #btn2 img {
+  width: 1em;
+}
+main #section4 #callToAction #media {
+  background-color: #042449;
+  border-radius: 0em 3em 3em 0em;
+}
+main #section4 #callToAction #media img {
+  width: 25em;
+  border-radius: 0em 3em 3em 0em;
+  -o-object-fit: contain;
+     object-fit: contain;
+  aspect-ratio: 3/2.5;
+}
+
+footer {
+  width: 100%;
+  padding: 7vh 3vw;
+  background-color: #f8f9fa;
+}
+footer #part1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10vh;
+}
+footer #part1 #left img {
+  width: 9em;
+}
+footer #part1 #right {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+footer #part1 #right .links {
+  width: 18em;
+  font-size: 1rem;
+}
+footer #part1 #right .links ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+}
+footer #part1 #right .links ul > :nth-child(1) {
+  font-weight: 600;
+  opacity: 1;
+}
+footer #part1 #right .links ul li {
+  font-weight: 500;
+  opacity: 0.9;
+}
+footer #part2 {
+  display: flex;
+  padding-bottom: 3vh;
+  gap: 1em;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.648);
+}
+footer #part2 img {
+  width: 1.1em;
+  opacity: 0.6;
+}
+footer #part3 {
+  display: flex;
+  padding: 2vh 0;
+  justify-content: space-between;
+  align-items: center;
+}
+footer #part3 #left p {
+  font-size: 1em;
+  opacity: 0.9;
+}
+footer #part3 #right {
+  display: flex;
+  gap: 1em;
+}
+footer #part3 #right h5 {
+  font-size: 0.9em;
+  font-weight: 500;
+}/*# sourceMappingURL=style.css.map */

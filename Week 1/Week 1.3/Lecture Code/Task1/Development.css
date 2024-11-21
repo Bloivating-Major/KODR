@@ -1,0 +1,641 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: clamp(12px, 1vw, 20px);
+  --lt-blue: #196bd4;
+  --dk-blue: #1783e1;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+nav #top {
+  padding: 1.6vh 0;
+  background: linear-gradient(to left, #813ff2, #036cdb);
+  display: flex;
+  justify-content: center;
+}
+nav #top p {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  color: white;
+  font-size: 0.9em;
+}
+nav #top p img {
+  width: 0.8em;
+}
+nav #navbar {
+  display: flex;
+  padding: 2vh 3vw;
+  justify-content: space-between;
+  background-color: white;
+  top: 0;
+}
+nav #navbar #left img {
+  width: 8em;
+}
+nav #navbar #right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.2em;
+}
+nav #navbar #right img {
+  display: none;
+}
+nav #navbar #right #links {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+nav #navbar #right #links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  opacity: 0.8;
+}
+nav #navbar #right #links a:hover {
+  color: royalblue;
+}
+nav #navbar #right button {
+  border-radius: 2em;
+  border: 0.15em solid royalblue;
+  padding: 0.7vh 2vw;
+  font-size: 1em;
+  color: royalblue;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  background-color: transparent;
+}
+nav #navbar #right button:hover {
+  background-color: royalblue;
+  color: white;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #linearGradient {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(45deg, #d4fef5, #f3fcff);
+}
+main #linearGradient #section1 {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20vh 20vw;
+  gap: 5em;
+  max-width: 120rem;
+}
+main #linearGradient #section1 #top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #linearGradient #section1 #top #text {
+  display: flex;
+  flex-basis: 50%;
+  padding: 0 3vw;
+}
+main #linearGradient #section1 #top #text h1 {
+  font-size: 4em;
+}
+main #linearGradient #section1 #top #media {
+  display: flex;
+  flex-basis: 50%;
+}
+main #linearGradient #section1 #top #media img {
+  width: 30em;
+  -o-object-fit: contain;
+     object-fit: contain;
+  aspect-ratio: 3/2.5;
+}
+main #linearGradient #section1 #bottom {
+  padding: 0 7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #linearGradient #section1 #bottom p {
+  font-size: 1.7em;
+  font-weight: 400;
+  text-align: center;
+}
+main #Section2 {
+  max-width: 120rem;
+}
+main #Section2 #center {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 7vh 20vw;
+  justify-content: center;
+  width: 100%;
+}
+main #Section2 #center .card {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding-right: 1.3vw;
+  padding-top: 1.4vh;
+  border-top: 0.2em solid #e8eaed;
+}
+main #Section2 #center .card h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+main #Section2 #center .card p {
+  font-size: 1.1em;
+  font-weight: 300;
+  opacity: 0.8;
+}
+main #Section2 #center .card img {
+  width: 20em;
+  -o-object-fit: contain;
+     object-fit: contain;
+  aspect-ratio: 3/2.5;
+}
+main #Section3Background {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, var(--lt-blue) 20%, transparent 60%), radial-gradient(ellipse at -50% -150%, transparent 80%, var(--lt-blue) 80%), linear-gradient(145deg, var(--lt-blue) 0, var(--dk-blue) 60%);
+}
+main #Section3Background #Section3 {
+  padding: 4vh;
+  display: flex;
+  justify-content: center;
+  max-width: 120rem;
+}
+main #Section3Background #Section3 #Features {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 4vh 0;
+  gap: 3em;
+}
+main #Section3Background #Section3 #Features #top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  padding-left: 2vw;
+  padding-right: 7vw;
+}
+main #Section3Background #Section3 #Features #top h2 {
+  color: white;
+  font-size: 1em;
+}
+main #Section3Background #Section3 #Features #top h3 {
+  color: white;
+  font-size: 2.9em;
+}
+main #Section3Background #Section3 #Features #bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em;
+}
+main #Section3Background #Section3 #Features #bottom #card {
+  display: flex;
+  padding: 1em 1em;
+  gap: 2em;
+  flex-direction: column;
+}
+main #Section3Background #Section3 #Features #bottom #card img {
+  width: 5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main #Section3Background #Section3 #Features #bottom #card a {
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 700;
+  color: white;
+}
+main #Section3Background #Section3 #Features #bottom #card a img {
+  width: 0.6em;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main #Section3Background #Section3 #Features #bottom #card p {
+  color: white;
+}
+main #Section3Background #Section3 #Features #bottom #card:hover {
+  border-radius: 1em;
+  background-color: #3b88df;
+  box-shadow: 2px 8px 21px 17px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+main #Section4 {
+  display: flex;
+  flex-direction: column;
+  padding: 4vh 17vw;
+  max-width: 120rem;
+  align-items: center;
+}
+main #Section4 #part1 {
+  display: flex;
+  flex-direction: column;
+}
+main #Section4 #part1 #hGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 0 8vw;
+  padding-right: 13vw;
+}
+main #Section4 #part1 #hGroup h4 {
+  font-size: 1.2em;
+}
+main #Section4 #part1 #hGroup h2 {
+  line-height: 1em;
+  font-size: 3em;
+}
+main #Section4 #part1 #featurePart1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 8vh 0;
+}
+main #Section4 #part1 #featurePart1 #text {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4em;
+  padding-right: 3vw;
+  padding-left: 7vw;
+}
+main #Section4 #part1 #featurePart1 #text #card {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4vh;
+  gap: 1em;
+}
+main #Section4 #part1 #featurePart1 #text #card p {
+  width: 80%;
+  font-weight: 500;
+  opacity: 0.7;
+}
+main #Section4 #part1 #featurePart1 #text #card #btnGroup {
+  display: flex;
+  gap: 1em;
+}
+main #Section4 #part1 #featurePart1 #text #card a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+main #Section4 #part1 #featurePart1 #text #card a img {
+  width: 0.6em;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main #Section4 #part1 #featurePart1 #media img {
+  width: 22em;
+  -o-object-fit: contain;
+     object-fit: contain;
+  aspect-ratio: 3/2.5;
+}
+main #Section4 #part2 {
+  display: flex;
+  padding: 4vh 0;
+}
+main #Section4 #part2 #text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+  padding-left: 4vw;
+  padding-right: 8vw;
+}
+main #Section4 #part2 #text h3 {
+  font-size: 3em;
+}
+main #Section4 #part2 #text p {
+  font-weight: 500;
+  opacity: 0.6;
+}
+main #Section4 #part2 #text #buttonGroup button {
+  border-radius: 2em;
+  border: 0.15em solid royalblue;
+  padding: 0.7vh 2vw;
+  font-size: 1em;
+  color: royalblue;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  background-color: transparent;
+}
+main #Section4 #part2 #text #buttonGroup button:hover {
+  background-color: royalblue;
+  color: white;
+}
+main #Section4 #part2 #media img {
+  width: 25em;
+  -o-object-fit: contain;
+     object-fit: contain;
+  aspect-ratio: 3/2.5;
+}
+main #Section4 #part3 {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 5vh 0;
+  align-items: center;
+}
+main #Section4 #part3 #text {
+  padding-left: 8vw;
+  padding-right: 3vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+main #Section4 #part3 #text h4 {
+  opacity: 0.7;
+}
+main #Section4 #part3 #text h3 {
+  font-size: 3em;
+  line-height: 1em;
+}
+main #Section4 #part3 #text p {
+  width: 80%;
+  font-weight: 500;
+  opacity: 0.7;
+}
+main #Section4 #part3 #text #buttonGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+}
+main #Section4 #part3 #text #buttonGroup #btn1 {
+  border-radius: 2em;
+  border: 0.15em solid royalblue;
+  padding: 0.7vh 2vw;
+  font-size: 1em;
+  color: royalblue;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  background-color: transparent;
+}
+main #Section4 #part3 #text #buttonGroup #btn1:hover {
+  background-color: royalblue;
+  color: white;
+}
+main #Section4 #part3 #text #buttonGroup #btn2 {
+  font-size: 0.9em;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+main #Section4 #part3 #text #buttonGroup #btn2 img {
+  width: 0.6em;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main #Section4 #part3 #media img {
+  width: 25em;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main #Section4 #part4 {
+  display: flex;
+}
+main #Section4 #part4 #text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+  padding-left: 4vw;
+  padding-right: 8vw;
+}
+main #Section4 #part4 #text h3 {
+  font-size: 1.5em;
+  opacity: 0.7;
+}
+main #Section4 #part4 #text h4 {
+  font-size: 3em;
+  line-height: 1em;
+}
+main #Section4 #part4 #text p {
+  width: 80%;
+  font-weight: 500;
+  opacity: 0.6;
+}
+main #Section4 #part4 #text #buttonGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+}
+main #Section4 #part4 #text #buttonGroup button {
+  border-radius: 2em;
+  border: 0.15em solid royalblue;
+  padding: 0.7vh 2vw;
+  font-size: 1em;
+  color: royalblue;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  background-color: transparent;
+}
+main #Section4 #part4 #text #buttonGroup button:hover {
+  background-color: royalblue;
+  color: white;
+}
+main #Section4 #part4 #media img {
+  width: 25em;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (min-width: 1920px) {
+  main #linearGradient {
+    padding: 3vh 5vw;
+  }
+  main #linearGradient #section1 {
+    min-height: 0;
+    justify-content: start;
+    padding: 0vh 2vw;
+  }
+  main #linearGradient #section1 #top #text {
+    padding: 0 1vw;
+  }
+  main #linearGradient #section1 #top #bottom {
+    padding: 0;
+  }
+  main #linearGradient #Section2 #center {
+    padding: 7vh 10vw;
+  }
+  main #linearGradient #Section3 {
+    padding: 0;
+  }
+  main #linearGradient #Section3 #part1 #hGroup {
+    padding: 0 0vw;
+  }
+  main #linearGradient #Section3 #Section4 {
+    padding: 4vh 15vw;
+  }
+}
+@media (max-width: 600px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+  nav #top p {
+    font-size: 1.1em;
+    font-weight: 700;
+  }
+  nav #navbar {
+    padding: 3vh 8vw;
+    padding-right: 11vw;
+  }
+  nav #navbar #left img {
+    width: 39vw;
+  }
+  nav #navbar #right #links a {
+    display: none;
+  }
+  nav #navbar #right button {
+    display: none;
+  }
+  nav #navbar #right img {
+    display: initial;
+    width: 5vw;
+  }
+  main #linearGradient #section1 {
+    display: flex;
+    flex-direction: column;
+    padding: 20vh 1vw;
+    padding-bottom: 10vh;
+  }
+  main #linearGradient #section1 #top {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+  }
+  main #linearGradient #section1 #top #text h1 {
+    font-size: 3.8em;
+    text-align: center;
+  }
+  main #linearGradient #section1 #top #media img {
+    width: 27em;
+  }
+  main #linearGradient #section1 #bottom p {
+    font-size: 2em;
+  }
+  main #Section2 #center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6vh 6vw;
+    gap: 5rem;
+  }
+  main #Section2 #center .card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main #Section2 #center .card h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+  main #Section2 #center .card p {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  main #Section2 #center .card img {
+    width: 30em;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  main #Section3Background {
+    padding: 0;
+  }
+  main #Section3Background #Section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2em;
+  }
+  main #Section3Background #Section3 #Features {
+    width: 100%;
+    text-align: start;
+  }
+  main #Section3Background #Section3 #Features #top h3 {
+    font-size: 3.5rem;
+  }
+  main #Section3Background #Section3 #Features #bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+  }
+  main #Section3Background #Section3 #Features #bottom #card {
+    width: 100%;
+    padding: 1em 3em;
+    background: transparent;
+    border-radius: 0.5em;
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.1);
+  }
+  main #Section3Background #Section3 #Features #bottom #card img {
+    max-width: 100%;
+  }
+  main #Section3Background #Section3 #Features #bottom #card a {
+    font-size: 2rem;
+    display: flex;
+    gap: 8px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: white;
+  }
+  main #Section3Background #Section3 #Features #bottom #card p {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: start;
+  }
+  main #Section4 {
+    flex-direction: column;
+    gap: 2em;
+    padding: 0;
+  }
+  main #Section4 #part1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 2em;
+  }
+  main #Section4 #part1 #hGroup {
+    display: flex;
+    flex-direction: column;
+  }
+  main #Section4 #part1 #featurePart1 {
+    display: flex;
+    flex-direction: column;
+  }
+  main #Section4 #part1 #featurePart1 #text {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=Development.css.map */
