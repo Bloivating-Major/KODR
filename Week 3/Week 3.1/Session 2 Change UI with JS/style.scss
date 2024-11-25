@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: clamp(12px, 1vw, 20px);
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  padding: 5vh 3vw;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(350px, 1fr));
+  gap: 2em;
+
+  .card {
+    width: 27em;
+    box-shadow: 0 0.3em 0.3em rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    padding: 2vh 2vw;
+    border-radius: 1em;
+    .status-bar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .availability {
+        padding: 0.2em 1.2em;
+        color: white;
+        text-transform: lowercase;
+        background-color: #00d861;
+        border-radius: 2em;
+      }
+
+      .rate {
+        font-size: 1em;
+        font-weight: 600;
+      }
+    }
+
+    .profile-image {
+      img {
+        height: 10em;
+        width: 10em;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+
+    .userName {
+      font-size: 1.4em;
+      font-weight: 500;
+    }
+
+    .role {
+      font-size: 0.8em;
+      font-weight: 500;
+      opacity: 0.7;
+    }
+
+    .professional-status {
+      font-size: 1em;
+      font-weight: 500;
+      color: #00d861;
+    }
+
+    .skills {
+      width: 100%;
+      display: flex;
+      gap: 0.3em;
+      justify-content: space-between;
+
+      .skill-tag {
+        border: 0.1em solid royalblue;
+        border-radius: 1em;
+        font-weight: 500;
+        padding: 0.1em 1em;
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: white;
+          background-color: royalblue;
+        }
+
+        &.skill-count {
+          background-color: #f0f0f0;
+          border-color: #d0d0d0;
+          color: #666;
+          cursor: pointer;
+
+          &:hover {
+            background-color: royalblue;
+            border-color: royalblue;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .bio {
+      text-align: center;
+      font-size: 0.9em;
+      opacity: 0.7;
+    }
+
+    .view-profile-btn {
+      border: none;
+      background-color: transparent;
+      width: 100%;
+      padding: 1em 1em;
+      font-size: 1em;
+      text-transform: uppercase;
+      font-weight: 600;
+      border-radius: 1em;
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: white;
+        background-color: royalblue;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    height: auto;
+    width: 100%;
+    padding: 2vh 4vw;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+
+    .card {
+      width: 100%;
+      padding: 4vh 4vw;
+
+      .status-bar {
+        .availability {
+          font-size: 1.2em;
+          padding: 0.3em 1.5em;
+        }
+
+        .rate {
+          font-size: 1.2em;
+        }
+      }
+
+      .profile-image {
+        img {
+          height: 15em;
+          width: 15em;
+        }
+      }
+
+      .userName {
+        font-size: 1.7em;
+      }
+
+      .role {
+        font-size: 1.2em;
+      }
+
+      .professional-status {
+        font-size: 1.3em;
+      }
+
+      .skills {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8em;
+
+        .skill-tag {
+          font-size: 1.2em;
+          padding: 0.2em 1.2em;
+
+          &.skill-count {
+            font-size: 1.2em;
+          }
+        }
+      }
+
+      .bio {
+        font-size: 1.2em;
+        width: 95%;
+      }
+
+      .view-profile-btn {
+        font-size: 1.3em;
+        padding: 0.8em;
+        border-radius: 0.5em;
+      }
+    }
+  }
+}

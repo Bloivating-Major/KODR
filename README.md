@@ -82,6 +82,24 @@ cd KODR-Bootcamp
 
 ---
 
+# Week 03 - DSA, Object Oriented Programming and JavaScript DOM
+
+<details>
+<summary style="display: inline; font-size: 20px; font-weight: 700; cursor: pointer;" title="Click on me to Expand">Click to Expand Week 03 Details</summary>
+
+## 📚 [ Week 03 - DSA, Object Oriented Programming and JavaScript DOM](./Week%203/)
+
+### 💻 [**3.1 - OOP and DOM Manipulation**](./Week%203/Week%203.1)
+
+> **`Topics Covered:` OOP and DOM Manipulation -**  I explored and implemented today, focusing on JavaScript Classes, Objects, Constructors, and Dynamic Frontend Development using DOM Manipulation and JSON Data Handling.
+
+- 👨‍💻 [**Lecture Codes**](./Week%203/Week%203.1/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%203/Week%203.1/Readme.md)
+
+</details>
+
+---
+
 ## 🤝 **Connect with the Community**
 
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/sheryians_coding_school/#)
