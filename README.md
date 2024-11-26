@@ -96,9 +96,25 @@ cd KODR-Bootcamp
 - 👨‍💻 [**Lecture Codes**](./Week%203/Week%203.1/)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%203/Week%203.1/Readme.md)
 
+
+
+### 💻 [**3.2 - OOP and DOM Manipulation**](./Week%203/Week%203.2/)
+
+> **`Topics Covered:` OOP and DOM Manipulation -**  I explored and implemented today, focusing on JavaScript Classes, Objects, Constructors, and Dynamic Frontend Development using DOM Manipulation and JSON Data Handling.
+
+- 👨‍💻 [**Lecture Codes**](./Week%203/Week%203.2/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%203/Week%203.2/Readme.md)
+
 </details>
 
 ---
+
+
+
+</details>
+
+---
+
 
 ## 🤝 **Connect with the Community**
 

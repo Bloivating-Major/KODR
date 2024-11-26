@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: GILROY;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+main button {
+  position: absolute;
+  top: 5em;
+  left: 50%;
+  padding: 1em 2em;
+  background-color: #7cff44;
+  border-radius: 1em;
+  border: none;
+  font-size: 1.2em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+main button:active {
+  background-color: #66d633;
+  scale: 0.95;
+}
+main #moveMe {
+  position: absolute;
+  top: 5em;
+  left: 5em;
+  width: 17em;
+  border-radius: 50%;
+  transition: all linear 0.2s;
+}
+main #swords {
+  position: absolute;
+  bottom: 10em;
+  right: 10em;
+  width: 8em;
+  border-radius: 1em;
+}
+main #finalResult {
+  position: absolute;
+  bottom: 10em;
+  right: 10em;
+  width: 12em;
+  border-radius: 1em;
+  display: none;
+  transition: all ease-in-out 0.5s;
+}/*# sourceMappingURL=style.css.map */
