@@ -252,8 +252,7 @@ const user = [
   
     const buttons = document.querySelectorAll('.view-profile-btn');
     buttons.forEach((button) => {
-      console.log(button);
-      button.addEventListener('click', function(elem) {
+      button.addEventListener('click', function() {
         const index = this.getAttribute('userIndex');
         user[index].available = !user[index].available;
         createUserCards();

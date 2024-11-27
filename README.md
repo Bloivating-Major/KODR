@@ -105,15 +105,20 @@ cd KODR-Bootcamp
 - 👨‍💻 [**Lecture Codes**](./Week%203/Week%203.2/)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%203/Week%203.2/Readme.md)
 
+### 💻 [**3.3 - OOP and DOM Manipulation**](./Week%203/Week%203.2/)
+
+> **`Topics Covered:` OOP and DOM Manipulation -**  Solved questions which improved logic making and implementation of javascript functions.
+
+- 👨‍💻 [**Lecture Codes**](./Week%203/Week%203.3/Session%201%20DSA/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%203/Week%203.3/Readme.md)
+
 </details>
 
 ---
 
 
 
-</details>
 
----
 
 
 ## 🤝 **Connect with the Community**

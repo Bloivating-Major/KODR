@@ -50,8 +50,8 @@
 // age >= 18 ? console.log(`Hello ${name}, you are a Voter.`) : console.log(`Hello ${name}, you will be eligible to vote in ${18-age} years.`);
 
 //Task 11
-let a = parseInt(prompt('Enter a Week Number between 1 and 7'));
+// let a = parseInt(prompt('Enter a Week Number between 1 and 7'));
 
-let daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+// let daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-a > 0 && a<8 ?  console.log(`Day of the Week for ${a} is ${daysOfWeek[a-1]}`) : console.log(`Invalid Day of the Week for ${a}`);
+// a > 0 && a<8 ?  console.log(`Day of the Week for ${a} is ${daysOfWeek[a-1]}`) : console.log(`Invalid Day of the Week for ${a}`);

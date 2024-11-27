@@ -3,6 +3,49 @@
 ## 📘 Learning Overview
 This document captures the essence of a multi-faceted JavaScript learning journey, showcasing progression from basic concepts to advanced DOM manipulation and interactive web development.
 
+# **JavaScript Problem Solving**
+
+This repository contains solutions to three practical JavaScript tasks involving problem solving skills and logic related to JavaScript.
+
+---
+
+## **Task Overview**
+
+| **Task**                         | **Live Demo**                     |
+|-----------------------------------|------------------------------------|
+| **Task 1: Cursor Follower**    | [Show Live Demo](https://bloivating-major.github.io/KODR/Week%203/Week%203.2/Session%202%20JS%20DOM/Task%201/index.html)   |
+| **Task 2: Keyboard Event Game Creation** | [Show Live Demo](https://bloivating-major.github.io/KODR/Week%203/Week%203.2/Session%202%20JS%20DOM/Task%202/index.html)   |
+| **Task 3: Dynamic Card Data Manipulation** | [Show Live Demo](https://bloivating-major.github.io/KODR/Week%203/Week%203.2/Session%202%20JS%20DOM/Task%203/index.html) |
+
+---
+
+## **Task Details**
+
+### **Task 1: Cursor Follower**
+- **Description**: Updates the cursor position of the cursor when the cursor is moved.
+- **Live Demo**: [Show Live Demo](https://bloivating-major.github.io/KODR/Week%203/Week%203.2/Session%202%20JS%20DOM/Task%201/index.html)
+
+### **Task 2: Keyboard Event Game Creation**
+- **Description**: Applied keyboard events on this task to manipulate DOM.
+- **Live Demo**: [Show Live Demo](https://bloivating-major.github.io/KODR/Week%203/Week%203.2/Session%202%20JS%20DOM/Task%202/index.html) 
+
+### **Task 3: Dynamic Card Data Manipulation**
+- **Description**: Changed the values of the Card Dynamically when button is clicked on the particular card.
+- **Live Demo**:  [Show Live Demo](https://bloivating-major.github.io/KODR/Week%203/Week%203.2/Session%202%20JS%20DOM/Task%203/index.html)
+
+---
+
+## **How to Run**
+1. Copy the code snippets into your browser console or a `.js` file.
+2. Execute the code in a browser or using Node.js.
+3. Provide input when prompted to view results.
+
+---
+
+## **Links**
+- You can replace the `#task-xx-demo` placeholders with actual hosted links (e.g., CodePen, GitHub Pages, or your preferred platform).
+
+
 ---
 
 ## 🎯 Learning Milestones
