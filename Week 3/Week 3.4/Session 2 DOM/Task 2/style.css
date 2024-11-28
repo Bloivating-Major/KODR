@@ -1,0 +1,420 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  color: white;
+  overflow-x: hidden;
+}
+
+.instagram-mobile {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #000000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell;
+}
+.instagram-mobile .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #dbdbdb;
+}
+.instagram-mobile .header .logo {
+  width: 7em;
+}
+.instagram-mobile .header .header-icons img {
+  height: 2em;
+  width: 2em;
+  background-color: black;
+  border-radius: 50%;
+}
+.instagram-mobile .stories {
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+  overflow-x: auto;
+  border-bottom: 1px solid #dbdbdb;
+}
+.instagram-mobile .stories .story-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.instagram-mobile .stories .story-item .story-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  padding: 2px;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+.instagram-mobile .stories .story-item .story-avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 1.5px solid #ffffff;
+}
+.instagram-mobile .stories .story-item span {
+  font-size: 12px;
+}
+.instagram-mobile .stories .your-story .story-avatar {
+  border: 2px solid #dbdbdb;
+}
+.instagram-mobile .stories .your-story .story-avatar .add-story {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #0095f6;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.instagram-mobile .post {
+  border-bottom: 1px solid #dbdbdb;
+}
+.instagram-mobile .post .post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+}
+.instagram-mobile .post .post-header .user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.instagram-mobile .post .post-header .user-info .user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fafafa;
+}
+.instagram-mobile .post .post-header .user-info .user-avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.instagram-mobile .post .post-header img {
+  background-color: black;
+}
+.instagram-mobile .post .post-image {
+  width: 100%;
+  height: 375px;
+  background: #fafafa;
+}
+.instagram-mobile .post .post-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.instagram-mobile .post .post-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+}
+.instagram-mobile .post .post-actions .left-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.instagram-mobile .post .post-actions .left-actions .post-action-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.instagram-mobile .post .post-actions .left-actions .post-action-item h6 {
+  font-size: 16px;
+}
+.instagram-mobile .post .post-actions .left-actions .post-action-item img {
+  background-color: black;
+}
+.instagram-mobile .post .post-actions img {
+  background-color: black;
+}
+.instagram-mobile .post .post-caption, .instagram-mobile .post .post-hashtags {
+  padding: 1em 1.5em;
+  font-size: 14px;
+}
+.instagram-mobile .post .post-caption .username, .instagram-mobile .post .post-hashtags .username {
+  font-weight: 600;
+  margin-right: 6px;
+}
+.instagram-mobile .post .post-comments {
+  padding: 1em 1.4em;
+}
+.instagram-mobile .post .post-time {
+  padding: 1em 1.5em;
+  font-size: 12px;
+}
+.instagram-mobile .post .post-hashtags {
+  color: #00376b;
+}
+.instagram-mobile .bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 12px 0;
+  background: #fff;
+  border-top: 1px solid #dbdbdb;
+}
+.instagram-mobile .bottom-nav img {
+  background-color: transparent;
+}
+.instagram-mobile .icon-search {
+  width: 20px;
+  height: 20px;
+}
+.instagram-mobile .icon-profile {
+  width: 27px;
+  height: 26px;
+}
+
+[class^=icon-] {
+  width: 24px;
+  height: 24px;
+  background: #dbdbdb;
+  display: inline-block;
+}
+
+.story-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 1000;
+    display: none;
+}
+
+.story-modal.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.story-modal-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1001;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6), transparent);
+}
+
+.story-user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    padding-top: 10px;
+}
+
+.story-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #fff;
+}
+
+.story-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story-username {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.story-time {
+    color: #dbdbdb;
+    font-size: 12px;
+}
+
+.story-actions {
+    display: flex;
+    gap: 20px;
+}
+
+.story-actions button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 4px;
+    transition: opacity 0.2s;
+}
+
+.story-actions button:hover {
+    opacity: 0.8;
+}
+
+.story-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.story-progress {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    right: 0;
+    padding: 0 16px;
+    z-index: 1001;
+}
+
+.progress-bar {
+    height: 2px;
+    background-color: rgb(246, 29, 29);
+    position: relative;
+    overflow: hidden;
+}
+
+/* .progress-bar::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: #fff;
+    animation: progress 6s linear;
+} */
+
+@keyframes progress {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.story-media {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-media img {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.story-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+}
+
+.reply-input {
+    flex: 1;
+    position: relative;
+}
+
+.reply-input input {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 24px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 14px;
+    outline: none;
+    transition: background-color 0.2s;
+}
+
+.reply-input input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.reply-input input::placeholder {
+    color: #dbdbdb;
+}
+
+.story-reactions {
+    display: flex;
+    gap: 16px;
+}
+
+.story-reactions button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 4px;
+    transition: transform 0.2s;
+}
+
+.story-reactions button:hover {
+    transform: scale(1.1);
+}
+
+/* Close button specific styling */
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 4px;
+    transition: transform 0.2s;
+}
+
+.close-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .story-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .story-actions button {
+        font-size: 20px;
+    }
+
+    .story-footer {
+        padding: 16px;
+    }
+
+    .reply-input input {
+        padding: 10px 16px;
+    }
+}/*# sourceMappingURL=style.css.map */
