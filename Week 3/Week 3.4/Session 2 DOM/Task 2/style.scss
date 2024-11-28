@@ -1,224 +1,438 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-html, body{
-    width: 100%;
-    height: 100%;   
-    color: white;
-    overflow-x: hidden;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  color: white;
+  overflow-x: hidden;
+  background-color: #101010;
 }
 
 .instagram-mobile {
-    max-width: 600px;
-    margin: 0 auto;
-    background: #000000;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #000000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell;
 
-    .header {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid #dbdbdb;
+
+    .logo {
+      width: 7em;
+    }
+
+    .header-icons {
+      img {
+        height: 2em;
+        width: 2em;
+        background-color: black;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .stories {
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+    overflow-x: auto;
+    border-bottom: 1px solid #dbdbdb;
+
+    .story-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+
+      .story-avatar {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        padding: 2px;
+        background: linear-gradient(
+          45deg,
+          #f09433 0%,
+          #e6683c 25%,
+          #dc2743 50%,
+          #cc2366 75%,
+          #bc1888 100%
+        );
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .post {
+    border-bottom: 1px solid #dbdbdb;
+
+    .post-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 16px;
+
+      .user-info {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        padding: 12px 16px;
-        border-bottom: 1px solid #dbdbdb;
+        gap: 12px;
 
-        .logo {
-            width: 7em;
-        }
-
-        .header-icons {
-                img{
-                    height: 2em;
-                    width: 2em;
-                    background-color: black;
-                    border-radius: 50%;
-                }
-        }
-    }
-
-    .stories {
-        display: flex;
-        padding: 16px;
-        gap: 16px;
-        overflow-x: auto;
-        border-bottom: 1px solid #dbdbdb;
-
-        .story-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 4px;
-
-            .story-avatar {
-                width: 56px;
-                height: 56px;
-                border-radius: 50%;
-                padding: 2px;
-                background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-                
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    border-radius: 50%;
-                    border: 1.5px solid #ffffff;
-                }
-            }
-
-            span {
-                font-size: 12px;
-            }
-        }
-
-        .your-story {
-            .story-avatar {
-                border: 2px solid #dbdbdb;
-                
-                .add-story {
-                    position: absolute;
-                    bottom: 0;
-                    right: 0;
-                    background: #0095f6;
-                    color: white;
-                    border-radius: 50%;
-                    width: 20px;
-                    height: 20px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-            }
-        }
-    }
-
-    .post {
-        border-bottom: 1px solid #dbdbdb;
-        
-        .post-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px 16px;
-
-            .user-info {
-                display: flex;
-                align-items: center;
-                gap: 12px;
-
-                .user-avatar {
-                    width: 32px;
-                    height: 32px;
-                    border-radius: 50%;
-                    background: #fafafa;
-                    img{
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        border-radius: 50%;
-                    }
-                }
-            }
-
-            img{
-                background-color: black;
-            }
-        }
-
-        .post-image {
+        .user-avatar {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          background: #fafafa;
+          img {
             width: 100%;
-            height: 375px;
-            background: #fafafa;
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+          }
         }
+      }
 
-        .post-actions {
-            display: flex;
-            justify-content: space-between;
-            padding: 12px 16px;
-
-            .left-actions {
-                display: flex;
-                align-items: center;
-                gap: 16px;
-                .post-action-item{
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                    h6{
-                        font-size: 16px;
-                    }
-                    img{
-                        background-color: black;
-                }
-                }
-            }
-
-            img{
-                background-color: black;
-            }
-        }
-
-
-        .post-caption, .post-hashtags {
-            padding: 1em 1.5em;
-            font-size: 14px;
-
-            .username {
-                font-weight: 600;
-                margin-right: 6px;
-            }
-        }
-
-        .post-comments{
-            padding: 1em 1.4em;
-        }
-
-        .post-time{
-            padding: 1em 1.5em;
-            font-size: 12px;
-        }
-
-        .post-hashtags {
-            color: #00376b;
-        }
+      img {
+        background-color: black;
+      }
     }
 
-    .bottom-nav {
-        position: fixed;
-        bottom: 0;
+    .post-image {
+      width: 100%;
+      height: 375px;
+      background: #fafafa;
+      img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .post-actions {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 16px;
+
+      .left-actions {
         display: flex;
-        justify-content: space-evenly;
-        padding: 12px 0;
-        background: #fff;
-        border-top: 1px solid #dbdbdb;
-
-        img{
-            background-color: transparent;
-
-            
+        align-items: center;
+        gap: 16px;
+        .post-action-item {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          h6 {
+            font-size: 16px;
+          }
+          img {
+            background-color: black;
+          }
         }
+      }
+
+      img {
+        background-color: black;
+      }
     }
-    .icon-search{
-        width: 20px;
-        height: 20px;
+
+    .post-caption,
+    .post-hashtags {
+      padding: 1em 1.5em;
+      font-size: 14px;
+
+      .username {
+        font-weight: 600;
+        margin-right: 6px;
+      }
     }
-    .icon-profile{
-        width: 27px;
-        height: 26px;
+
+    .post-comments {
+      padding: 1em 1.4em;
     }
+
+    .post-time {
+      padding: 1em 1.5em;
+      font-size: 12px;
+    }
+
+    .post-hashtags {
+      color: #00376b;
+    }
+  }
+
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 12px 0;
+    background: #fff;
+    border-top: 1px solid #dbdbdb;
+
+    img {
+      background-color: transparent;
+    }
+  }
+  .icon-search {
+    width: 20px;
+    height: 20px;
+  }
+  .icon-profile {
+    width: 27px;
+    height: 26px;
+  }
 }
 
 [class^="icon-"] {
-    width: 24px;
-    height: 24px;
-    background: #dbdbdb;
-    display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: #dbdbdb;
+  display: inline-block;
 }
+
+.story-modal {
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-52%);
+  width: 100%;
+  max-width: 610px;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  z-index: 1000;
+  display: none;
+}
+
+.story-modal.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.story-modal-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1001;
+  background: black;
+}
+
+.story-user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 1em;
+  color: white;
+}
+
+.story-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.story-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story-username {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.story-time {
+  color: #dbdbdb;
+  font-size: 12px;
+}
+
+.story-actions {
+  display: flex;
+  gap: 20px;
+}
+
+.story-actions button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 4px;
+  transition: opacity 0.2s;
+}
+
+.story-actions button:hover {
+  opacity: 0.8;
+}
+
+.story-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.story-progress {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  right: 0;
+  padding: 0 16px;
+  z-index: 1001;
+}
+
+.progress-bar {
+  height: 2px;
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.story-media {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.story-media img {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.story-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+
+.reply-input {
+  flex: 1;
+  position: relative;
+}
+
+.reply-input input {
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 14px;
+  outline: none;
+  transition: background-color 0.2s;
+}
+
+.reply-input input:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.reply-input input::placeholder {
+  color: #dbdbdb;
+}
+
+.story-reactions {
+  display: flex;
+  gap: 16px;
+}
+
+.story-reactions button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 4px;
+  transition: transform 0.2s;
+}
+
+.story-reactions button:hover {
+  transform: scale(1.1);
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 4px;
+  transition: transform 0.2s;
+}
+
+.close-btn:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .story-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .story-actions button {
+    font-size: 20px;
+  }
+
+  .story-footer {
+    padding: 16px;
+  }
+
+  .reply-input input {
+    padding: 10px 16px;
+  }
+}
+

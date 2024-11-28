@@ -1,75 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Instagram Mobile UI</title>
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="instagram-mobile">
-
-        <header class="header">
-            <img class="logo" src="./Assets/textLogoWhite.png" alt="logo">
-            <div class="header-icons">
-                <img class="icon-messenger" src="./Assets/icons8-sent-50.png">
-            </div>
-        </header>
-
-        <div class="stories"></div>
-
-        <div class="story-modal">
-            <div class="story-modal-header">
-                <div class="story-user-info">
-                    <div class="story-avatar"></div>
-                    <span class="story-username">fiction_gaming_</span>
-                    <span class="story-time">32m</span>
-                </div>
-                <div class="story-actions">
-                    <button class="mute-btn"><i class="ri-volume-mute-line"></i></button>
-                    <button class="play-btn"><i class="ri-play-fill"></i></button>
-                    <button class="more-btn"><i class="ri-more-fill"></i></button>
-                    <button class="close-btn"><i class="ri-close-line"></i></button>
-                </div>
-            </div>
-            
-            <div class="story-content">
-                <div class="story-progress">
-                    <div class="progress-bar"></div>
-                </div>
-                
-                <div class="story-media"></div>
-            </div>
-
-            <div class="story-footer">
-                <div class="reply-input">
-                    <input type="text" placeholder="Reply to fiction_gaming_...">
-                </div>
-                <div class="story-reactions">
-                    <button class="like-btn"><i class="ri-heart-line"></i></button>
-                    <button class="share-btn"><i class="ri-share-forward-line"></i></button>
-                </div>
-            </div>
+      <header class="header">
+        <img class="logo" src="./Assets/textLogoWhite.png" alt="logo" />
+        <div class="header-icons">
+          <img class="icon-messenger" src="./Assets/icons8-sent-50.png" />
         </div>
+      </header>
 
-        <div class="content-area">
-            <div class="post"></div>
-        </div>
+      <div class="stories"></div>
 
-        <nav class="bottom-nav">
-            <img src="./Assets/icons8-home-48.png" class="icon-home">
-            <img src="./Assets/icons8-search-60.png" alt="" class="icon-search">
-            <img src="./Assets/icons8-add-new-48.png" alt="" class="icon-add">
-            <img src="./Assets/icons8-instagram-reels-50.png" alt="" class="icon-reels">
-            <img src="./Assets/user.png" alt="" class="icon-profile">
-        </nav>
+      <div class="story-modal"></div>
+
+      <div class="content-area">
+        <div class="post"></div>
+      </div>
+
+      <nav class="bottom-nav">
+        <img src="./Assets/icons8-home-48.png" class="icon-home" />
+        <img src="./Assets/icons8-search-60.png" alt="" class="icon-search" />
+        <img src="./Assets/icons8-add-new-48.png" alt="" class="icon-add" />
+        <img
+          src="./Assets/icons8-instagram-reels-50.png"
+          alt=""
+          class="icon-reels"
+        />
+        <img src="./Assets/user.png" alt="" class="icon-profile" />
+      </nav>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

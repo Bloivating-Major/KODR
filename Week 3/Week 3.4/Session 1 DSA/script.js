@@ -71,21 +71,21 @@
 
 // Task 25
 
-let number = parseInt(prompt("Enter a number: "));
+// let number = parseInt(prompt("Enter a number: "));
 
-function sumOfDigits(number){
-    let sum = 0;
-    while (number > 0 || sum > 9) {
-        if(number === 0){
-            number = sum;
-            sum = 0;
-        }
-        sum += number % 10;
-        number = Math.floor(number / 10);
-    }
-    return sum;
-}
+// function sumOfDigits(number){
+//     let sum = 0;
+//     while (number > 0 || sum > 9) {
+//         if(number === 0){
+//             number = sum;
+//             sum = 0;
+//         }
+//         sum += number % 10;
+//         number = Math.floor(number / 10);
+//     }
+//     return sum;
+// }
 
-number = sumOfDigits(number);
-console.log(number);
+// number = sumOfDigits(number);
+// console.log(number);
 
