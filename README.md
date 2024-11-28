@@ -112,6 +112,13 @@ cd KODR-Bootcamp
 - 👨‍💻 [**Lecture Codes**](./Week%203/Week%203.3/Session%201%20DSA/)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%203/Week%203.3/Readme.md)
 
+### 💻 [**3.4 - OOP and DOM Manipulation**](./Week%203/Week%203.4/)
+
+> **`Topics Covered:` OOP and DOM Manipulation -**   Explored JavaScript object-oriented programming concepts and implemented interactive DOM-based tasks such as a progress bar and social media post feed.
+
+- 👨‍💻 [**Lecture Codes**](./Week%203/Week%203.4/Readme.md)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%203/Week%203.4/Session%202%20DOM/Readme.md)
+
 </details>
 
 ---
