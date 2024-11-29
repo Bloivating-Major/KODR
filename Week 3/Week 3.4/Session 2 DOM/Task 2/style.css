@@ -100,12 +100,30 @@ body {
   width: 100%;
   height: 375px;
   background: #fafafa;
+  position: relative;
 }
 .instagram-mobile .post .post-image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.instagram-mobile .post .post-image .heart-animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+.instagram-mobile .post .post-image .heart-animation i {
+  font-size: 80px;
+  color: white;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+}
+.instagram-mobile .post .post-image .heart-animation.active {
+  animation: heartBurst 1s ease forwards;
 }
 .instagram-mobile .post .post-actions {
   display: flex;
@@ -125,8 +143,11 @@ body {
 .instagram-mobile .post .post-actions .left-actions .post-action-item h6 {
   font-size: 16px;
 }
-.instagram-mobile .post .post-actions .left-actions .post-action-item img {
-  background-color: black;
+.instagram-mobile .post .post-actions .left-actions .post-action-item .icon-heart {
+  font-size: 1.5em;
+}
+.instagram-mobile .post .post-actions .left-actions .post-action-item .icon-heart.ri-heart-fill {
+  color: red;
 }
 .instagram-mobile .post .post-actions img {
   background-color: black;
@@ -385,6 +406,11 @@ body {
 }
 
 @media (max-width: 768px) {
+  .post-image img {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
   .story-media img {
     width: 100%;
     height: 100%;
@@ -400,4 +426,38 @@ body {
   .reply-input input {
     padding: 10px 16px;
   }
+  .story-modal {
+    transform: translateX(-50%);
+  }
+}
+@keyframes heartBurst {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  15% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  30% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  45% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  80% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+.icon-heart {
+  transition: transform 0.2s ease;
+}
+.icon-heart.ri-heart-fill {
+  background-color: transparent;
+  color: #ed4956;
 }/*# sourceMappingURL=style.css.map */

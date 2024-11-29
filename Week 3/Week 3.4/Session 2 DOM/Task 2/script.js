@@ -76,7 +76,7 @@ function createPost() {
   const postContainer = document.querySelector(".post");
   postContainer.innerHTML = "";
 
-  userData.forEach((userData) => {
+  userData.forEach((userData, index) => {
     const posts = `    
                 <div class="post-header">
                     <div class="user-info">
@@ -86,12 +86,17 @@ function createPost() {
                     <img src="./Assets/icons8-menu-horizontal-50.png" alt="" class="icon-more">
                 </div>
                 
-                <div class="post-image"><img src="${userData.userPost}" alt=""></div>
+                <div class="post-image" data-index="${index}">
+                    <img src="${userData.userPost}" alt="">
+                    <div class="heart-animation">
+                        <i class="ri-heart-fill"></i>
+                    </div>
+                </div>
                 
                 <div class="post-actions">
                     <div class="left-actions">
                         <div id="like" class="post-action-item">
-                            <img class="icon-heart" src="./Assets/icons8-heart-50.png">
+                            <i id="${index}" ${userData.like ? "class='ri-heart-fill icon-heart'" : "class='ri-heart-line icon-heart'"}></i>
                             <h6>${userData.likeCount}</h6>
                         </div>
                         <div id="comment" class="post-action-item">
@@ -121,6 +126,55 @@ function createPost() {
                 <div class="post-time">${userData.timeAgoUploaded} days ago</div>  
         `;
     postContainer.innerHTML += posts;
+  });
+
+  setupDoubleClickLike();
+  likePost();
+}
+
+function likePost() {
+  const likeBtn = document.querySelectorAll("#like");
+  likeBtn.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      let index = e.target.id;
+      if (userData[index].like) {
+        userData[index].like = false;
+        userData[index].likeCount--;
+      } else {
+        userData[index].like = true;
+        userData[index].likeCount++;
+      }
+      createPost();
+    });
+  });
+}
+
+function setupDoubleClickLike() {
+  const postImages = document.querySelectorAll('.post-image');
+  
+  postImages.forEach(post => {
+    post.addEventListener('dblclick', (e) => {
+      e.preventDefault();
+      const index = e.currentTarget.dataset.index;
+      const heartAnimation = post.querySelector('.heart-animation');
+      
+      heartAnimation.classList.add('active');
+      setTimeout(() => {
+        heartAnimation.classList.remove('active');
+      }, 1000);
+
+      if (!userData[index].like) {
+        userData[index].like = true;
+        userData[index].likeCount++;
+        
+        const heartIcon = document.querySelectorAll('.icon-heart')[index];
+        heartIcon.classList.remove('ri-heart-line');
+        heartIcon.classList.add('ri-heart-fill');
+        const likeCount = heartIcon.nextElementSibling;
+        likeCount.textContent = userData[index].likeCount;
+      }
+    });
   });
 }
 

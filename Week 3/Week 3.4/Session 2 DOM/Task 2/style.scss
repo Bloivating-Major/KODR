@@ -125,6 +125,27 @@ body {
         height: 100%;
         object-fit: cover;
       }
+      position: relative;
+
+      .heart-animation {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+        pointer-events: none;
+        z-index: 2;
+        
+        i {
+          font-size: 80px;
+          color: white;
+          filter: drop-shadow(0 0 10px rgba(0,0,0,0.3));
+        }
+        
+        &.active {
+          animation: heartBurst 1s ease forwards;
+        }
+      }
     }
 
     .post-actions {
@@ -143,8 +164,12 @@ body {
           h6 {
             font-size: 16px;
           }
-          img {
-            background-color: black;
+          .icon-heart {
+            font-size: 1.5em; 
+
+            &.ri-heart-fill {
+              color: red;
+            }
           }
         }
       }
@@ -417,6 +442,12 @@ body {
 }
 
 @media (max-width: 768px) {
+
+  .post-image{
+    img{
+      user-select: none;
+    }
+  }
   .story-media img {
     width: 100%;
     height: 100%;
@@ -433,6 +464,45 @@ body {
 
   .reply-input input {
     padding: 10px 16px;
+  }
+
+  .story-modal{
+    transform: translateX(-50%);
+  }
+
+}
+
+@keyframes heartBurst {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  15% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  30% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  45% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  80% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+.icon-heart {
+  transition: transform 0.2s ease;
+  
+  &.ri-heart-fill {
+    background-color: transparent;
+    color: #ed4956;
   }
 }
 
