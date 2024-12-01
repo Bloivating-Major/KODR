@@ -346,6 +346,8 @@ body {
   );
   position: relative;
   overflow: hidden;
+  width: 0;
+  transition: width 0.01s linear;
 }
 
 @keyframes progress {

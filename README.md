@@ -16,6 +16,7 @@ git clone https://github.com/Bloivating-Major/KODR.git
 
 - [Getting Started](#-getting-started)
 - [Progress and Goals](#-progress-and-goals)
+- [Live Links](#-live-links)
 - [Connect with the Community](#-connect-with-the-community)
 
 ---
@@ -26,7 +27,7 @@ To clone this repository for your local use, use the following commands:
 
 ```bash
 git clone https://github.com/Bloivating-Major/KODR.git
-cd KODR-Bootcamp
+cd KODR
 ```
 
 ---
@@ -71,9 +72,9 @@ cd KODR-Bootcamp
 - 👨‍💻 [**Lecture Codes**](./Week%201/Week%201.4/Lecture%20Code/Readme.md)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%201/Week%201.4/Notes-Slides-Video_Links/Readme.md)
 
-### 💻 [**1.5 -  Awwwards Website: Building and Responsiveness**](./Week%201/Week%201.5/)
+### 💻 [**1.5 - Awwwards Website: Building and Responsiveness**](./Week%201/Week%201.5/)
 
-> **`Topics Covered:`  Awwwards Website: Building and Responsiveness -** CSS Functions: min, max, and clamp. Applying CSS functions for better responsiveness. Restyling and refining the Flutter Dev Landing Page project.
+> **`Topics Covered:` Awwwards Website: Building and Responsiveness -** CSS Functions: min, max, and clamp. Applying CSS functions for better responsiveness. Restyling and refining the Flutter Dev Landing Page project.
 
 - 👨‍💻 [**Lecture Codes**](./Week%201/Week%201.5/Lecture%20Code/Landing%20Page/)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%201/Week%201.5/Notes-Slides-Video_Links/Readme.md)
@@ -91,42 +92,67 @@ cd KODR-Bootcamp
 
 ### 💻 [**3.1 - OOP and DOM Manipulation**](./Week%203/Week%203.1)
 
-> **`Topics Covered:` OOP and DOM Manipulation -**  I explored and implemented today, focusing on JavaScript Classes, Objects, Constructors, and Dynamic Frontend Development using DOM Manipulation and JSON Data Handling.
+> **`Topics Covered:` OOP and DOM Manipulation -** I explored and implemented today, focusing on JavaScript Classes, Objects, Constructors, and Dynamic Frontend Development using DOM Manipulation and JSON Data Handling.
 
 - 👨‍💻 [**Lecture Codes**](./Week%203/Week%203.1/)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%203/Week%203.1/Readme.md)
 
-
-
 ### 💻 [**3.2 - OOP and DOM Manipulation**](./Week%203/Week%203.2/)
 
-> **`Topics Covered:` OOP and DOM Manipulation -**  I explored and implemented today, focusing on JavaScript Classes, Objects, Constructors, and Dynamic Frontend Development using DOM Manipulation and JSON Data Handling.
+> **`Topics Covered:` OOP and DOM Manipulation -** I explored and implemented today, focusing on JavaScript Classes, Objects, Constructors, and Dynamic Frontend Development using DOM Manipulation and JSON Data Handling.
 
 - 👨‍💻 [**Lecture Codes**](./Week%203/Week%203.2/)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%203/Week%203.2/Readme.md)
 
 ### 💻 [**3.3 - OOP and DOM Manipulation**](./Week%203/Week%203.2/)
 
-> **`Topics Covered:` OOP and DOM Manipulation -**  Solved questions which improved logic making and implementation of javascript functions.
+> **`Topics Covered:` OOP and DOM Manipulation -** Solved questions which improved logic making and implementation of javascript functions.
 
 - 👨‍💻 [**Lecture Codes**](./Week%203/Week%203.3/Session%201%20DSA/)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%203/Week%203.3/Readme.md)
 
 ### 💻 [**3.4 - OOP and DOM Manipulation**](./Week%203/Week%203.4/)
 
-> **`Topics Covered:` OOP and DOM Manipulation -**   Explored JavaScript object-oriented programming concepts and implemented interactive DOM-based tasks such as a progress bar and social media post feed.
+> **`Topics Covered:` OOP and DOM Manipulation -** Explored JavaScript object-oriented programming concepts and implemented interactive DOM-based tasks such as a progress bar and social media post feed.
 
 - 👨‍💻 [**Lecture Codes**](./Week%203/Week%203.4/Readme.md)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%203/Week%203.4/Session%202%20DOM/Readme.md)
+
+### 💻 [**3.5 - OOP and DOM Manipulation**](./Week%203/Week%203.5/)
+
+> **`Topics Covered:` OOP and DOM Manipulation -** Explored JavaScript object-oriented programming concepts and implemented interactive DOM-based tasks such as like feature and social media post feed.
+
+- 👨‍💻 [**Lecture Codes**](./Week%203/Week%203.5/Readme.md)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%203/Week%203.5/Session%201%20DSA/Readme.md)
+
+### 💻 [**3.6 - DOM Manipulation**](./Week%203/Week%203.6/)
+
+> **`Topics Covered:` OOP and DOM Manipulation -** Explored JavaScript object-oriented programming concepts and implemented interactive DOM-based tasks such as like feature and social media post feed.
+
+- 👨‍💻 [**Lecture Codes**](./Week%203/Week%203.6/Readme.md)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%203/Week%203.6/Readme.md)
 
 </details>
 
 ---
 
 
+## 🔥 **Live Links**
 
+This table summarizes the live demos for various tasks and features implemented during the Bootcamp.
 
+| **Task/Feature**                   | **Description**                                                                  | **Live Link**                                                                                                             |
+| ---------------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **Base Habitation**                | Created Awwards Website Nominee Landing Page                                     | [Live Demo](https://bloivating-major.github.io/KODR/Week%201/Week%201.5/Lecture%20Code/Landing%20Page/index.html)         |
+| **Marvel Theme Cards**             | Used array of objects to manipulate the data and changed HTML.                   | [Live Demo](https://bloivating-major.github.io/Cards/Task%201/index.html)                                                 |
+| **User Cards**                     | Added Dynamic Data in Frontend using JavaScript.                                 | [Live Demo](https://bloivating-major.github.io/KODR/Week%203/Week%203.1/Session%202%20Change%20UI%20with%20JS/index.html) |
+| **Cursor Follower**                | Manipulated HTML Element using JavaScript to dynamically follow cursor           | [Live Demo](https://bloivating-major.github.io/KODR/Week%203/Week%203.2/Session%202%20JS%20DOM/Task%201/index.html)       |
+| **Keyboard Event Game Creation**   | Used JavaScript to handle Keyboard Events and change HTML Dynamically            | [Live Demo](https://bloivating-major.github.io/KODR/Week%203/Week%203.2/Session%202%20JS%20DOM/Task%202/index.html)       |
+| **Dynamic Card Data Manipulation** | Changes the Status of a person when button is clicked and Database also changes! | [Live Demo](https://bloivating-major.github.io/KODR/Week%203/Week%203.2/Session%202%20JS%20DOM/Task%203/index.html)       |
+| **Download Button Progress Bar**   | Created a download button and progress bar theme.                                | [Live Demo](https://bloivating-major.github.io/KODR/Week%203/Week%203.2/Session%202%20JS%20DOM/Task%203/index.html)       |
+| **Instagram FrontEnd Clone**       | Created landing page of Instagram                                                | [Live Demo](https://bloivating-major.github.io/KODR/Week%203/Week%203.2/Session%202%20JS%20DOM/Task%203/index.html)       |
 
+---
 
 ## 🤝 **Connect with the Community**
 

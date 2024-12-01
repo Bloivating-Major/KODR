@@ -1,3 +1,41 @@
+const storyData = [
+  {
+    username: "travel_diaries",
+    userprofile: "https://images.unsplash.com/photo-1524638431109-93d95c968f03?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    storyImage: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    timePosted: "2h",
+    hasStory: true
+  },
+  {
+    username: "foodie_lover",
+    userprofile: "https://images.unsplash.com/photo-1487069838269-7c05365b400b?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    storyImage: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=2981&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    timePosted: "4h",
+    hasStory: true
+  },
+  {
+    username: "fitness_freak",
+    userprofile: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=3538&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    storyImage: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    timePosted: "6h",
+    hasStory: true
+  },
+  {
+    username: "artsy_corner",
+    userprofile: "https://images.unsplash.com/photo-1647205552933-12e3dfdb77b5?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    storyImage: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=2945&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    timePosted: "8h",
+    hasStory: true
+  },
+  {
+    username: "adventure_seeker",
+    userprofile: "https://images.unsplash.com/photo-1681562978415-bbf1dfe59353?q=80&w=2624&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    storyImage: "https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    timePosted: "12h",
+    hasStory: true
+  }
+];
+
 const userData = [
   {
     username: "travel_diaries",
@@ -72,6 +110,10 @@ const userData = [
     timeAgoUploaded: 18,
   },
 ];
+
+let currentStoryTimeout;
+let currentProgressAnimation;
+
 function createPost() {
   const postContainer = document.querySelector(".post");
   postContainer.innerHTML = "";
@@ -182,28 +224,35 @@ function createStory() {
   const storyContainer = document.querySelector(".stories");
   storyContainer.innerHTML = "";
 
-  userData.forEach((user, index) => {
-    const story = `
+  storyData.forEach((story, index) => {
+    const storyHTML = `
         <div class="story-item">
             <div class="story-avatar">
-                <img src="${user.userprofile}" alt="" id="${index}">
+                <img src="${story.userprofile}" alt="" id="${index}">
             </div>
-            <span>${user.username}</span>
+            <span>${story.username}</span>
         </div>
         `;
-    storyContainer.innerHTML += story;
+    storyContainer.innerHTML += storyHTML;
   });
 
   const storyAvatars = document.querySelectorAll(".story-avatar img");
   storyAvatars.forEach((avatar) => {
     avatar.addEventListener("click", (e) => {
       const storyId = e.target.id;
-      openStory(userData[storyId]);
+      openStory(storyData[storyId]);
     });
   });
 }
 
-function openStory(user) {
+function openStory(story) {
+  if (currentStoryTimeout) {
+    clearTimeout(currentStoryTimeout);
+  }
+  if (currentProgressAnimation) {
+    clearInterval(currentProgressAnimation);
+  }
+
   const modal = document.querySelector(".story-modal");
   modal.classList.add("active");
 
@@ -211,9 +260,10 @@ function openStory(user) {
         <div class="story-modal-header">
             <div class="story-user-info">
                 <div class="story-avatar">
-                    <img src="${user.userprofile}" alt="">
+                    <img src="${story.userprofile}" alt="">
                 </div>
-                <span class="story-username">${user.username}</span>
+                <span class="story-username">${story.username}</span>
+                <span class="story-time">${story.timePosted}</span>
             </div>
             <div class="story-actions">
                 <button class="close-btn"><i class="ri-close-line"></i></button>
@@ -226,13 +276,13 @@ function openStory(user) {
             </div>
             
             <div class="story-media">
-                <img src="${user.userPost}" alt="">
+                <img src="${story.storyImage}" alt="">
             </div>
         </div>
 
         <div class="story-footer">
             <div class="reply-input">
-                <input type="text" placeholder="Reply to ${user.username}...">
+                <input type="text" placeholder="Reply to ${story.username}...">
             </div>
             <div class="story-reactions">
                 <button class="like-btn"><i class="ri-heart-line"></i></button>
@@ -243,22 +293,40 @@ function openStory(user) {
   modal.innerHTML = storyModal;
 
   const progressBar = modal.querySelector(".progress-bar");
-  progressBar.style.animation = "none";
-  progressBar.offsetHeight;
-  progressBar.style.animation = "progress 6s linear";
+  let width = 0;
+  const duration = 6000;
+  const interval = 10;
+  const increment = (interval / duration) * 100;
 
-  progressBar.addEventListener("animationend", () => {
+  currentProgressAnimation = setInterval(() => {
+    if (width >= 100) {
+      clearInterval(currentProgressAnimation);
+      closeStory();
+    } else {
+      width += increment;
+      progressBar.style.width = width + '%';
+    }
+  }, interval);
+
+  currentStoryTimeout = setTimeout(() => {
+    clearInterval(currentProgressAnimation);
     closeStory();
-  });
+  }, duration);
 
   modal.addEventListener("click", (e) => {
     if (e.target === modal) {
+      clearInterval(currentProgressAnimation);
+      clearTimeout(currentStoryTimeout);
       closeStory();
     }
   });
 
   const closeBtn = modal.querySelector(".close-btn");
-  closeBtn.addEventListener("click", closeStory);
+  closeBtn.addEventListener("click", () => {
+    clearInterval(currentProgressAnimation);
+    clearTimeout(currentStoryTimeout);
+    closeStory();
+  });
 }
 
 function closeStory() {

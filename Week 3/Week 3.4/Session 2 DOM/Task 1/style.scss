@@ -84,5 +84,41 @@ main{
                 display: none;
             }   
         }   
+
+        @media (max-width: 1200px) {
+            width: 40vw;
+        }
+
+        @media (max-width: 768px) {
+            width: 80vw;
+            padding: 2em 2em;
+
+            #download {
+                h1 {
+                    font-size: 2.5em;
+                }
+                
+                button {
+                    padding: 0.6em 1.4em;
+                    font-size: 0.9em;
+                }
+            }
+        }
+
+        @media (max-width: 480px) {
+            width: 90vw;
+            padding: 1.5em 1.5em;
+
+            #download {
+                h1 {
+                    font-size: 2em;
+                }
+                
+                button {
+                    padding: 0.5em 1.2em;
+                    font-size: 0.8em;
+                }
+            }
+        }
     }
 }
