@@ -149,8 +149,8 @@ This table summarizes the live demos for various tasks and features implemented 
 | **Cursor Follower**                | Manipulated HTML Element using JavaScript to dynamically follow cursor           | [Live Demo](https://bloivating-major.github.io/KODR/Week%203/Week%203.2/Session%202%20JS%20DOM/Task%201/index.html)       |
 | **Keyboard Event Game Creation**   | Used JavaScript to handle Keyboard Events and change HTML Dynamically            | [Live Demo](https://bloivating-major.github.io/KODR/Week%203/Week%203.2/Session%202%20JS%20DOM/Task%202/index.html)       |
 | **Dynamic Card Data Manipulation** | Changes the Status of a person when button is clicked and Database also changes! | [Live Demo](https://bloivating-major.github.io/KODR/Week%203/Week%203.2/Session%202%20JS%20DOM/Task%203/index.html)       |
-| **Download Button Progress Bar**   | Created a download button and progress bar theme.                                | [Live Demo](https://bloivating-major.github.io/KODR/Week%203/Week%203.2/Session%202%20JS%20DOM/Task%203/index.html)       |
-| **Instagram FrontEnd Clone**       | Created landing page of Instagram                                                | [Live Demo](https://bloivating-major.github.io/KODR/Week%203/Week%203.2/Session%202%20JS%20DOM/Task%203/index.html)       |
+| **Download Button Progress Bar**   | Created a download button and progress bar theme.                                | [Live Demo](https://bloivating-major.github.io/KODR/Week%203/Week%203.4/Session%202%20DOM/Task%201/index.html)       |
+| **Instagram FrontEnd Clone**       | Created landing page of Instagram                                                | [Live Demo](https://bloivating-major.github.io/KODR/Week%203/Week%203.4/Session%202%20DOM/Task%202/index.html)       |
 
 ---
 
