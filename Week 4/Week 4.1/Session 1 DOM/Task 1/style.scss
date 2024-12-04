@@ -1,0 +1,119 @@
+@font-face{
+    font-family: Classic;
+    src : url(./Assets/Fonts/66aa728085dec3390cb7f058_Satoshi-Variable.ttf)
+}
+
+:root{
+    --backGround-main : #0F1215;
+    --backGround-section1 : #4A576B;
+    --backGround-section2 : #005337;
+    --backGround-section3 : #5355EE;
+    --backGround-section4 : #FB523B;
+    --backGround-section5 : #5355EE;
+    --backGround-section6 : #1626F3;
+    --backGround-section7 : #636301;
+    --backGround-section8 : #51249D;
+    --color-font : #FFFFFF;
+}
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Classic;
+}
+html,body{ 
+width: 100%;
+height: 100%;
+font-size: clamp(12px , 1vw, 20px);
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+main{
+   
+    color: var(--color-font);
+    background-color: var(--backGround-main);
+    h1{
+        text-align: center;
+        font-size: 5em;
+        padding: 1em;
+    }
+    #container{
+        .card{
+            width: 100%;
+            display: flex;
+            padding: 2em 3em;
+            justify-content: space-between;
+            transition: ease-in-out 0.3s;
+            position: relative;
+            #left{
+                display: flex;
+                flex-direction: column;
+                gap: 3em;
+                h1{
+                    padding: 0;
+                    text-align: start;
+                    font-size: 2.5em;
+                    font-weight: 500;
+                }
+                #techList{
+                    text-transform: uppercase;
+                    h5{
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            #right{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 34%;
+                p{
+                    font-size: 1.2em;
+                    font-weight: 500;
+                }
+                #showCase{
+                    width: 35%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 1.5em;
+                    padding-bottom: 0.7em;
+                    border-bottom: 0.01em solid #eee;
+
+                    h5{
+                        font-weight: 400;
+                    }
+
+                }
+            }
+            #videosContent{
+                display: none;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-70% ,-43%);
+                height: 25em;
+                width: 33em;
+                z-index: 300;
+                transition: ease-in-out 0.3s;
+                video{
+                border-radius: 1em;
+                    object-fit: cover;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+
+    }
+}
