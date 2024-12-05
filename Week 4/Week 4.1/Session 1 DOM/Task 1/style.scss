@@ -33,6 +33,8 @@ body{
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+    background-color: var(--backGround-main);
+
 }
 
 
@@ -53,6 +55,7 @@ main{
             justify-content: space-between;
             transition: ease-in-out 0.3s;
             position: relative;
+            border-top: 0.5px solid var(--color-font);
             #left{
                 display: flex;
                 flex-direction: column;
@@ -60,12 +63,13 @@ main{
                 h1{
                     padding: 0;
                     text-align: start;
-                    font-size: 2.5em;
+                    font-size: 2em;
                     font-weight: 500;
                 }
                 #techList{
                     text-transform: uppercase;
                     h5{
+                        font-size: 0.7em;
                         font-weight: 500;
                     }
                 }
@@ -77,15 +81,17 @@ main{
                 justify-content: space-between;
                 width: 34%;
                 p{
-                    font-size: 1.2em;
+                    font-size: 0.9em;
                     font-weight: 500;
                 }
                 #showCase{
+                    opacity: 0;
                     width: 35%;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    font-size: 1.5em;
+                    font-size: 1.2em;
+                    transition: all 0.2s ease-in-out;
                     padding-bottom: 0.7em;
                     border-bottom: 0.01em solid #eee;
 
@@ -104,7 +110,7 @@ main{
                 height: 25em;
                 width: 33em;
                 z-index: 300;
-                transition: ease-in-out 0.3s;
+                transition: ease-in-out 0.7s;
                 video{
                 border-radius: 1em;
                     object-fit: cover;
@@ -114,6 +120,88 @@ main{
             }
         }
 
+    }
 
+    #mobileView{
+        display: none;
+    }
+}
+
+@media (max-width : 600px){
+    main{
+        padding: 0em 1.5em;
+
+        #container{
+            display: none;
+        }
+
+        #mobileView{
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+
+            .card{
+                width: 100%;
+                border-radius: 0.5em;
+                padding: 1em 1em;
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+
+                #top{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    h1{
+                        padding: 0;
+                        font-size: 1.5em;
+                    }
+                    #techList{
+                        font-size: 1em;
+                        text-transform: uppercase;
+                    }
+                }
+
+                #videosContent{
+
+                    video{
+                        width: 100%;
+                        border-radius: 1em;
+                    }
+                }
+
+                #bottom{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 3em;
+                   p{
+                        font-size: 1.3em;
+                        font-weight: 500;
+                    }
+
+                    #showCase{
+                        width: 60%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 2em;
+                        padding-bottom: 1em;
+                        border-bottom: 1px solid white;
+
+                        h5{
+                            font-size: 1.3em;
+                            font-weight: 500;
+                        }
+                        i{
+                            font-size: 20px;
+                            font-weight:100;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

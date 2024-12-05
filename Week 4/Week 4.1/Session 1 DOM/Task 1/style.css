@@ -32,6 +32,7 @@ body {
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
+  background-color: var(--backGround-main);
 }
 
 main {
@@ -50,6 +51,7 @@ main #container .card {
   justify-content: space-between;
   transition: ease-in-out 0.3s;
   position: relative;
+  border-top: 0.5px solid var(--color-font);
 }
 main #container .card #left {
   display: flex;
@@ -59,13 +61,14 @@ main #container .card #left {
 main #container .card #left h1 {
   padding: 0;
   text-align: start;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 500;
 }
 main #container .card #left #techList {
   text-transform: uppercase;
 }
 main #container .card #left #techList h5 {
+  font-size: 0.7em;
   font-weight: 500;
 }
 main #container .card #right {
@@ -75,15 +78,17 @@ main #container .card #right {
   width: 34%;
 }
 main #container .card #right p {
-  font-size: 1.2em;
+  font-size: 0.9em;
   font-weight: 500;
 }
 main #container .card #right #showCase {
+  opacity: 0;
   width: 35%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.5em;
+  font-size: 1.2em;
+  transition: all 0.2s ease-in-out;
   padding-bottom: 0.7em;
   border-bottom: 0.01em solid #eee;
 }
@@ -99,7 +104,7 @@ main #container .card #videosContent {
   height: 25em;
   width: 33em;
   z-index: 300;
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.7s;
 }
 main #container .card #videosContent video {
   border-radius: 1em;
@@ -107,4 +112,74 @@ main #container .card #videosContent video {
      object-fit: cover;
   height: 100%;
   width: 100%;
+}
+main #mobileView {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 0em 1.5em;
+  }
+  main #container {
+    display: none;
+  }
+  main #mobileView {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  main #mobileView .card {
+    width: 100%;
+    border-radius: 0.5em;
+    padding: 1em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  main #mobileView .card #top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  main #mobileView .card #top h1 {
+    padding: 0;
+    font-size: 1.5em;
+  }
+  main #mobileView .card #top #techList {
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+  main #mobileView .card #videosContent video {
+    width: 100%;
+    border-radius: 1em;
+  }
+  main #mobileView .card #bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+  }
+  main #mobileView .card #bottom p {
+    font-size: 1.3em;
+    font-weight: 500;
+  }
+  main #mobileView .card #bottom #showCase {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid white;
+  }
+  main #mobileView .card #bottom #showCase h5 {
+    font-size: 1.3em;
+    font-weight: 500;
+  }
+  main #mobileView .card #bottom #showCase i {
+    font-size: 20px;
+    font-weight: 100;
+  }
 }/*# sourceMappingURL=style.css.map */

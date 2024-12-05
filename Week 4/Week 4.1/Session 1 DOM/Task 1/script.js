@@ -1,4 +1,3 @@
-// Map containing section IDs and their hover background colors
 const sectionColors = {
     section1: "#4A576B",
     section2: "#005337",
@@ -12,7 +11,14 @@ const sectionColors = {
   
   const defaultBgColor = "#0F1215";
   
-  const sections = document.querySelectorAll(".card");
+  const sections = document.querySelectorAll("#container .card");
+  const mobileSection = document.querySelectorAll("#mobileView .card");
+
+  mobileSection.forEach((mobsec)=>{
+    const id = mobsec.id;
+    const bgColor = sectionColors[id];
+    mobsec.style.backgroundColor = bgColor;
+  })
   
   sections.forEach((section) => {
     section.addEventListener("mouseover", () => {
@@ -22,15 +28,21 @@ const sectionColors = {
         section.style.backgroundColor = hoverColor;
         const video = section.querySelector("#videosContent");
         video.style.display = "block";
+        const link = section.querySelector("#showCase");
+        link.style.opacity = '1';
       }
-      section.style.padding = '3em 4em'
+      section.style.padding = '2.5em 3em'
     });
+
+
   
     section.addEventListener("mouseleave", () => {
       section.style.backgroundColor = defaultBgColor;
       const video = section.querySelector("#videosContent");
       if (video) video.style.display = "none";
-      section.style.padding = '2em 3em'
+      const link = section.querySelector("#showCase");
+        link.style.opacity = '0';
+      section.style.padding = '1em 3em'
     });
   
     section.addEventListener("mousemove", (e) => {
