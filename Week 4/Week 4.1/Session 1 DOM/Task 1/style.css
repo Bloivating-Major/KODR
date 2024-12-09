@@ -128,6 +128,7 @@ main #mobileView {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    padding-bottom: 10em;
   }
   main #mobileView .card {
     width: 100%;
