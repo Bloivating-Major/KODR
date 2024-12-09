@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2f363e;
+}
+
+.clock {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: #2f363e;
+    border: 4px solid #2f363e;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.05),
+                20px 20px 20px rgba(0, 0, 0, 0.3),
+                inset -8px -8px 15px rgba(255, 255, 255, 0.05),
+                inset 20px 20px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+
+    .numbers {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        
+        .number {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            padding: 5px;
+            
+            span {
+                font-size: 30px;
+                color: #fff;
+                opacity: 0.3;
+                display: inline-block;
+                transform-origin: 50% 50%;
+            }
+
+            @for $i from 1 through 12 {
+                &:nth-of-type(#{$i}) {
+                    transform: rotate(#{$i * 30}deg);
+                    
+                    span {
+                        transform: rotate(-#{$i * 30}deg);
+                    }
+                }
+            }
+        }
+    }
+
+    .hour-hand {
+        width: 160px;
+        height: 8px;
+        background: #ffffff;
+        position: absolute;
+        left: 50%;
+        bottom: 50%;
+        transform-origin: 0% 50%;
+        border-radius: 4px;
+        rotate: -90deg;
+        transition: linear 1s;
+
+    }
+
+    .minute-hand {
+        width: 190px;
+        height: 6px;
+        background: #ffffff;
+        position: absolute;
+        left: 50%;
+        bottom: 50%;
+        transform-origin: 0% 50%;
+        border-radius: 3px;
+        rotate: -90deg;
+        transition: linear 1s;
+
+    }
+
+    .second-hand {
+        width: 200px;
+        height: 4px;
+        background: #ff3333;
+        position: absolute;
+        left: 50%;
+        bottom: 50%;
+        transform-origin: 0% 50%;
+        border-radius: 2px;
+        rotate: -90deg;
+        transition: linear 1s;
+    }
+
+    .center {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #2f363e;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

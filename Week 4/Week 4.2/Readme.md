@@ -1,228 +1,156 @@
-```scss
+# **Bubble Pop Game**
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-  
-  body {
-    min-height: 100vh;
-    background: #1a1a1a;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    color: #fff;
-  }
-  
-  .stats-container {
-    width: 100%;
-    max-width: 800px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    padding: 20px;
-    gap: 40px;
-  }
-  
-  .stat-box {
-    background: #333;
-    padding: 15px 30px;
-    border-radius: 10px;
-    color: #fff;
-    text-align: center;
-  
-    h2 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
-  
-    .value {
-      font-size: 2rem;
-      font-weight: bold;
-    }
-  }
-  
-  .bubble-container {
-    width: 100%;
-    max-width: 800px;
-    background: #222;
-    border-radius: 20px;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 15px;
-    min-height: 500px;
-  
-    .game-over {
-      grid-column: 1 / -1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      height: 100%;
-    
-      h1 {
-        font-size: 3rem;
-        color: #ff4d4d;
-        margin-bottom: 20px;
-        text-transform: uppercase;
-      }
-    
-      .final-score {
-        font-size: 2rem;
-        color: #fff;
-        span {
-          color: #ff4d4d;
-          font-weight: bold;
-        }
-      }
-    }
-  }
-  
-  .bubble {
-    aspect-ratio: 1;
-    border-radius: 50%;
-    background: #444;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    color: #fff;
-    cursor: pointer;
-    transition: transform 0.2s, background-color 0.2s;
-  
-    &:hover {
-      transform: scale(1.1);
-      background: #ff4d4d;
-    }
-  }
-  
-  .reset-btn {
-    margin-top: 30px;
-    padding: 15px 40px;
-    font-size: 1.2rem;
-    background: #ff4d4d;
-    border: none;
-    border-radius: 10px;
-    color: #fff;
-    cursor: pointer;
-    transition: transform 0.2s;
-  
-    &:hover {
-      transform: scale(1.05);
-    }
-  
-    &:disabled {
-      opacity: 0.5;
-      cursor: not-allowed;
-      transform: none;
-    }
-  }
+This project is a fun and interactive **Bubble Pop Game** where players aim to score as many points as possible within a 60-second time frame by clicking on the correct target number. The game is built using vanilla JavaScript, HTML, and CSS.
 
-  main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  @media (max-width: 768px) {
-    .stats-container {
-      flex-direction: column;
-      gap: 15px;
-    }
-  
-    .bubble-container {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
+---
 
-  
+## **📂 Features**
 
+| **Feature**                  | **Description**                                                                |
+|-------------------------------|--------------------------------------------------------------------------------|
+| **Dynamic Bubble Creation**   | Generates 36 bubbles with random numbers, including a target number.           |
+| **Target Matching**           | Player earns points by clicking the bubble that matches the target number.     |
+| **Timer Functionality**       | The game runs for 60 seconds, with the timer decreasing each second.           |
+| **Score Tracking**            | Tracks and displays the player's current score dynamically.                    |
+| **Game Over Screen**          | Displays a "Game Over" screen with the final score when the timer ends.        |
+| **Reset Functionality**       | Allows players to reset and start a new game.                                  |
 
+---
+
+## **🕹️ How to Play**
+
+1. **Objective**: Click the bubble that matches the displayed target number to score points.
+2. **Scoring**: Each correct bubble click adds 10 points to your score.
+3. **Timer**: You have 60 seconds to score as many points as possible.
+4. **Game Over**: Once time is up, the game displays your final score.
+5. **Reset**: Click the reset button to start a new game.
+
+---
+
+## **💻 Code Breakdown**
+
+### **1. Random Number Generation**
+Used to generate random numbers for bubbles and the target number:
+```javascript
+function getRandomNumber(min, max) {
+  return Math.floor((Math.random() * (max - min + 1)) + min);
+}
 ```
 
+---
 
+### **2. Dynamic Bubble Creation**
+Creates 36 bubbles, randomly assigning numbers. One bubble contains the target number:
 ```javascript
-let score = 0;
-let timeLeft = 60;
-let gameInterval;
-let targetNumber;
-
-const bubbleContainer = document.getElementById('bubbleContainer');
-const scoreElement = document.getElementById('score');
-const timerElement = document.getElementById('timer');
-const targetElement = document.getElementById('targetNumber');
-const resetBtn = document.getElementById('resetBtn');
-
-function getRandomNumber(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+function createBubble() {
+  bubbleContainer.innerHTML = '';
+  let numbers = new Array(36).fill(null); 
+  let targetPosition = getRandomNumber(0, 35);
+  numbers[targetPosition] = targetNumber;
+  numbers = numbers.map(num => num === null ? getRandomNumber(1, 9) : num);
+  numbers.forEach(number => {
+    let bubble = document.createElement("div");
+    bubble.classList.add("bubble");
+    bubble.textContent = number;
+    bubble.addEventListener("click", handleBubbleClick);
+    bubbleContainer.appendChild(bubble);
+  });
 }
+```
 
-function createBubbles() {
-    bubbleContainer.innerHTML = '';
-    for (let i = 0; i < 36; i++) {
-        const bubble = document.createElement('div');
-        bubble.classList.add('bubble');
-        bubble.textContent = getRandomNumber(1, 9);
-        bubble.addEventListener('click', handleBubbleClick);
-        bubbleContainer.appendChild(bubble);
-    }
-}
+---
 
+### **3. Target Number Generation**
+Randomly generates a target number between 1 and 9:
+```javascript
 function generateTarget() {
-    targetNumber = getRandomNumber(1, 9);
-    targetElement.textContent = targetNumber;
+  targetNumber = getRandomNumber(1, 9);
+  targetNumberElement.textContent = targetNumber;
 }
+```
 
-function handleBubbleClick(e) {
-    console.log(e);
-    const clickedNumber = Number(e.target.textContent);
-    if (clickedNumber === targetNumber) {
-        score += 10;
-        scoreElement.textContent = score;
-        createBubbles();
-        generateTarget();
-    }
-}
+---
 
-function updateTimer() {
-    timerElement.textContent = timeLeft;
-    if (timeLeft === 0) {
-        endGame();
-    } else {
-        timeLeft--;
-    }
-}
-
-function startGame() {
-    score = 0;
-    timeLeft = 3;
+### **4. Bubble Click Handler**
+Checks if the clicked bubble matches the target number, updates the score, and regenerates bubbles:
+```javascript
+function handleBubbleClick(event) {
+  const clickedNumber = Number(event.target.textContent);
+  if (clickedNumber === targetNumber) {
+    score += 10;
     scoreElement.textContent = score;
-    timerElement.textContent = timeLeft;
-    resetBtn.disabled = true;
-    createBubbles();
+    createBubble();
     generateTarget();
-    gameInterval = setInterval(updateTimer, 1000);
+  }
 }
+```
 
+---
+
+### **5. Timer Management**
+Counts down from 60 seconds, updating the timer display. Ends the game when the timer reaches 0:
+```javascript
+function updateTimer() {
+  timeleftElement.textContent = timeleft;
+  if (timeleft === 0) {
+    endGame();
+  } else {
+    timeleft--;
+  }
+}
+```
+
+---
+
+### **6. Game Over and Reset**
+Displays the game over screen and allows players to reset the game:
+```javascript
 function endGame() {
-    clearInterval(gameInterval);
-    bubbleContainer.innerHTML = `
-        <div class="game-over">
+  clearInterval(gameInterval);
+  bubbleContainer.innerHTML = `
+          <div class="game-over">
             <h1>Game Over!</h1>
             <div class="final-score">Final Score: <span>${score}</span></div>
         </div>
     `;
-    resetBtn.disabled = false;
+  resetBtn.disabled = false;
 }
 
 resetBtn.addEventListener('click', startGame);
-
-startGame();
-
 ```
+
+---
+
+## **🎮 Live Demo**
+You can play the game [here](./Session%202%20DOM/index.html). 
+
+---
+
+## **📂 Project Structure**
+
+```plaintext
+BubblePopGame/
+├── index.html        # HTML structure of the game
+├── style.css         # Styles for game layout and bubbles
+├── main.js           # JavaScript logic for game functionality
+├── README.md         # Documentation
+```
+
+---
+
+## **💡 Key Learnings**
+1. **DOM Manipulation**:
+   - Dynamically created and updated HTML elements (`bubbles`, `game over screen`).
+2. **Event Handling**:
+   - Used `click` events to handle bubble interactions and reset functionality.
+3. **Game Logic**:
+   - Implemented a scoring system, timer, and target-based gameplay.
+4. **Responsive Design**:
+   - Ensured the game remains visually appealing across different screen sizes.
+5. **State Management**:
+   - Managed game state variables like `score`, `timeleft`, and `targetNumber`.
+
+---
+
+
+This **Bubble Pop Game** is a simple yet engaging project that demonstrates practical JavaScript skills for interactive web development. Feel free to enhance it further with animations, sound effects, or new features! 😊

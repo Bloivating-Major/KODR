@@ -136,6 +136,58 @@ cd KODR
 
 ---
 
+# Week 04 - JavaScript DOM and React Intro
+
+<details>
+<summary style="display: inline; font-size: 20px; font-weight: 700; cursor: pointer;" title="Click on me to Expand">Click to Expand Week 04 Details</summary>
+
+## 📚 [Week 04 - JavaScript DOM and React Intro](./Week%204/)
+
+### 💻 [**4.1 - Advance DOM Manipulation and Logic Building**](./Week%204/Week%204.1/)
+
+> **`Topics Covered:` Advance DOM Manipulation and Logic Building -** The first session focused on solving **JavaScript logic-building questions**, while the second session delved into **JavaScript DOM interactions** to enhance front-end development skills.
+
+- 👨‍💻 [**Lecture Codes**](./Week%204/Week%204.1/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%204/Week%204.1/Readme.md)
+
+### 💻 [**4.2 - DOM Manipulation Bubble Game**](./Week%204/Week%204.2/)
+
+> **`Topics Covered:` DOM Manipulation Bubble Game -** This project is a fun and interactive **Bubble Pop Game** where players aim to score as many points as possible within a 60-second time frame by clicking on the correct target number. The game is built using vanilla JavaScript, HTML, and CSS.
+
+- 👨‍💻 [**Lecture Codes**](./Week%204/Week%204.2/Session%202%20DOM/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%204/Week%204.2/Readme.md)
+
+### 💻 [**4.3 - DOM Manipulation Analog Clock with Continuous Movement**](./Week%204/Week%204.3/)
+
+> **`Topics Covered:` DOM Manipulation Analog Clock with Continuous Movement -** This project showcases the implementation of an **animated analog clock** using **JavaScript**. It replicates the smooth movement of the hour, minute, and second hands, ensuring accurate time representation while dynamically updating the clock hands in real time.
+
+- 👨‍💻 [**Lecture Codes**](./Week%204/Week%204.3/Session%202%20DOM/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%204/Week%204.3/Readme.md)
+
+### 💻 [**4.4 - Creating a Responsive Website with Tailwind CSS**](./Week%204/Week%204.4/)
+
+> **`Topics Covered:` Creating a Responsive Website with Tailwind CSS -** This session was centered around building a **responsive website** using **HTML**, **Tailwind CSS**, and **JavaScript**. The primary objective was to create a visually appealing, user-friendly, and fully responsive web layout. The session also emphasized learning how to leverage Tailwind CSS utilities and responsive design principles.
+
+- 👨‍💻 [**Lecture Codes**](./Week%204/Week%204.4/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%204/Week%204.4/Readme.md)
+
+### 💻 [**4.5 - Designing a Website using React Components**](./Week%204/Week%204.5/))
+
+> **`Topics Covered:` Designing a Website using React Components -** Explored JavaScript object-oriented programming concepts and implemented interactive DOM-based tasks such as like feature and social media post feed.
+
+- 👨‍💻 [**Lecture Codes**](./Week%203/Week%203.5/Readme.md)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%203/Week%203.5/Session%201%20DSA/Readme.md)
+
+### 💻 [**4.6 - UI/UX and Logic Building using JavaScript**](./Week%204/Week%204.6/)
+
+> **`Topics Covered:` UI/UX and Logic Building using JavaScript -** This session provided a comprehensive introduction to **UI/UX Design** principles, focusing on typography, color theory, and modern design trends. It emphasized the importance of creating visually appealing and user-centric designs.
+
+- 👨‍💻 [**Lecture Codes**](./Week%204/Week%204.6/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%204/Week%204.6/Readme.md)
+
+</details>
+
+---
 
 ## 🔥 **Live Links**
 
@@ -151,6 +203,10 @@ This table summarizes the live demos for various tasks and features implemented 
 | **Dynamic Card Data Manipulation** | Changes the Status of a person when button is clicked and Database also changes! | [Live Demo](https://bloivating-major.github.io/KODR/Week%203/Week%203.2/Session%202%20JS%20DOM/Task%203/index.html)       |
 | **Download Button Progress Bar**   | Created a download button and progress bar theme.                                | [Live Demo](https://bloivating-major.github.io/KODR/Week%203/Week%203.4/Session%202%20DOM/Task%201/index.html)       |
 | **Instagram FrontEnd Clone**       | Created landing page of Instagram                                                | [Live Demo](https://bloivating-major.github.io/KODR/Week%203/Week%203.4/Session%202%20DOM/Task%202/index.html)       |
+| **Refocus PortFolio Section Effect**       | **JavaScript DOM Manipulation** With a project to create interactive and dynamic web sections. The features included hover effects, video displays, and progress animations.                                               | [Live Demo](./Week%204/Week%204.1/Session%201%20DOM/Task%201/index.html)       |
+| **Bubble Game Using JavaScript**       | This project is a fun and interactive **Bubble Pop Game** where players aim to score as many points as possible within a 60-second time frame by clicking on the correct target number. The game is built using vanilla JavaScript, HTML, and CSS.                                              | [Live Demo](./Week%204/Week%204.2/Session%202%20DOM/index.html)       |
+| **Analog Clock Using JavaScript**       | It replicates the smooth movement of the hour, minute, and second hands, ensuring accurate time representation while dynamically updating the clock hands in real time.                                           | [Live Demo](./Week%204/Week%204.3/Session%202%20DOM/index.html)       |
+| **Portfolio Website using Tailwind with Responsive Design!**       | This project was centered around building a **responsive website** using **HTML**, **Tailwind CSS**, and **JavaScript**.                                          | [Live Demo](./Week%204/Week%204.4/Session%202%20TailWind/index.html)       |
 
 ---
 
