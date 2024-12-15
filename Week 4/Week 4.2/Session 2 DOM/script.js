@@ -15,10 +15,10 @@ function getRandomNumber(min, max) {
 
 function createBubble() {
   bubbleContainer.innerHTML = '';
-  let numbers = new Array(36).fill(null); 
-  let targetPosition = getRandomNumber(0, 35);
-  numbers[targetPosition] = targetNumber;
-  numbers = numbers.map(num => num === null ? getRandomNumber(1, 9) : num);
+  let numbers = new Array(36).fill(null).map(() => getRandomNumber(1, 9)); // Fill the array with random numbers
+  let targetPosition = getRandomNumber(0, 35); // Pick a random position
+  numbers[targetPosition] = targetNumber; // Insert the targetNumber at the targetPosition
+
   numbers.forEach(number => {
     let bubble = document.createElement("div");
     bubble.classList.add("bubble");
@@ -27,6 +27,7 @@ function createBubble() {
     bubbleContainer.appendChild(bubble);
   });
 }
+
 
 function generateTarget() {
   targetNumber = getRandomNumber(1, 9);
