@@ -171,12 +171,12 @@ cd KODR
 - 👨‍💻 [**Lecture Codes**](./Week%204/Week%204.4/)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%204/Week%204.4/Readme.md)
 
-### 💻 [**4.5 - Designing a Website using React Components**](./Week%204/Week%204.5/))
+### 💻 [**4.5 - Creating Components in React**](./Week%204/Week%204.5/)
 
-> **`Topics Covered:` Designing a Website using React Components -** Explored JavaScript object-oriented programming concepts and implemented interactive DOM-based tasks such as like feature and social media post feed.
+> **`Topics Covered:` Creating Components in React -** This session focused on learning the fundamentals of **React components** by building a **Navbar** and a **Hero Section** for a responsive shoe store website. The session introduced **React functional components**, the **JSX syntax**, and how to use **Tailwind CSS** for styling.
 
-- 👨‍💻 [**Lecture Codes**](./Week%203/Week%203.5/Readme.md)
-- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%203/Week%203.5/Session%201%20DSA/Readme.md)
+- 👨‍💻 [**Lecture Codes**](./Week%204/Week%204.5/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%204/Week%204.5/Readme.md)
 
 ### 💻 [**4.6 - UI/UX and Logic Building using JavaScript**](./Week%204/Week%204.6/)
 
@@ -207,6 +207,7 @@ This table summarizes the live demos for various tasks and features implemented 
 | **Bubble Game Using JavaScript**       | This project is a fun and interactive **Bubble Pop Game** where players aim to score as many points as possible within a 60-second time frame by clicking on the correct target number. The game is built using vanilla JavaScript, HTML, and CSS.                                              | [Live Demo](https://bloivating-major.github.io/KODR/Week%204/Week%204.2/Session%202%20DOM/index.html)       |
 | **Analog Clock Using JavaScript**       | It replicates the smooth movement of the hour, minute, and second hands, ensuring accurate time representation while dynamically updating the clock hands in real time.                                           | [Live Demo](https://bloivating-major.github.io/KODR/Week%204/Week%204.3/Session%202%20DOM/index.html)       |
 | **Portfolio Website using Tailwind with Responsive Design!**       | This project was centered around building a **responsive website** using **HTML**, **Tailwind CSS**, and **JavaScript**.                                          | [Live Demo](https://bloivating-major.github.io/KODR/Week%204/Week%204.4/Session%202%20TailWind/index.html)       |
+| **Nike Website Hero Section**       | This session focused on learning the fundamentals of **React components** by building a **Navbar** and a **Hero Section** for a responsive shoe store website. The session introduced **React functional components**, the **JSX syntax**, and how to use **Tailwind CSS** for styling.                                        | [Live Demo](./Week%204/Week%204.5/Components/)       |
 
 ---
 
