@@ -15,8 +15,5 @@
 
 // let n = 5;
 
-let a = true;
-
-a++;
-
-console.log(a);
+let c = 'A', C = 'a';
+console.log(c++ * ++C);

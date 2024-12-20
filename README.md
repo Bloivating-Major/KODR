@@ -189,6 +189,24 @@ cd KODR
 
 ---
 
+# Week 05 - React and DSA using JavaScript
+
+<details>
+<summary style="display: inline; font-size: 20px; font-weight: 700; cursor: pointer;" title="Click on me to Expand">Click to Expand Week 05 Details</summary>
+
+## 📚 [Week 05 - React and DSA using JavaScript](./Week%205/)
+
+### 💻 [**5.1 - Logic Building and Problem Solving**](./Week%204/Week%204.1/)
+
+> **`Topics Covered:` Logic Building and Problem Solving -** Below are JavaScript solutions to your questions using simple and brute-force methods. 
+
+- 👨‍💻 [**Lecture Codes**](./Week%205/Week%205.1/Session%202%20DSA%20Star%20Pattern/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%205/Week%205.1/Session%202%20DSA%20Star%20Pattern/Readme.md)
+
+
+
+</details>
+
 ## 🔥 **Live Links**
 
 This table summarizes the live demos for various tasks and features implemented during the Bootcamp.
