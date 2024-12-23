@@ -135,4 +135,16 @@ function question9() {
   console.log(`${isSorted ? "Array is Sorted" : "Array is Not Sorted"}`);
 }
 
-question9();
+function question10(){
+  //left rotation
+  let arr = [1, 2, 3, 4, 5]; // creating a array
+  let temp = arr[0];
+  console.log(arr);
+  for(let i = 0; i < arr.length-1; i++){
+      arr[i] = arr[i + 1];
+  }
+  arr[arr.length - 1] = temp;
+  console.log(arr);
+}
+
+question10()
