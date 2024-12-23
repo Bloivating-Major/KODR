@@ -226,6 +226,7 @@ This table summarizes the live demos for various tasks and features implemented 
 | **Analog Clock Using JavaScript**       | It replicates the smooth movement of the hour, minute, and second hands, ensuring accurate time representation while dynamically updating the clock hands in real time.                                           | [Live Demo](https://bloivating-major.github.io/KODR/Week%204/Week%204.3/Session%202%20DOM/index.html)       |
 | **Portfolio Website using Tailwind with Responsive Design!**       | This project was centered around building a **responsive website** using **HTML**, **Tailwind CSS**, and **JavaScript**.                                          | [Live Demo](https://bloivating-major.github.io/KODR/Week%204/Week%204.4/Session%202%20TailWind/index.html)       |
 | **Nike Website Hero Section**       | This session focused on learning the fundamentals of **React components** by building a **Navbar** and a **Hero Section** for a responsive shoe store website. The session introduced **React functional components**, the **JSX syntax**, and how to use **Tailwind CSS** for styling.                                        | [Live Demo](https://nike-olive-chi.vercel.app/)       |
+| **KODR Registration Form**       | A modern React application featuring dynamic form management with a responsive navigation system, powered by React Router and Context API.                                   | [Live Demo](https://kodr-form.vercel.app/)       |
 
 ---
 
