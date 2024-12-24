@@ -7,25 +7,37 @@ const RegisterForm = () => {
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
   const [checked, setChecked] = useState(false);
-  const [error, setError] = useState(""); 
+  const [error, setError] = useState("");
+
+  const validateName = (name) => /^[a-zA-Z\s]{3,50}$/.test(name);
+  const validateEmail = (email) =>
+    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  const validatePhoneNumber = (number) =>
+    /^[0-9]{10}$/.test(number);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const formData = { name, email, number, isfavorite: checked };
-    
+
     if (!name || !email || !number) {
       setError("Please fill all the fields.");
-      setTimeout(() => {
-        setError(""); 
-      }, 2000);
+    } else if (!validateName(name)) {
+      setError("Name must be 3-50 characters and contain only letters or spaces.");
+    } else if (!validateEmail(email)) {
+      setError("Please enter a valid email address.");
+    } else if (!validatePhoneNumber(number)) {
+      setError("Phone number must be a 10-digit number.");
+    } else {
+      submitForm(formData);
+      setName("");
+      setEmail("");
+      setNumber("");
+      setChecked(false);
+      setError("");
       return;
     }
-    
-    submitForm(formData);
-    setName("");
-    setEmail("");
-    setNumber("");
-    setChecked(false);
+
+    setTimeout(() => setError(""), 3000);
   };
 
   return (
