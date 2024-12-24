@@ -10,10 +10,8 @@ const RegisterForm = () => {
   const [error, setError] = useState("");
 
   const validateName = (name) => /^[a-zA-Z\s]{3,50}$/.test(name);
-  const validateEmail = (email) =>
-    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  const validatePhoneNumber = (number) =>
-    /^[0-9]{10}$/.test(number);
+  const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  const validatePhoneNumber = (number) => /^[0-9]{10}$/.test(number);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -37,7 +35,7 @@ const RegisterForm = () => {
       return;
     }
 
-    setTimeout(() => setError(""), 3000);
+    setTimeout(() => setError(""), 3000); // Clear error message after 3 seconds
   };
 
   return (
@@ -76,7 +74,7 @@ const RegisterForm = () => {
           />
         </div>
 
-        <div className="flex gap-3 items-center max-sm:text-sm max-sm:pt-1">
+        <label className="flex gap-3 items-center max-sm:text-sm max-sm:pt-1 cursor-pointer">
           <input
             type="checkbox"
             className="w-4 h-4 accent-orange-500 bg-black border-black rounded-lg"
@@ -84,7 +82,7 @@ const RegisterForm = () => {
             onChange={(e) => setChecked(e.target.checked)}
           />
           Add to Favorites
-        </div>
+        </label>
 
         <button
           type="submit"
