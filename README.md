@@ -203,6 +203,69 @@ cd KODR
 - 👨‍💻 [**Lecture Codes**](./Week%205/Week%205.1/Session%202%20DSA%20Star%20Pattern/)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%205/Week%205.1/Session%202%20DSA%20Star%20Pattern/Readme.md)
 
+</details>
+
+---
+# Week 06 - React and DSA using JavaScript
+
+<details>
+<summary style="display: inline; font-size: 20px; font-weight: 700; cursor: pointer;" title="Click on me to Expand">Click to Expand Week 06 Details</summary>
+
+## 📚 [Week 06 - React and DSA using JavaScript](./Week%206/)
+
+### 💻 [**6.3 - DSA Binary Search**](./Week%206/Week%206.3/Session%202%20DSA-JS/)
+
+> **`Topics Covered:` DSA Binary Search -** In today's **DSA Session**, we explored the **Binary Search** algorithm, a fundamental concept for efficiently searching elements in sorted arrays. This algorithm significantly reduces the time complexity compared to linear search by halving the search space at every step.
+
+- 👨‍💻 [**Lecture Codes**](./Week%206/Week%206.3/Session%202%20DSA-JS/script.js)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%206/Week%206.3/Readme.md)
+
+### 💻 [**6.5 - Form Handling in React**](./Week%206/Week%206.5/Session%201%20React%20Form%20Handling/)
+
+> **`Topics Covered:` Form Handling in React -** A modern React application featuring dynamic form management with a responsive navigation system, powered by React Router and Context API.
+
+
+- 👨‍💻 [**Lecture Codes**](./Week%206/Week%206.5/Session%201%20React%20Form%20Handling/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%206/Week%206.5/Session%201%20React%20Form%20Handling/README.md)
+
+### 💻 [**6.6 - Array Manipulation with JavaScript**](./Week%206/Week%206.6/)
+
+> **`Topics Covered:` Array Manipulation with JavaScript -** This project demonstrates various operations on arrays, showcasing fundamental concepts in JavaScript. Each function represents a unique problem and its solution, providing practical examples of array manipulation and logic building.
+
+
+- 👨‍💻 [**Lecture Codes**](./Week%206/Week%206.6/Session%202%20DSA-JS/index.js)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%206/Week%206.6/Readme.md)
+
+</details>
+
+---
+# Week 07 - React and DSA using JavaScript
+
+<details>
+<summary style="display: inline; font-size: 20px; font-weight: 700; cursor: pointer;" title="Click on me to Expand">Click to Expand Week 07 Details</summary>
+
+## 📚 [Week 07 - React and DSA using JavaScript](./Week%207/)
+
+### 💻 [**7.1 -React API Integration using Axios**](./Week%207/Week%207.1/Readme.md)
+
+> **`Topics Covered:`React API Integration using Axios -** In today's **DSA Session**, we explored the **Binary Search** algorithm, a fundamental concept for efficiently searching elements in sorted arrays. This algorithm significantly reduces the time complexity compared to linear search by halving the search space at every step.
+
+- 👨‍💻 [**Lecture Codes**](./Week%207/Week%207.1/Readme.md)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%207/Week%207.1/Readme.md)
+
+### 💻 [**7.2 -Practice Session and Presentation**](./Week%207/Week%207.2/Readme.md)
+
+> **`Topics Covered:`React API Integration using Axios -** We revisited the problems solved during the previous day. Reviewed and discussed **optimal solutions** and **different approaches** for the same problems.  
+
+- 👨‍💻 [**Lecture Codes**](./Week%207/Week%207.2/Readme.md)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%207/Week%207.2/Readme.md)
+
+### 💻 [**7.3 - React - `useEffect` and `useRef` Hooks**](./Week%207/Week%207.3/)
+
+> **`Topics Covered:`React API Integration using Axios -** We revisited the problems solved during the previous day. Reviewed and discussed **optimal solutions** and **different approaches** for the same problems.  
+
+- 👨‍💻 [**Lecture Codes**](./Week%207/Week%207.3/Session%201%20React%20Use%20Effect/README.md)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%207/Week%207.3/Readme.md)
 
 
 </details>
