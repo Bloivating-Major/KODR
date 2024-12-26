@@ -267,6 +267,13 @@ cd KODR
 - 👨‍💻 [**Lecture Codes**](./Week%207/Week%207.3/Session%201%20React%20Use%20Effect/README.md)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%207/Week%207.3/Readme.md)
 
+### 💻 [**7.4 - React with LocalStorage and JavaScript String Manipulation**](./Week%207/Week%207.4/)
+
+> **`Topics Covered:`React with LocalStorage and JavaScript String Manipulation -** Today’s sessions were packed with learning and implementation. We focused on enhancing skills in React and JavaScript, exploring advanced topics like theme switching in React and efficient string and array manipulations in JavaScript.
+
+- 👨‍💻 [**Lecture Codes**](./Week%207/Week%207.4/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%207/Week%207.4/Readme.md)
+
 
 </details>
 
