@@ -281,6 +281,12 @@ cd KODR
 - 👨‍💻 [**Lecture Codes**](./Week%207/Week%207.5/Session%202%20DSA/script.js)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%207/Week%207.4/Readme.md)
 
+### 💻 [**7.6 - Revision Session: Strings in JavaScript**](./Week%207/Week%207.6/)
+
+> **`Topics Covered:`Revision Session: Strings in JavaScript -** Today's session was dedicated to revising **string manipulation** techniques in JavaScript. We revisited key concepts such as traversing strings, iterating over characters, and reversing a string. Here's a summary of what we covered, with detailed explanations and code snippets.
+
+- 👨‍💻 [**Lecture Codes**](./Week%207/Week%207.6/Session%201%20String%20Revision/script.js)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%207/Week%207.6/Readme.md)
 
 
 </details>
