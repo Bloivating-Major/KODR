@@ -274,6 +274,14 @@ cd KODR
 - 👨‍💻 [**Lecture Codes**](./Week%207/Week%207.4/)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%207/Week%207.4/Readme.md)
 
+### 💻 [**7.5 - JavaScript Practice: Character Frequency and Anagram Check**](./Week%207/Week%207.5/)
+
+> **`Topics Covered:`JavaScript Practice: Character Frequency and Anagram Check -** Today's session focused on understanding character frequency in strings and efficiently checking if two strings are anagrams. Below is a detailed summary of the concepts covered and the code implementations.
+
+- 👨‍💻 [**Lecture Codes**](./Week%207/Week%207.5/Session%202%20DSA/script.js)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%207/Week%207.4/Readme.md)
+
+
 
 </details>
 

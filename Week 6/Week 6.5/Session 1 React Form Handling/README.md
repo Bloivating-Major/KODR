@@ -204,6 +204,8 @@ npm run dev
 - Test across different devices
 - Keep state management centralized
 
+![Flow of Project](public/img/RoutingForm.png)
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
