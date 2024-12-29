@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Login = () => {
+const Login = ({handleLogin}) => {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -8,7 +8,7 @@ const Login = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     // TODO: Send login request to the server
-    console.log(`Logging in as ${email} with password ${password}`);
+    handleLogin(email, password)
     // Reset form
     setEmail('');
     setPassword('');
@@ -28,7 +28,7 @@ const Login = () => {
           <div>
             <input 
               type="email" 
-              placeholder='Teacher / Student ID' 
+              placeholder='Admin / Employee ID' 
               className='px-4 py-3 w-full text-white bg-gray-800 rounded-lg border border-gray-700 focus:outline-none focus:border-purple-500'
               value={email}
               onChange={(e) => {setEmail(e.target.value)}}
@@ -39,7 +39,7 @@ const Login = () => {
           <div>
             <input 
               type="password" 
-              placeholder='8 Digit Pin' 
+              placeholder='3 Digit Pin' 
               className='px-4 py-3 w-full text-white bg-gray-800 rounded-lg border border-gray-700 focus:outline-none focus:border-purple-500'
               value={password}
               onChange={(e) => {setPassword(e.target.value)}}

@@ -1,32 +1,46 @@
-import React from 'react'
-
+import React, { useContext } from "react";
+import { AuthContext } from "../../context/AuthProvider";
 const AllTasks = () => {
-  return (
-    <div>
-          {/* Tasks List */}
-          <div className="space-y-3">
-          {[
-            { color: 'rose', status: 'Pending' },
-            { color: 'emerald', status: 'Completed' },
-            { color: 'amber', status: 'In Progress' },
-            { color: 'blue', status: 'Review' }
-          ].map((task, index) => (
-            <div 
-              key={index}
-              className={`backdrop-blur-md bg-black/20 border border-gray-800 rounded-xl p-4 flex flex-col md:flex-row md:justify-between md:items-center gap-2 hover:bg-black/60 transition-all hover:border-${task.color}-500/50  `}
-            >
-              <div className="flex flex-col gap-2 md:flex-row md:items-center md:gap-4">
-                <span className="text-gray-400">Sarthak</span>
-                <span className="text-white">Make a UI Design</span>
-              </div>
-              <span className={`text-${task.color}-500 text-sm px-3 py-1 rounded-full bg-${task.color}-500/10 border border-${task.color}-500/20`}>
-                {task.status}
-              </span>
-            </div>
-          ))}
-        </div>
-    </div>
-  )
-}
+  const  {userData, setUserData} = useContext(AuthContext);
 
-export default AllTasks
+  return (
+    <div className="w-full">
+      {/* Header */}
+      <div className="grid grid-cols-5 gap-4 p-4 text-xl font-medium text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-t-xl max-sm:text-sm">
+        <div>Employee Name</div>
+        <div>New Task</div>
+        <div>Active Task</div>
+        <div>Completed</div>
+        <div>Failed</div>
+      </div>
+
+      {/* Employee Rows */}
+      <div className="mt-2 space-y-2">
+        {userData.map((employee, index) => (
+          <div
+            key={index}
+            className="grid grid-cols-5 gap-4 p-4 rounded-xl border border-gray-800 backdrop-blur-md transition-all bg-black/20 hover:bg-black/60"
+          >
+            <div className="text-lg font-bold text-gray-300">
+              {employee.firstName}
+            </div>
+            <div className="text-lg font-bold text-blue-500">
+              {employee.taskCounts.newTask}
+            </div>
+            <div className="text-lg font-bold text-amber-500">
+              {employee.taskCounts.active}
+            </div>
+            <div className="text-lg font-bold text-emerald-500">
+              {employee.taskCounts.completed}
+            </div>
+            <div className="text-lg font-bold text-rose-500">
+              {employee.taskCounts.failed}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default AllTasks;

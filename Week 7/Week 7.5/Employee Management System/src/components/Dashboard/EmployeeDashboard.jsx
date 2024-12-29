@@ -3,17 +3,18 @@ import EmployeeHeader from "../others/EmployeeHeader";
 import EmployeeStats from "../others/EmployeeStats";
 import TaskList from "../../TaskList/TaskList";
 
-const EmployeeDashboard = () => {
+const EmployeeDashboard = (props) => {
+
   return (
     <div className="p-4 min-h-screen bg-gray-900 md:p-8">
       {/* Header Section */}
-      <EmployeeHeader />
+      <EmployeeHeader changeUser={props.changeUser} data={props.data} />
 
       {/* Stats Grid */}
-      <EmployeeStats />
+      <EmployeeStats data={props.data} />
 
       {/* Tasks Grid */}
-      <TaskList />
+      <TaskList data={props.data} />
     </div>
   );
 };
