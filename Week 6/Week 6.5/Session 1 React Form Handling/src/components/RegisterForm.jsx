@@ -20,7 +20,9 @@ const RegisterForm = () => {
     if (!name || !email || !number) {
       setError("Please fill all the fields.");
     } else if (!validateName(name)) {
-      setError("Name must be 3-50 characters and contain only letters or spaces.");
+      setError(
+        "Name must be 3-50 characters and contain only letters or spaces."
+      );
     } else if (!validateEmail(email)) {
       setError("Please enter a valid email address.");
     } else if (!validatePhoneNumber(number)) {
@@ -34,17 +36,23 @@ const RegisterForm = () => {
       setError("");
       return;
     }
-
-    setTimeout(() => setError(""), 3000); // Clear error message after 3 seconds
+    setTimeout(() => setError(""), 2000);
   };
 
   return (
     <div className="text-white flex flex-col items-center justify-center h-full gap-10 font-raleway max-sm:gap-5 max-sm:py-5 max-sm:h-full">
-      <h1 className="text-3xl font-medium max-sm:text-sm">Fill Out the Form!</h1>
+      <h1 className="text-3xl font-medium max-sm:text-sm">
+        Fill Out the Form!
+      </h1>
 
-      <form className="flex flex-col gap-5 w-4/5 max-sm:gap-3" onSubmit={handleSubmit}>
+      <form
+        className="flex flex-col gap-5 w-4/5 max-sm:gap-3"
+        onSubmit={handleSubmit}
+      >
         <div className="bg-[#424669] rounded-sm text-[#676f9d] hover:border-l-4 hover:border-orange-400 transition-all">
-          <label className="block text-lg font-medium pt-2 px-3 max-sm:text-sm max-sm:pt-1">Name</label>
+          <label className="block text-lg font-medium pt-2 px-3 max-sm:text-sm max-sm:pt-1">
+            Name
+          </label>
           <input
             type="text"
             className="w-full p-3 rounded-lg bg-[#424669] text-white focus:outline-none max-sm:text-sm"
@@ -54,7 +62,9 @@ const RegisterForm = () => {
           />
         </div>
         <div className="bg-[#424669] rounded-sm text-[#676f9d] hover:border-l-4 hover:border-orange-400 transition-all">
-          <label className="block text-lg font-medium pt-2 px-3 max-sm:text-sm max-sm:pt-1">Email</label>
+          <label className="block text-lg font-medium pt-2 px-3 max-sm:text-sm max-sm:pt-1">
+            Email
+          </label>
           <input
             type="email"
             className="w-full p-3 rounded-lg bg-[#424669] text-white focus:outline-none max-sm:text-sm"
@@ -64,7 +74,9 @@ const RegisterForm = () => {
           />
         </div>
         <div className="bg-[#424669] rounded-sm text-[#676f9d] hover:border-l-4 hover:border-orange-400 transition-all">
-          <label className="block text-lg font-medium pt-2 px-3 max-sm:text-sm max-sm:pt-1">Contact</label>
+          <label className="block text-lg font-medium pt-2 px-3 max-sm:text-sm max-sm:pt-1">
+            Contact
+          </label>
           <input
             type="text"
             className="w-full p-3 rounded-lg bg-[#424669] text-white focus:outline-none max-sm:text-sm"

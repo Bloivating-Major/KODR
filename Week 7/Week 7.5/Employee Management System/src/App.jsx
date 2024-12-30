@@ -7,26 +7,28 @@ import { AuthContext } from "./context/AuthProvider";
 const App = () => {
   const [user, setUser] = useState(null);
   const [loggedInUserData, setLoggedInUserData] = useState(null);
+  const [loginError, setLoginError] = useState("");
 
   const { userData } = useContext(AuthContext);
 
   useEffect(() => {
     const loggedInUser = localStorage.getItem("loggedInUser");
-  
+
     if (loggedInUser) {
       try {
-        const parsedUserData = JSON.parse(loggedInUser); 
+        const parsedUserData = JSON.parse(loggedInUser);
         setUser(parsedUserData.role);
         setLoggedInUserData(parsedUserData.data || null);
       } catch (error) {
         console.error("Error parsing logged-in user data:", error);
-        localStorage.removeItem("loggedInUser"); 
+        localStorage.removeItem("loggedInUser");
       }
     }
   }, []);
-  
 
   const handleLogin = (email, password) => {
+    setLoginError("");
+
     if (email === "admin@me.com" && password === "123") {
       setUser("admin");
       localStorage.setItem("loggedInUser", JSON.stringify({ role: "admin" }));
@@ -49,13 +51,16 @@ const App = () => {
       }
     }
 
-    alert("Invalid Details");
+    setLoginError("Invalid email or password. Please try again.");
+    setTimeout(() => setLoginError(""), 2000);
   };
 
   return (
     <>
-      {!user && <Login handleLogin={handleLogin} />}
-      {user === "admin" && <AdminDashboard changeUser={setUser} data={loggedInUserData}  />}
+      {!user && <Login handleLogin={handleLogin} errorMessage={loginError} />}
+      {user === "admin" && (
+        <AdminDashboard changeUser={setUser} data={loggedInUserData} />
+      )}
       {user === "employee" && (
         <EmployeeDashboard changeUser={setUser} data={loggedInUserData} />
       )}
