@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: GILROY;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  background-color: aqua;
+  // height: 20%;
+  flex-wrap: wrap; // s3 wraps the childs jo screen se bahar ja reahe ho
+  .box {
+    border: 2px solid black;
+    background-color: red;
+    height: 100px;
+    flex-basis: 100px; //s1 gets min width value from prarent container but "flex shrinks childs by default we can undo that by flex shrink"
+    flex-shrink: 0; //s2 jo daba raha tha use nahi dabne dega but wo parent ke bahar jaye ga
+    flex-grow: 1; // s4 jo area parent me bacha rahe ga jo child in a particular line last me rahe ga wa apni width badake
+    // flex: 1 0 100px //shorthand for
+  }
+}
