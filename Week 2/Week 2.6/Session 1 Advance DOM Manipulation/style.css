@@ -1,0 +1,61 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html,body{ 
+width: 100%;
+height: 100%;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    background-color: antiquewhite;
+    overflow-y: auto;
+}
+
+.search{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw 0;
+    /* background-color: crimson; */
+}
+
+.search input{
+    width: 100%;
+    padding: 0.5em 1.5em;
+    border-radius: 10px;
+    border: 1px solid royalblue;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.peoples{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
+    gap: 20px;
+}
+
+.userCard{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 7vw;
+    flex-direction: column;
+}
+
+.userCard img{
+    width: 7vw;
+    height: 7vw;
+    object-fit: cover;
+    border-radius: 50%;
+}
