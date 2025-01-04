@@ -83,6 +83,61 @@ cd KODR
 
 ---
 
+# Week 02 - JavaScript Language and DOM with Responsiveness and SCSS.
+
+<details>
+<summary style="display: inline; font-size: 20px; font-weight: 700; cursor: pointer;" title="Click on me to Expand">Click to Expand Week 02 Details</summary>
+
+## 📚 [ Week 02 - JavaScript Language and DOM with Responsiveness and SCSS.](./Week%202/)
+
+### 💻 [**2.1 - Creating Fluid Layouts with Flex and Grids**](./Week%202/Week%202.1)
+
+> **`Topics Covered:` Creating Fluid Layouts with Flex and Grids -** Gained hands-on experience with **Flexbox** and **Grid** to create fluid and responsive layouts.  
+
+- 👨‍💻 [**Lecture Codes**](./Week%202/Week%202.1/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%202/Week%202.1/Readme.md)
+
+### 💻 [**2.2 - JavaScript Basics**](./Week%202/Week%202.2/)
+
+> **`Topics Covered:` JavaScript Basics -** In today's session, we covered foundational concepts of **JavaScript**, including its history, basic features, data types, and memory operations. 
+
+- 👨‍💻 [**Lecture Codes**](./Week%202/Week%202.2/Session%201%20JavaScript%20The%20Language/index.js)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%202/Week%202.2/Readme.md)
+
+### 💻 [**2.3 - JavaScript Intermeddiate and Advanced Concepts**](./Week%202/Week%202.3/)
+
+> **`Topics Covered:` JavaScript Intermeddiate and Advanced Concepts -** 1. Mastery of **conditionals**, **loops**, and **functions** lays the foundation for JavaScript programming. 2. Arrays and objects are indispensable for structuring and manipulating data. 3. Understanding **synchronous vs. asynchronous** execution is vital for handling modern web development tasks. 4. Prototypes and inheritance streamline behavior sharing in object-oriented programming. 5. ES6 introduced modern syntax to enhance readability, performance, and scalability.
+
+- 👨‍💻 [**Lecture Codes**](./Week%202/Week%202.3/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%202/Week%202.3/Readme.md)
+
+### 💻 [**2.4 - JavaScript DOM and Event Handling**](./Week%202/Week%202.4/)
+
+> **`Topics Covered:` JavaScript DOM and Event Handling -** DOM is essential for dynamic interaction in web applications. Event handling bridges the gap between static content and user interactions. With DOM manipulation and event listeners, we can create highly interactive web experiences.
+
+- 👨‍💻 [**Lecture Codes**](./Week%202/Week%202.4/Session%201%20OOP/Readme.md)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%202/Week%202.4/Readme.md)
+
+### 💻 [**2.5 - Mini Tasks on JavaScript DOM**](./Week%202/Week%202.5/)
+
+> **`Topics Covered:` Mini Tasks on JavaScript DOM -** In today’s session, we tackled several mini tasks related to the **JavaScript DOM Model**. These tasks were designed to enhance our understanding of DOM manipulation, event handling, and dynamic interaction with HTML elements.
+
+- 👨‍💻 [**Lecture Codes**](./Week%202/Week%202.5/Session%201%20JavaScript%20DOM%20Tasks/script.js)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%202/Week%202.5/Readme.md)
+
+### 💻 [**2.6 - Advanced DOM Manipulation with Search Functionality**](./Week%202/Week%202.6/)
+
+> **`Topics Covered:` Advanced DOM Manipulation with Search Functionality -** Today, we created a dynamic **User Search Interface** using **HTML**, **CSS**, and **JavaScript**. This task enhanced our understanding of DOM manipulation, filtering arrays, and building a responsive layout. Users can search for names dynamically, and the list updates in real-time as they type.
+
+- 👨‍💻 [**Lecture Codes**](./Week%202/Week%202.6/Session%201%20Advance%20DOM%20Manipulation/script.js)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%202/Week%202.6/Readme.md)
+
+</details>
+
+---
+
+
+
 # Week 03 - DSA, Object Oriented Programming and JavaScript DOM
 
 <details>
@@ -196,12 +251,47 @@ cd KODR
 
 ## 📚 [Week 05 - React and DSA using JavaScript](./Week%205/)
 
-### 💻 [**5.1 - Logic Building and Problem Solving**](./Week%204/Week%204.1/)
+### 💻 [**5.1 - React Components and Data Structure Problem Solving**](./Week%205/Week%205.1/)
 
-> **`Topics Covered:` Logic Building and Problem Solving -** Below are JavaScript solutions to your questions using simple and brute-force methods. 
+> **`Topics Covered:` React Components and Data Structure Problem Solving -** Dive deeper into React with props and state management. Tackle intermediate-level data structure problems.
 
-- 👨‍💻 [**Lecture Codes**](./Week%205/Week%205.1/Session%202%20DSA%20Star%20Pattern/)
-- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%205/Week%205.1/Session%202%20DSA%20Star%20Pattern/Readme.md)
+- 👨‍💻 [**Lecture Codes**](./Week%205/Week%205.1/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%205/Week%205.1/Readme.md)
+
+### 💻 [**5.2 - Nested Components in React**](./Week%205/Week%205.2/)
+
+> **`Topics Covered:` Nested Components in React -** This exercise demonstrated the power of React's component-based architecture. By dividing the UI into independent components, we achieved better code organization and reusability, paving the way for scalable applications.  
+
+- 👨‍💻 [**Lecture Codes**](./Week%205/Week%205.2/React%20Nested%20Components/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%205/Week%205.2/Readme.md)
+
+### 💻 [**5.3 - JSX (JavaScript XML)**](./Week%205/Week%205.3/)
+
+> **`Topics Covered:` JSX (JavaScript XML) -** In today's session, we dived into the fundamentals of **JSX (JavaScript XML)** and practiced creating a basic React component to render content dynamically in our app.
+
+- 👨‍💻 [**Lecture Codes**](./Week%205/Week%205.3/React%20JSX/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%205/Week%205.3/Readme.md)
+
+### 💻 [**5.4 - JSX Rules**](./Week%205/Week%205.4/)
+
+> **`Topics Covered:` JSX Rules -** In today's session, we focused on understanding and applying the fundamental **rules of JSX** while creating a new React component.  
+
+- 👨‍💻 [**Lecture Codes**](./Week%205/Week%205.4/React%20JSX%20Rules/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%205/Week%205.4/Readme.md)
+
+### 💻 [**5.5 - Dynamic Content in JSX**](./Week%205/Week%205.5/)
+
+> **`Topics Covered:` Dynamic Content in JSX -** In today's session, we explored how to use **dynamic content with curly braces `{}` in JSX** to make React components more interactive and data-driven.
+
+- 👨‍💻 [**Lecture Codes**](./Week%205/Week%205.5/React%20Embedding%20Dynamic%20Content/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%205/Week%205.5/Readme.md)
+
+### 💻 [**5.6 - Rendering Lists in React**](./Week%205/Week%205.6/)
+
+> **`Topics Covered:` Rendering Lists in React -** Today, we focused on **rendering lists in React** using the powerful `.map()` method. This approach makes it simple to dynamically display collections of data in your components.  
+
+- 👨‍💻 [**Lecture Codes**](./Week%205/Week%205.6/React%20Rendering%20List%20of%20Data/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%205/Week%205.6/Readme.md)
 
 </details>
 
@@ -213,6 +303,20 @@ cd KODR
 
 ## 📚 [Week 06 - React and DSA using JavaScript](./Week%206/)
 
+### 💻 [**6.1 - Using Props in React Components**](./Week%206/Week%206.1/)
+
+> **`Topics Covered:` Using Props in React Components -** Today, we learned about **props** in React, their purpose, and how to pass dynamic data to components to make them reusable. Additionally, we explored the use of **props.children** for nesting custom content within components.  
+
+- 👨‍💻 [**Lecture Codes**](./Week%206/Week%206.1/React%20Props/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%206/Week%206.1/Readme.md)
+
+### 💻 [**6.2 - Conditional Rendering in React**](./Week%206/Week%206.2/)
+
+> **`Topics Covered:` Conditional Rendering in React -** Today, we explored **Conditional Rendering in React**, a crucial concept that allows us to display different UI elements based on specific conditions. Here's a summary of the exercise, where we practiced various ways to implement conditional rendering.  
+
+- 👨‍💻 [**Lecture Codes**](./Week%206/Week%206.2/React%20Conditional%20Rendering/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%206/Week%206.2/Readme.md)
+
 ### 💻 [**6.3 - DSA Binary Search**](./Week%206/Week%206.3/Session%202%20DSA-JS/)
 
 > **`Topics Covered:` DSA Binary Search -** In today's **DSA Session**, we explored the **Binary Search** algorithm, a fundamental concept for efficiently searching elements in sorted arrays. This algorithm significantly reduces the time complexity compared to linear search by halving the search space at every step.
@@ -220,13 +324,20 @@ cd KODR
 - 👨‍💻 [**Lecture Codes**](./Week%206/Week%206.3/Session%202%20DSA-JS/script.js)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%206/Week%206.3/Readme.md)
 
+### 💻 [**6.4 - Styling Components in React**](./Week%206/Week%206.4/)
+
+> **`Topics Covered:` Styling Components in React -** Today, we explored various methods for styling React components. This session demonstrated how to apply **inline styles**, **style objects**, and **React icons** to make components visually appealing.  
+
+- 👨‍💻 [**Lecture Codes**](./Week%206/Week%206.4/React%20Styling/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%206/Week%206.4/Readme.md)
+
 ### 💻 [**6.5 - Form Handling in React**](./Week%206/Week%206.5/Session%201%20React%20Form%20Handling/)
 
 > **`Topics Covered:` Form Handling in React -** A modern React application featuring dynamic form management with a responsive navigation system, powered by React Router and Context API.
 
 
 - 👨‍💻 [**Lecture Codes**](./Week%206/Week%206.5/Session%201%20React%20Form%20Handling/)
-- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%206/Week%206.5/Session%201%20React%20Form%20Handling/README.md)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%206/Week%206.5/Readme.md)
 
 ### 💻 [**6.6 - Array Manipulation with JavaScript**](./Week%206/Week%206.6/)
 
@@ -253,9 +364,9 @@ cd KODR
 - 👨‍💻 [**Lecture Codes**](./Week%207/Week%207.1/Readme.md)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%207/Week%207.1/Readme.md)
 
-### 💻 [**7.2 -Practice Session and Presentation**](./Week%207/Week%207.2/Readme.md)
+### 💻 [**7.2 -JavaScript Practice Session and React useState**](./Week%207/Week%207.2/Readme.md)
 
-> **`Topics Covered:`React API Integration using Axios -** We revisited the problems solved during the previous day. Reviewed and discussed **optimal solutions** and **different approaches** for the same problems.  
+> **`Topics Covered:`JavaScript Practice Session and React useState -** We revisited the problems solved during the previous day. Reviewed and discussed **optimal solutions** and **different approaches** for the same problems.  
 
 - 👨‍💻 [**Lecture Codes**](./Week%207/Week%207.2/Readme.md)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%207/Week%207.2/Readme.md)
@@ -290,6 +401,27 @@ cd KODR
 
 
 </details>
+
+---
+# Week 08 - Advance React Concepts and DSA
+
+<details>
+<summary style="display: inline; font-size: 20px; font-weight: 700; cursor: pointer;" title="Click on me to Expand">Click to Expand Week 08 Details</summary>
+
+## 📚 [Week 08 - Advance React Concepts and DSA](./Week%208/)
+
+### 💻 [**8.1 - Nike Project With React and DSA LeetCode Questions**](./Week%208/Week%208.1/)
+
+> **`Topics Covered:`Nike Project With React and DSA LeetCode Questions -** Today, we worked on two exciting areas:  1. Building components for the **Nike Project with React**. 2. Solving **LeetCode Problem 2357 - Minimum Operations to Make the Array Zero**.  
+
+- 👨‍💻 [**Lecture Codes**](./Week%208/Week%208.1/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%208/Week%208.1/Readme.md)
+
+
+</details>
+
+---
+
 
 ## 🔥 **Live Links**
 
