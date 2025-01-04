@@ -1,74 +1,194 @@
-### Exercise: Conditional Rendering in React
+# **Week 6 - Day 2: Conditional Rendering in React**  
 
-In this exercise, you will practice different ways to render JSX conditionally in React components.
+Today, we explored **Conditional Rendering in React**, a crucial concept that allows us to display different UI elements based on specific conditions. Here's a summary of the exercise, where we practiced various ways to implement conditional rendering.  
 
-#### Step 1: Create a `Weather` Component with `if`, `else if`, and `else`
+---
 
-1. Create a new file called `Weather.jsx`.
-2. Inside this file, create a functional component called `Weather`.
-3. The component should:
-   - Take a `temperature` prop.
-   - Use `if`, `else if`, and `else` statements to conditionally render different messages based on the temperature value:
-     - If the temperature is below 15, display: "It's cold outside!"
-     - If the temperature is between 15 and 25, display: "It's nice outside!"
-     - If the temperature is above 25, display: "It's hot outside!"
+## **What We Built**
 
-#### Step 2: Create a `UserStatus` Component with the `&&` Operator
+We created three components to understand and implement conditional rendering using:  
+1. **if, else if, else** statements.  
+2. **Logical AND (`&&`)** operator.  
+3. **Ternary (`? :`)** operator.  
 
-1. Create a new file called `UserStatus.jsx`.
-2. Inside this file, create a functional component called `UserStatus`.
-3. The component should:
-   - Take two boolean props `loggedIn`, `isAdmin`
-   - Use the `&&` operator to display a message for Admin & Normal User:
-     - If `loggedIn` is `true` and `isAdmin` display: "Welcome Admin!"
-     - If it's just `loggedIn` and not admin then display "Welcome User".
+---
 
-#### Step 3: Create a `Greeting` Component with a Ternary Operator
+## **Step-by-Step Guide**
 
-1. Create a new file called `Greeting.jsx`.
-2. Inside this file, create a functional component called `Greeting`.
-3. The component should:
-   - Take a `timeOfDay` prop (e.g., `"morning"`, `"afternoon"`, or `"evening"`).
-   - Use the ternary operator to conditionally display different greetings based on the time of day:
-     - If `timeOfDay` is `"morning"`, display: "Good morning!"
-     - If `timeOfDay` is `"afternoon"`, display: "Good afternoon!"
+### **1. Weather Component**  
 
-#### Step 4: Render the Components in `App.jsx`
+This component renders different messages based on the `temperature` prop using **if, else if, else statements**.  
 
-1. In your `App.jsx` file, import the `Weather`, `UserStatus`, and `Greeting` components:
-
-   ```jsx
-   import Weather from "./Weather";
-   import UserStatus from "./UserStatus";
-   import Greeting from "./Greeting";
-   ```
-
-2. Inside the `App` component, render each component with different props to test the conditional rendering logic.
-
-Example:
-
+#### **Code:**  
 ```jsx
+import React from "react";
+
+const Weather = ({ temperature }) => {
+  if (temperature < 15) {
+    return <p>It's cold outside!</p>;
+  } else if (temperature <= 25) {
+    return <p>It's nice outside!</p>;
+  } else {
+    return <p>It's hot outside!</p>;
+  }
+};
+
+export default Weather;
+```
+
+---
+
+### **2. UserStatus Component**  
+
+This component displays messages for different user statuses (Admin or User) using the **logical AND (`&&`)** operator.  
+
+#### **Code:**  
+```jsx
+import React from "react";
+
+const UserStatus = ({ loggedIn, isAdmin }) => {
+  return (
+    <div>
+      {loggedIn && isAdmin && <p>Welcome Admin!</p>}
+      {loggedIn && !isAdmin && <p>Welcome User!</p>}
+      {!loggedIn && <p>Please log in!</p>}
+    </div>
+  );
+};
+
+export default UserStatus;
+```
+
+---
+
+### **3. Greeting Component**  
+
+This component displays greetings based on the `timeOfDay` prop using the **ternary (`? :`)** operator.  
+
+#### **Code:**  
+```jsx
+import React from "react";
+
+const Greeting = ({ timeOfDay }) => {
+  return (
+    <p>
+      {timeOfDay === "morning"
+        ? "Good morning!"
+        : timeOfDay === "afternoon"
+        ? "Good afternoon!"
+        : "Good evening!"}
+    </p>
+  );
+};
+
+export default Greeting;
+```
+
+---
+
+### **4. Integrating All Components in App.jsx**  
+
+We rendered all the components in the `App.jsx` file and passed various props to test the conditional rendering logic.  
+
+#### **Code:**  
+```jsx
+import React from "react";
+import Weather from "./Weather";
+import UserStatus from "./UserStatus";
+import Greeting from "./Greeting";
+
 function App() {
   return (
     <div>
       <h1>Conditional Rendering in React</h1>
 
-      {/* Weather component */}
+      {/* Weather Component */}
       <Weather temperature={10} />
       <Weather temperature={20} />
       <Weather temperature={30} />
 
-      {/* UserStatus component */}
-      <UserStatus loggedIn={true} />
+      {/* UserStatus Component */}
+      <UserStatus loggedIn={true} isAdmin={true} />
+      <UserStatus loggedIn={true} isAdmin={false} />
       <UserStatus loggedIn={false} />
 
-      {/* Greeting component */}
+      {/* Greeting Component */}
       <Greeting timeOfDay="morning" />
       <Greeting timeOfDay="afternoon" />
-      <Greeting />
+      <Greeting timeOfDay="evening" />
     </div>
   );
 }
 
 export default App;
 ```
+
+---
+
+## **Key Learnings**  
+
+### **1. Using `if, else if, else` Statements**  
+- **Purpose**: Suitable for handling multiple conditions.  
+- **Example**:  
+  ```jsx
+  if (condition1) {
+    // Render something
+  } else if (condition2) {
+    // Render something else
+  } else {
+    // Render default
+  }
+  ```
+
+### **2. Using the Logical AND (`&&`) Operator**  
+- **Purpose**: Conditionally render elements only when the condition is true.  
+- **Example**:  
+  ```jsx
+  {loggedIn && <p>Welcome back!</p>}
+  ```
+
+### **3. Using the Ternary (`? :`) Operator**  
+- **Purpose**: Concise way to handle simple conditions.  
+- **Example**:  
+  ```jsx
+  {isLoggedIn ? <p>Welcome User</p> : <p>Please Log In</p>}
+  ```
+
+---
+
+## **Output Examples**
+
+### **Weather Component**  
+- For `temperature = 10`:  
+  Output: *"It's cold outside!"*  
+- For `temperature = 20`:  
+  Output: *"It's nice outside!"*  
+- For `temperature = 30`:  
+  Output: *"It's hot outside!"*  
+
+### **UserStatus Component**  
+- For `loggedIn = true` and `isAdmin = true`:  
+  Output: *"Welcome Admin!"*  
+- For `loggedIn = true` and `isAdmin = false`:  
+  Output: *"Welcome User!"*  
+- For `loggedIn = false`:  
+  Output: *"Please log in!"*  
+
+### **Greeting Component**  
+- For `timeOfDay = "morning"`:  
+  Output: *"Good morning!"*  
+- For `timeOfDay = "afternoon"`:  
+  Output: *"Good afternoon!"*  
+- For `timeOfDay = "evening"`:  
+  Output: *"Good evening!"*  
+
+---
+
+## **Takeaways**  
+- Conditional rendering is a core concept in React that makes components dynamic and interactive.  
+- React provides flexible ways to implement conditional rendering, including `if-else`, `&&`, and the ternary operator.  
+- Proper use of conditional rendering improves code readability and functionality.  
+
+---
+
+Happy Coding! 🚀  
