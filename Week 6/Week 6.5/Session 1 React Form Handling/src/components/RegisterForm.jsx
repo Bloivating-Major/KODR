@@ -8,6 +8,7 @@ const RegisterForm = () => {
   const [number, setNumber] = useState("");
   const [checked, setChecked] = useState(false);
   const [error, setError] = useState("");
+  const [submitted , setSubmitted] = useState("");
 
   const validateName = (name) => /^[a-zA-Z\s]{3,50}$/.test(name);
   const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -29,11 +30,13 @@ const RegisterForm = () => {
       setError("Phone number must be a 10-digit number.");
     } else {
       submitForm(formData);
+      setSubmitted("Form Submitted")
       setName("");
       setEmail("");
       setNumber("");
       setChecked(false);
       setError("");
+      setTimeout(() => setSubmitted(""), 1000);
       return;
     }
     setTimeout(() => setError(""), 2000);
@@ -104,6 +107,7 @@ const RegisterForm = () => {
         </button>
       </form>
       {error && <p className="text-red-500 text-sm">{error}</p>}
+      {submitted && <p className="text-green-500 text-sm">{submitted}</p>}
     </div>
   );
 };
