@@ -42,8 +42,7 @@ const App = () => {
 
       const result = await model.generateContent([prompt, imagePart]);
       const response = await result.response;
-      const text = response.text();
-
+      const text = await response.text();
       setGeneratedText(text);
     } catch (error) {
       console.error("Error analyzing image:", error);
@@ -63,6 +62,25 @@ const App = () => {
       };
       reader.onerror = (error) => reject(error);
     });
+  };
+
+  const formatResponseToJSX = (response) => {
+    const steps = response.split(/\d+\.\s\*\*/).slice(1); // Split by numbered steps
+    const intro = response.split(/\d+\.\s\*\*/)[0]; // Extract introduction before steps
+
+    return (
+      <div className="space-y-4 p-4 bg-gray-800 rounded-lg text-gray-300">
+        <p className="mb-4">{intro.trim()}</p>
+        <ol className="list-decimal space-y-2 pl-5">
+          {steps.map((step, index) => (
+            <li key={index} className="text-gray-200">
+              <span className="font-semibold">{step.split(":")[0]}:</span>
+              <span>{step.split(":").slice(1).join(":").trim()}</span>
+            </li>
+          ))}
+        </ol>
+      </div>
+    );
   };
 
   return (
@@ -123,7 +141,7 @@ const App = () => {
                   <h3 className="mb-2 text-lg font-semibold">
                     Generated Description:
                   </h3>
-                  <p className="text-gray-300">{generatedText}</p>
+                  {formatResponseToJSX(generatedText)}
                 </div>
               ) : (
                 <p className="text-gray-400">
