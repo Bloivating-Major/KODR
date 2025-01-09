@@ -417,6 +417,41 @@ cd KODR
 - 👨‍💻 [**Lecture Codes**](./Week%208/Week%208.1/)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%208/Week%208.1/Readme.md)
 
+### 💻 [**8.2 - Understanding Context API in React**](./Week%208/Week%208.2/)
+
+> **`Topics Covered:`Understanding Context API in React -** Today, we learned how to use the **Context API** in React to manage and share state across multiple components without prop drilling. Here's a detailed overview of what we accomplished:
+
+- 👨‍💻 [**Lecture Codes**](./Week%208/Week%208.2/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%208/Week%208.2/Readme.md)
+
+### 💻 [**8.4 - Exploring 2D Arrays and React Tasks**](./Week%208/Week%208.4/)
+
+> **`Topics Covered:`Exploring 2D Arrays and React Tasks -** Today, we studied **Redux Toolkit**, a powerful tool to manage global state in React applications efficiently. Below is a summary of the steps we followed and concepts we covered.
+
+- 👨‍💻 [**Lecture Codes**](./Week%208/Week%208.4/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%208/Week%208.4/Readme.md)
+
+### 💻 [**8.5 - Exploring Redux ToolKit**](./Week%208/Week%208.5/)
+
+> **`Topics Covered:`Exploring Redux ToolKit -** Today, we studied **Redux Toolkit**, a powerful tool to manage global state in React applications efficiently. Below is a summary of the steps we followed and concepts we covered.
+
+- 👨‍💻 [**Lecture Codes**](./Week%208/Week%208.5/React%20Redux%20Toolkit/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%208/Week%208.5/Readme.md)
+
+### 💻 [**8.6 - DSA Revision Class**](./Week%208/Week%208.6/)
+
+> **`Topics Covered:`Exploring Redux ToolKit -** Today, we revised key **Data Structures and Algorithms (DSA)** concepts through practical problems and solutions. Below is a detailed summary of the questions solved in the session.
+
+- 👨‍💻 [**Lecture Codes**](./Week%208/Week%208.6/Session%201%20DSA%20Revision/script.js)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%208/Week%208.6/Readme.md)
+
+### 💻 [**8.7 - Shopping Cart Feature**](./Week%208/Week%208.7/)
+
+> **`Topics Covered:`Shopping Cart Feature -** This repository contains a **Shopping Cart Feature** implemented using **React**, **Redux Toolkit**, and **TailwindCSS**. This feature was created during **Week 8, Day 7** of the project development timeline. The application allows users to toggle between light and dark modes, view product listings, and manage a shopping cart.
+
+- 👨‍💻 [**Lecture Codes**](./Week%208/Week%208.7/Shopping%20Cart%20Redux/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%208/Week%208.7/Readme.md)
+
 
 </details>
 
