@@ -456,6 +456,24 @@ cd KODR
 </details>
 
 ---
+# Week 09 - BackEnd and DSA Revision
+
+<details>
+<summary style="display: inline; font-size: 20px; font-weight: 700; cursor: pointer;" title="Click on me to Expand">Click to Expand Week 09 Details</summary>
+
+## 📚 [Week 09 - BackEnd and DSA Revision](./Week%209/)
+
+### 💻 [**9.1 - Intro to Backend and DSA LeetCode Questions**](./Week%209/Week%209.1/)
+
+> **`Topics Covered:`Intro to Backend and DSA LeetCode Questions -** Welcome to Day 1 of Week 9! Today, we explored some exciting problem-solving exercises across two sessions. Here’s a structured breakdown of everything we covered.
+
+- 👨‍💻 [**Lecture Codes**](./Week%209/Week%209.1/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%209/Week%209.1/Readme.md)
+
+
+</details>
+
+---
 
 
 ## 🔥 **Live Links**
@@ -479,6 +497,7 @@ This table summarizes the live demos for various tasks and features implemented 
 | **Nike Website Hero Section**       | This session focused on learning the fundamentals of **React components** by building a **Navbar** and a **Hero Section** for a responsive shoe store website. The session introduced **React functional components**, the **JSX syntax**, and how to use **Tailwind CSS** for styling.                                        | [Live Demo](https://nike-olive-chi.vercel.app/)       |
 | **KODR Registration Form**       | A modern React application featuring dynamic form management with a responsive navigation system, powered by React Router and Context API.                                   | [Live Demo](https://kodr-form.vercel.app/)       |
 | **Employee Management System**       | The Employee Management System is a web application designed to manage tasks for employees. It features separate pages for admin and employee users. Admins can create new tasks for employees, and these tasks are reflected on the employee's page.                                  | [Live Demo](https://employee-management-system-omega-seven.vercel.app/)       |
+| **Shopping Cart Redux Toolkit**       | A **Shopping Cart Feature** implemented using **React**, **Redux Toolkit**, and **TailwindCSS**. This feature was created during **Week 8, Day 7** of the project development timeline. The application allows users to toggle between light and dark modes, view product listings, and manage a shopping cart.                         | [Live Demo](https://shoppingcart-bice.vercel.app/)       |
 
 ---
 
