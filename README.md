@@ -498,6 +498,7 @@ This table summarizes the live demos for various tasks and features implemented 
 | **KODR Registration Form**       | A modern React application featuring dynamic form management with a responsive navigation system, powered by React Router and Context API.                                   | [Live Demo](https://kodr-form.vercel.app/)       |
 | **Employee Management System**       | The Employee Management System is a web application designed to manage tasks for employees. It features separate pages for admin and employee users. Admins can create new tasks for employees, and these tasks are reflected on the employee's page.                                  | [Live Demo](https://employee-management-system-omega-seven.vercel.app/)       |
 | **Shopping Cart Redux Toolkit**       | A **Shopping Cart Feature** implemented using **React**, **Redux Toolkit**, and **TailwindCSS**. This feature was created during **Week 8, Day 7** of the project development timeline. The application allows users to toggle between light and dark modes, view product listings, and manage a shopping cart.                         | [Live Demo](https://shoppingcart-bice.vercel.app/)       |
+| **Image to Text Generator**       |  An **Image to Text Generator** application. The project involved uploading an image, analyzing it using Google Generative AI, and generating a descriptive text based on a user-provided prompt. It pushed our React and API integration skills to the next level!                  | [Live Demo](https://genz-khaki-xi.vercel.app/)       |
 
 ---
 
