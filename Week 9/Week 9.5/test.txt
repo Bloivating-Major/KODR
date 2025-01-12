@@ -1,0 +1,6 @@
+npm i ejs
+
+add.set("view engine", ejs);
+
+
+// server side rendering.
