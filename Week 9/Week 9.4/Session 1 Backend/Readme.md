@@ -1,4 +1,3 @@
-Here’s the updated README with **emojis** and **all required functions** implemented based on the comments you provided:
 
 ---
 

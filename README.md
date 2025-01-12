@@ -37,6 +37,8 @@ cd KODR
 - **Documenting Daily Progress**: Updates shared on GitHub, LinkedIn, and Twitter
 - **Goal-setting**: Setting and reviewing goals every three days for accountability
 
+# [**React**](./React/Readme.md)
+
 # Week 01 - Basics of Git and Github and Collaboration
 
 <details>
@@ -470,6 +472,40 @@ cd KODR
 - 👨‍💻 [**Lecture Codes**](./Week%209/Week%209.1/)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%209/Week%209.1/Readme.md)
 
+### 💻 [**9.2 - Theory of Internet and DSA LeetCode Questions**](./Week%209/Week%209.2/)
+
+> **`Topics Covered:`Theory of Internet and DSA LeetCode Questions -**Today's session combined theoretical and practical learning. From understanding how the internet works to solving challenging coding questions, it was a productive day! Looking forward to continuing this momentum tomorrow.
+
+- 👨‍💻 [**Lecture Codes**](./Week%209/Week%209.2/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%209/Week%209.2/Readme.md)
+
+### 💻 [**9.3 - React Test**](./Week%209/Week%209.3/)
+
+> **`Topics Covered:`React Test -**This exciting React app challenge was to create an **Image to Text Generator** application. The project involved uploading an image, analyzing it using Google Generative AI, and generating a descriptive text based on a user-provided prompt. It pushed our React and API integration skills to the next level!
+
+- 👨‍💻 [**Lecture Codes**](./Week%209/Week%209.3/React%20Test/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%209/Week%209.3/Readme.md)
+
+### 💻 [**9.4 - FS Node Modules and DSA Revision**](./Week%209/Week%209.4/)
+
+> **`Topics Covered:`React Test -**## **🌟 Learning Highlights**- 🗂️ **FS Module**: Manage files and directories efficiently in Node.js. - 💡 **Dirent Objects**: Differentiate between files and directories during traversal. - 🌐 **HTTP Module**: Essential for building and handling web servers in Node.js.  
+
+- 👨‍💻 [**Lecture Codes**](./Week%209/Week%209.4/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%209/Week%209.4/Session%201%20Backend/Readme.md)
+
+### 💻 [**9.5 - HTTP and HTTPS and DSA Revision**](./Week%209/Week%209.5/)
+
+> **`Topics Covered:`HTTP and HTTPS and DSA Revision -** We learned about HTTPS and HTTP and also did revision of DSA learning about BLOCK Swap Algorithm.
+
+- 👨‍💻 [**Lecture Codes**](./Week%209/Week%209.5/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%209/Week%209.5/)
+
+### 💻 [**9.6 - Backend Revision and Express**](./Week%209/Week%209.6/)
+
+> **`Topics Covered:`HTTP and HTTPS and DSA Revision -** We did Backend Revision and Learned about Express in Backend.
+
+- 👨‍💻 [**Lecture Codes**](./Week%209/Week%209.6/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%209/Week%209.6/)
 
 </details>
 
