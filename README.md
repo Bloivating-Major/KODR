@@ -510,6 +510,35 @@ cd KODR
 </details>
 
 ---
+# Week 10 - BackEnd and DSA Revision
+
+<details>
+<summary style="display: inline; font-size: 20px; font-weight: 700; cursor: pointer;" title="Click on me to Expand">Click to Expand Week 10 Details</summary>
+
+## 📚 [Week 10 - BackEnd and DSA Revision](./Week%2010/)
+
+### 💻 [**10.1 - Backend Development and DSA and JS Sets**](./Week%2010/Week%2010.1/)
+
+> **`Topics Covered:`Backend Development and DSA and JS Sets -** Welcome to Day 1 of Week 10. We revised earlier concepts of Backend and now started with Express
+
+- 👨‍💻 [**Lecture Codes**](./Week%2010/Week%2010.1/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2010/Week%2010.1/Readme.md)
+
+### 💻 [**10.2 - Building a Backend Server with Express.js**](./Week%2010/Week%2010.2/)
+
+> **`Topics Covered:`Building a Backend Server with Express.js -** In today's session we learned about creating a server using Express and then creating middlewares and routes. In DSA Session we learned about sets and maps and solved questions regarding Sets and Maps.
+
+- 👨‍💻 [**Lecture Codes**](./Week%2010/Week%2010.2/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2010/Week%2010.2/Readme.md)
+
+### 💻 [**10.3 - Introduction to Databases**](./Week%2010/Week%2010.3/)
+
+> **`Topics Covered:`Introduction to Databases -** In today’s session, we explored the fundamentals of **databases** and connected our **Express server** to a **MongoDB database** using Mongoose. Let’s break down everything we learned!  
+
+- 👨‍💻 [**Lecture Codes**](./Week%2010/Week%2010.3/Session%201%20BackEnd%20Server/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2010/Week%2010.3/Readme.md)
+
+---
 
 
 ## 🔥 **Live Links**
