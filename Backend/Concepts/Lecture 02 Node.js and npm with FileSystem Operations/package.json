@@ -1,0 +1,12 @@
+{
+  "name": "lecture-02-node.js-and-npm-with-filesystem-operations",
+  "version": "1.0.0",
+  "description": "- Node.js Basics\r     - It is not a programming language\r     - It is also not a technology\r     - It is also not a framework\r     - It is not a library\r     - It is JavaScript Runtime Environment\r     - With javascript you cannot build Backend because JavaScript does'nt have those functionalities.\r     - So there was a developer known as Ryan Dahl thought to write backend using JavaScript\r     - What he did is took v8 engine of Google and then modified it the way that you can write backend using it.\r     - So v8 engine was written in c++ so what he did is wrapped js outside v8 engine and now you can write backend using JavaScript.\r     - runtime environment means until the node is running till that time only node will run.\r - Introduction to Node.js\r     - to start working with nodejs you have to go inside your folder and then first initialize your package.json file\r     - you can then write a command npm init -y why -y because then you won't be asked many questions it will direactly create a package.json file\r - Installating Node.js and npm\r     - You can visit nodejs website to download node.js \r     - From there you can download node js\r     - what is npm it is package manager where people can upload their own packages and then you can download those packages\r - Working with modules.\r - File System Operations\r - Understanding HTTP module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
