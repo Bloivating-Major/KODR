@@ -1,4 +1,14 @@
-const fs = require('fs');
+// const fs = require('fs');
+
+// fs.open('./Readme.md', (err)=>{
+//     if(err) console.log(err);
+//     else console.log("File opened successfully");
+// });
+
+// fs.mkdir('./temp', (err)=>{
+//     if(err) console.log(err);
+//     else console.log("Folder created successfully");
+// })
 
 // fs.writeFile('hey.txt',"Hey Hello kaise Ho" , (err)=>{
 //     if(err) console.log(err);
@@ -31,3 +41,11 @@ const fs = require('fs');
 //     if(err) console.log(err);
 //     else console.log("File deleted successfully");
 // })
+
+const http = require('http');
+
+const server = http.createServer((req,res)=>{
+    res.end("Hello World");
+})
+
+server.listen(3000);

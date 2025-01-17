@@ -1,61 +1,163 @@
-# Lecture 2 Node.js and npm with File System Operations
+# Lecture 2: Node.js and npm with File System Operations
 
-- Node.js Basics
-    - It is not a programming language
-    - It is also not a technology
-    - It is also not a framework
-    - It is not a library
-    - It is JavaScript Runtime Environment
-    - With javascript you cannot build Backend because JavaScript does'nt have those functionalities.
-    - So there was a developer known as Ryan Dahl thought to write backend using JavaScript
-    - What he did is took v8 engine of Google and then modified it the way that you can write backend using it.
-    - So v8 engine was written in c++ so what he did is wrapped js outside v8 engine and now you can write backend using JavaScript.
-    - runtime environment means until the node is running till that time only node will run.
-- Introduction to Node.js
-    - to start working with nodejs you have to go inside your folder and then first initialize your package.json file
-    - you can then write a command npm init -y why -y because then you won't be asked many questions it will direactly create a package.json file
-- Installating Node.js and npm
-    - You can visit nodejs website to download node.js 
-    - From there you can download node js
-    - what is npm it is package manager where people can upload their own packages and then you can download those packages
-- Working with modules.
-- File System Operations
-    - What we have to learn in FS is 
-        - write file
-            - it means creation of file
-            ```javascript
-                fs.writeFile("test.js", "let name = 'Sambhav'", (err)=>{
-                if(err) console.log(err);
-                else console.log("File created successfully");
-                })
-            ```
-        - append file
-             ```javascript
-                fs.appendFile("test.js", "age = 20", (err)=>{
-                if(err) console.log(err);
-                else console.log("Data appended successfully");
-                })
-            ```
-        - copy file - used to copy a file
-            ```javascript
-               fs.copyFile('renamed.js', 'copy.js', (err)=>{
-                if(err) console.log(err);
-                else console.log("Copied successfully");
-                })
-            ```
-        - rename file - used to rename a file
-             ```javascript
-                fs.rename('test.js', 'renamed.js' , (err)=>{
-                if(err) console.log(err);
-                else console.log("Renamed Successfully");
-                })
-            ```
-        - unlink file - used to delete file
-             ```javascript
-                fs.unlink('renamed.js', (err)=>{
-                if(err) console.log(err);
-                else console.log("File deleted successfully");
-                })
-            ```
+## Node.js Basics
 
-- Understanding HTTP module
+- **What is Node.js?**
+  - It is **not** a programming language, technology, framework, or library.
+  - Node.js is a **JavaScript Runtime Environment**, allowing JavaScript to be used for backend development.
+  - JavaScript originally lacked backend functionalities. To overcome this, Ryan Dahl created Node.js by modifying the V8 engine (Google's JavaScript engine written in C++).
+  - He wrapped JavaScript around the V8 engine to enable backend development using JavaScript.
+
+- **Runtime Environment:**
+  - Node.js runs as long as the process is active. When the runtime stops, the Node.js process ends.
+
+---
+
+## Introduction to Node.js
+
+- To start working with Node.js:
+  1. Navigate to your project folder.
+  2. Initialize a `package.json` file by running:
+     ```bash
+     npm init -y
+     ```
+     The `-y` flag skips the prompts and directly creates the file with default configurations.
+
+---
+
+## Installing Node.js and npm
+
+- Visit the [Node.js official website](https://nodejs.org) to download and install Node.js.
+- **npm (Node Package Manager):**
+  - A package manager where developers can upload, share, and use reusable JavaScript packages.
+
+---
+
+## Working with Modules
+
+- Node.js supports modular programming.
+- You can import and use core modules (like `fs` and `http`) or install external modules using npm.
+
+---
+
+## File System (FS) Operations
+
+The `fs` module in Node.js is used to interact with the file system. Below are the key operations:
+
+### 1. Write File (Creation of a File)
+Creates a new file or overwrites an existing file:
+```javascript
+const fs = require('fs');
+
+fs.writeFile("test.js", "let name = 'Sambhav';", (err) => {
+    if (err) console.error(err);
+    else console.log("File created successfully");
+});
+```
+
+### 2. Append File (Add Data to a File)
+Adds data to an existing file without overwriting:
+```javascript
+fs.appendFile("test.js", "age = 20;", (err) => {
+    if (err) console.error(err);
+    else console.log("Data appended successfully");
+});
+```
+
+### 3. Copy File
+Creates a copy of an existing file:
+```javascript
+fs.copyFile("test.js", "copy.js", (err) => {
+    if (err) console.error(err);
+    else console.log("Copied successfully");
+});
+```
+
+### 4. Rename File
+Renames a file:
+```javascript
+fs.rename("test.js", "renamed.js", (err) => {
+    if (err) console.error(err);
+    else console.log("Renamed successfully");
+});
+```
+
+### 5. Delete File
+Removes a file:
+```javascript
+fs.unlink("renamed.js", (err) => {
+    if (err) console.error(err);
+    else console.log("File deleted successfully");
+});
+```
+
+### 6. Delete a Directory
+Removes an empty folder:
+```javascript
+fs.rm("folder_name", { recursive: true }, (err) => {
+    if (err) console.error(err);
+    else console.log("Folder deleted successfully");
+});
+```
+
+### 7. Create a Directory
+Creates a new folder:
+```javascript
+fs.mkdir("./temp", (err) => {
+    if (err) console.error(err);
+    else console.log("Folder created successfully");
+});
+```
+
+### 8. Open a File
+Opens a file for reading or writing:
+```javascript
+fs.open("./Readme.md", "r", (err, fd) => {
+    if (err) console.error(err);
+    else console.log("File opened successfully");
+});
+```
+
+---
+
+## Understanding HTTP Module
+
+The `http` module enables the creation of HTTP servers in Node.js.
+
+### **HTTP vs. HTTPS**
+- **HTTP:** A protocol (set of rules) for transferring data over the web.
+- **HTTPS:** A secure version of HTTP with encryption.
+- Both protocols follow predefined rules installed on operating systems to send and receive data.
+
+### **Creating an HTTP Server**
+Below is an example of creating a basic HTTP server:
+```javascript
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+    res.end("Hello World");
+});
+
+server.listen(3000, () => {
+    console.log("Server is running on http://localhost:3000");
+});
+```
+- The server listens on port `3000`.
+- When accessed via a browser or a tool like Postman, it responds with "Hello World."
+
+---
+
+## Summary
+
+- **Node.js** is a runtime environment enabling backend development with JavaScript.
+- **npm** is a package manager to install, manage, and share libraries.
+- The **fs module** provides powerful file system operations like creating, renaming, deleting, and copying files and directories.
+- The **http module** is used to create web servers and handle requests and responses efficiently.
+
+---
+
+### Helpful Resources
+- [Node.js Documentation](https://nodejs.org/en/docs/)
+- [npm Documentation](https://docs.npmjs.com/)
+- [MDN Web Docs on HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)
+

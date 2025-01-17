@@ -1,0 +1,9 @@
+{
+  "description": "",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1"
+  }
+}
