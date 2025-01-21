@@ -538,6 +538,12 @@ cd KODR
 - 👨‍💻 [**Lecture Codes**](./Week%2010/Week%2010.3/Session%201%20BackEnd%20Server/)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2010/Week%2010.3/Readme.md)
 
+### 💻 [**10.4 - Connecting Mongoose to MongoDb & DSA Maps**](./Week%2010/Week%2010.4/)
+
+> **`Topics Covered:`Connecting Mongoose to MongoDb -** Today's sessions were jam-packed with learning! We explored Maps in JavaScript during the first session and practiced some challenging DSA problems. Later, in the second session, we delved into the world of backend development, specifically learning how to connect the backend to a database using Mongoose. 🚀
+
+- 👨‍💻 [**Lecture Codes**](./Week%2010/Week%2010.4/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2010/Week%2010.4/Readme.md)
 
 </details>
 
