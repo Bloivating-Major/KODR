@@ -547,6 +547,17 @@ cd KODR
 
 </details>
 
+## 📚 [Week 11 - BackEnd and DSA Revision](./Week%2011/)
+
+### 💻 [**11.1 - DSA & Backend Adventures**](./Week%2011/Week%2011.1/)
+
+> **`Topics Covered:`DSA & Backend Adventures -** Today, we delved into two exciting domains: **Recursion in DSA** and **User Models & Schemas in Backend Development**! Here's a detailed and creative breakdown of everything we learned. 🌟  
+
+- 👨‍💻 [**Lecture Codes**](./Week%2011/Week%2011.1/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2011/Week%2011.1/Readme.md)
+
+</details>
+
 ---
 
 
