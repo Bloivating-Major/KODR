@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 min-h-screen p-8">
+    <div class="max-w-2xl mx-auto flex flex-col gap-5">
+
+        <h1 class="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">Users</h1>
+
+        <div class="space-y-4">
+            <% if (users && users.length > 0) { %> 
+            <% users.forEach(user => {   %>
+
+                <div class="bg-gray-800 p-8 rounded-lg flex items-center justify-between">
+    
+                    <div class="flex items-center justify-between w-full">
+    
+                        <div class="flex items-center gap-5">
+    
+                            <div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full p-[2px]">
+                                <img src="<%=user.image%>" alt="" class="w-20 h-20 rounded-full object-cover ">
+                            </div>
+                            <span class="text-gray-300 font-medium text-2xl"><%=user.username%></span>
+                        </div>
+    
+                        <a href="" class="bg-violet-500 text-gray-300 font-medium px-8 py-4 rounded-full text-sm hover:bg-violet-600">
+                            Details
+                        </a>
+                    </div>
+    
+                </div>
+
+
+            <%})%>
+            <% } else { %>
+                <p class="text-center text-gray-500 text-xl">No users found.</p>
+            <% } %>
+
+        </div>
+
+        <div class="mt-5">
+
+            <a href="/" class="bg-gray-500 text-black px-8 py-4 rounded-md text-sm hover:bg-gray-100 transition-colors uppercase font-medium" >Back</a>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
