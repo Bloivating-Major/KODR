@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+    <body class="bg-gray-100 min-h-screen p-8">
+        <div class="max-w-2xl mx-auto">
+            <h1 class="text-3xl font-bold mb-8 text-center">Users</h1>
+            
+            <div class="space-y-4 ">
+                <% profiles.forEach(user => { %>
+                    <div class="bg-black p-8 rounded-lg flex items-center justify-between ">
+                        <div class="flex items-center space-x-3">
+                            <img src="<%= user.image %>" 
+                                 alt="<%= user.username %>'s profile" 
+                                 class="w-20 h-20 rounded-full object-cover border-2 border-red-500">
+                            <span class="text-white font-medium text-2xl"><%= user.username %></span>
+                        </div>
+                        <a href="/users/<%= user._id %>" 
+                           class="bg-white text-black px-8 py-4 rounded-full text-sm hover:bg-gray-100 transition-colors ">
+                            Details
+                        </a>
+                    </div>
+                <% }); %>
+            </div>
+            
+        </div>
+    </body>
+</html>
