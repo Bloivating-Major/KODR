@@ -38,6 +38,7 @@ cd KODR
 - **Goal-setting**: Setting and reviewing goals every three days for accountability
 
 # [**React**](./React/Readme.md)
+# [**Backend**](./Backend/Readme.md)
 
 # Week 01 - Basics of Git and Github and Collaboration
 
