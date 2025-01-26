@@ -1,0 +1,5 @@
+- npm init -y
+- npm i ejs mongoose express dotenv
+- how to use env variables
+    - you have to import it and then call config - this is written in server.js 
+    - you have to use process.env.VariableName
