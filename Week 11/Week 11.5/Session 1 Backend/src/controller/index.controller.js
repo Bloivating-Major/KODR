@@ -22,3 +22,6 @@ module.exports.homeController = (req, res)=>{
     res.render('home');
 }
 
+module.exports.createPostController = (req, res)=>{
+    res.render('createPost');
+}

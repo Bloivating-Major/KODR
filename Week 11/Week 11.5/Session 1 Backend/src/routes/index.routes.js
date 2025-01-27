@@ -8,6 +8,8 @@ route.post('/create-user', controller.createUserController);
 
 route.get('/home', controller.homeController);
 
+route.get('/create-post', controller.createPostController);
+
 
 
 module.exports = route;
