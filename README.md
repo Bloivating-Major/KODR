@@ -511,6 +511,7 @@ cd KODR
 </details>
 
 ---
+
 # Week 10 - BackEnd and DSA Revision
 
 <details>
@@ -548,6 +549,14 @@ cd KODR
 
 </details>
 
+---
+
+
+# Week 11 - BackEnd and DSA Revision
+
+<details>
+<summary style="display: inline; font-size: 20px; font-weight: 700; cursor: pointer;" title="Click on me to Expand">Click to Expand Week 11 Details</summary>
+
 ## 📚 [Week 11 - BackEnd and DSA Revision](./Week%2011/)
 
 ### 💻 [**11.1 - DSA & Backend Adventures**](./Week%2011/Week%2011.1/)
@@ -556,6 +565,15 @@ cd KODR
 
 - 👨‍💻 [**Lecture Codes**](./Week%2011/Week%2011.1/)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2011/Week%2011.1/Readme.md)
+
+### 💻 [**11.2 - DSA Recursion and Backend Database Connection**](./Week%2011/Week%2011.2)
+
+> **`Topics Covered:`DSA Recursion and Backend Database Connection -** 🌈 **Recursion is like peeling layers of an onion—each step brings you closer to the core solution.** Keep practicing, and you'll master it in no time! 🚀
+
+- 👨‍💻 [**Lecture Codes**](./Week%2011/Week%2011.2/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2011/Week%2011.2/Readme.md)
+
+
 
 </details>
 
