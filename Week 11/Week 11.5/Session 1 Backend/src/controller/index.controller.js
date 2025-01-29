@@ -18,10 +18,24 @@ module.exports.createUserController = async (req, res)=>{
     
 }
 
-module.exports.homeController = (req, res)=>{
-    res.render('home');
+module.exports.homeController = async (req, res)=>{
+
+    const posts = await Post.find({});
+
+    res.render('home' , { posts});
 }
 
 module.exports.createPostController = (req, res)=>{
     res.render('createPost');
 }
+
+module.exports.createPost = async (req, res)=>{
+    const { mediaImage, caption} = req.body;
+
+    const newPost = await Post.create({
+        mediaImage ,
+        caption
+    })
+
+    res.redirect("/home");
+ }

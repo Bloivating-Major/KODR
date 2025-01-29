@@ -10,6 +10,8 @@ route.get('/home', controller.homeController);
 
 route.get('/create-post', controller.createPostController);
 
+route.post('/create-post' , controller.createPost);
+
 
 
 module.exports = route;
