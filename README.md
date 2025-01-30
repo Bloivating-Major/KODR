@@ -573,6 +573,29 @@ cd KODR
 - 👨‍💻 [**Lecture Codes**](./Week%2011/Week%2011.2/)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2011/Week%2011.2/Readme.md)
 
+### 💻 [**11.3 - DSA Recursion and Backend User Management System**](./Week%2011/Week%2011.3/)
+
+> **`Topics Covered:`DSA Recursion and Backend User Management System -** Today, we explored **recursion** in depth and learned how to solve problems like **factorial computation, GCD (Greatest Common Divisor), and finding factors of a number** using recursion. 🔥 Today, we built a **User Management System** using **Express, MongoDB (Mongoose), and EJS**! 🎉  
+
+- 👨‍💻 [**Lecture Codes**](./Week%2011/Week%2011.3/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2011/Week%2011.3/Readme.md)
+
+### 💻 [**11.4 - DSA Mathematics and Backend Environment Variables**](./Week%2011/Week%2011.4/)
+
+> **`Topics Covered:`DSA Mathematics and Backend Environment Variables -** Today, we delved into the **fascinating world of factors** using **JavaScript**. Here's a detailed overview of what we learned and the code implementations we explored! 🚀  Today, we explored **environment variables** and how to use them in a **Node.js + Express + MongoDB** project! 🌍✨  
+
+
+- 👨‍💻 [**Lecture Codes**](./Week%2011/Week%2011.4/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2011/Week%2011.4/Readme.md)
+
+### 💻 [**11.5 - DSA Mathematics and Backend Multiple Schemas**](./Week%2011/Week%2011.5/)
+
+> **`Topics Covered:`DSA Mathematics and Backend Multiple Schemas -** In this session, we learned how to create **Mongoose schemas** and handle **User** and **Post** data efficiently in a backend project! 🎯   In this session, we explored **Prime Numbers** and how to efficiently check whether a number is prime using JavaScript. 🔢  
+
+
+- 👨‍💻 [**Lecture Codes**](./Week%2011/Week%2011.5/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2011/Week%2011.5/Readme.md)
+
 
 
 </details>
