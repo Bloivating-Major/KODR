@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read File</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="w-full h-screen p-10 bg-zinc-900 text-white">
+        <a class="text-blue-500 mb-10" href="/">Back to Home</a>
+        <h1 class="text-3xl tracking-tighter mb-3 mt-10">All Users</h1>
+        <div class="users flex gap-3 flex-wrap">
+            <% if(users.length > 0 ) { %>
+            <% users.forEach((user)=> {  %>
+                <div class="user w-72 p-4 bg-zinc-800 rounded-lg">
+                    <div class="w-full h-52 rounded-lg bg-red-500">
+                        <img class="w-full h-full object-cover object-top" src="<%=user.image%>" alt="">
+                    </div>
+                    <h3 class="text-xl mt-3 tracking-tighter"><%= user.name  %></h3>
+                    <h5 class="text-zinc-500"> <%= user.email%> </h5>
+                    <div class="flex gap-3 mt-3">
+                        <a class="text-zinc-300" href="/edit/<%=user._id%>">Edit User</a>
+                        <a class="text-red-600" href="/delete/<%=user._id%>">Detele User</a>
+    
+                    </div>
+    
+                </div>
+            <% }) } else {  %>
+                <h1 class="text-2xl">No Users Found</h1>
+             <% }%>
+        </div>
+    </div>
+</body>
+</html>

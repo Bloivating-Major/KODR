@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index File</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="w-full h-screen p-10 bg-zinc-900 text-white">
+
+        <div class="nav">
+            <a class="mb-10 text-blue-500" href="/read">Show Users</a>
+        </div>
+
+        <h1 class="text-3xl tracking-tighter mb-3">Create User</h1>
+        <form action="/create" method="post">
+            <input type="text" name="name" placeholder="Enter Name" class="px-5 py-3 border-2 border-zinc-400 rounded-lg outline-none">
+            <input type="email" name="email" placeholder="Enter Email" class="px-5 py-3 border-2 border-zinc-400 rounded-lg outline-none">
+            <input type="url" name="image" placeholder="Enter Image URL" class="px-5 py-3 border-2 border-zinc-400 rounded-lg outline-none">
+            <button type="submit" class="px-5 py-3 bg-blue-500  rounded-lg">Create User</button>
+        </form>
+    </div>
+</body>
+</html>
