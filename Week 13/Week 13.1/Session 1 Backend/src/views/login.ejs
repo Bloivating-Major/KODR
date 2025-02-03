@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        input:-webkit-autofill {
+            background-color: transparent !important;
+            -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+            -webkit-text-fill-color: white !important;
+            transition: background-color 5000s ease-in-out 0s; 
+          }          
+    </style>
+</head>
+<body>
+    <div class="w-full h-screen bg-zinc-900 text-white p-10">
+        <div class="w-full flex justify-end">
+            <a class="text-blue-500" href="/user/register">Register Page</a>
+        </div>
+        <h1 class="text-3xl mb-3">Login Your Account</h1>
+        <form action="/user/login" method="post">
+            <input class="peer px-3 py-2 rounded-md bg-transparent border-2 border-zinc-800 outline-none focus:bg-transparent autofill:bg-transparent autofill:shadow-[inset_0_0_0px_1000px_rgba(0,0,0,0)]" type="email" placeholder="Email" name="email">
+            
+            <input class="peer px-3 py-2 rounded-md bg-transparent border-2 border-zinc-800 outline-none focus:bg-transparent autofill:bg-transparent autofill:shadow-[inset_0_0_0px_1000px_rgba(0,0,0,0)]" type="password" placeholder="Password" name="password">
+            
+            <input class="px-5 py-2 bg-blue-500 rounded-md hover:bg-blue-600" type="submit" value="Login">
+        </form>
+        
+    </div>
+</body>
+</html>
