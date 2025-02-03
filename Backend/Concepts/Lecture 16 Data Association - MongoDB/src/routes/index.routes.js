@@ -19,4 +19,9 @@ Route.get('/logout', indexController.logout);
 // Protected Route
 Route.get('/profile' , authMiddleware, indexController.profileController);
 Route.post('/post', authMiddleware, indexController.postController);
+
+Route.get('/like/:id', authMiddleware, indexController.likeController);
+Route.get('/edit/:id', authMiddleware, indexController.editController);
+Route.post('/update/:id', authMiddleware, indexController.updateController);
+Route.get('/delete/:id', authMiddleware, indexController.deleteController);
 module.exports = Route;
