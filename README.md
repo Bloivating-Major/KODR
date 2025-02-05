@@ -584,7 +584,6 @@ cd KODR
 
 > **`Topics Covered:`DSA Mathematics and Backend Environment Variables -** Today, we delved into the **fascinating world of factors** using **JavaScript**. Here's a detailed overview of what we learned and the code implementations we explored! 🚀  Today, we explored **environment variables** and how to use them in a **Node.js + Express + MongoDB** project! 🌍✨  
 
-
 - 👨‍💻 [**Lecture Codes**](./Week%2011/Week%2011.4/)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2011/Week%2011.4/Readme.md)
 
@@ -592,11 +591,62 @@ cd KODR
 
 > **`Topics Covered:`DSA Mathematics and Backend Multiple Schemas -** In this session, we learned how to create **Mongoose schemas** and handle **User** and **Post** data efficiently in a backend project! 🎯   In this session, we explored **Prime Numbers** and how to efficiently check whether a number is prime using JavaScript. 🔢  
 
-
 - 👨‍💻 [**Lecture Codes**](./Week%2011/Week%2011.5/)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2011/Week%2011.5/Readme.md)
 
+</details>
 
+---
+
+# Week 12 - BackEnd and DSA Revision
+
+<details>
+<summary style="display: inline; font-size: 20px; font-weight: 700; cursor: pointer;" title="Click on me to Expand">Click to Expand Week 12 Details</summary>
+
+## 📚 [Week 12 - BackEnd and DSA Revision](./Week%2012/)
+
+### 💻 [**12.1 - DSA & Backend Mongo Online**](./Week%2012/Week%2012.1/)
+
+> **`Topics Covered:`DSA & Backend Mongo Online -** Today, we explored the **Sieve of Eratosthenes**, a highly efficient algorithm for finding all prime numbers up to a given number. Here's everything we covered! 🚀  In today's session, we took the first steps toward creating a **MongoDB database cluster** on **MongoDB Atlas**, a cloud-based solution for managing your databases. Below are the detailed notes with step-by-step instructions! 🛠️  
+
+
+- 👨‍💻 [**Lecture Codes**](./Week%2012/Week%2012.1/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2012/Week%2012.1/Readme.md)
+
+### 💻 [**12.2 - DSA Recursion and Backend Authorization**](./Week%2012/Week%2012.2/)
+
+> **`Topics Covered:`DSA Recursion and Backend Authorization-** In today's **Data Structures and Algorithms (DSA)** session, we explored **recursion and mathematical computation** by solving a problem involving **exponentiation using recursion**. 🚀Today, we explored **Authentication**, **Authorization**, **Validation**, and **Verification** in backend development. These core concepts ensure the security, functionality, and integrity of applications. 🚀
+
+- 👨‍💻 [**Lecture Codes**](./Week%2012/Week%2012.2/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2012/Week%2012.2/Readme.md)
+
+### 💻 [**12.3 - DSA Leetcode and Backend Authentication**](./Week%2012/Week%2012.3/)
+
+> **`Topics Covered:`DSA Leetcode and Backend Authentication -** Today, we explored **array-based problems**, particularly focusing on **finding the maximum profit from stock prices**.  Today, we implemented **User Authentication** 🔐 using **Node.js, Express, MongoDB, and Bcrypt**. 
+
+- 👨‍💻 [**Lecture Codes**](./Week%2012/Week%2012.3/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2012/Week%2012.3/Readme.md)
+
+### 💻 [**12.4 - Backend User Authentication System**](./Week%2012/Week%2012.4/)
+
+> **`Topics Covered:`Backend User Authentication System -** 🚀 User Authentication System (Week 12 - Day 4, Session 2 - Backend) A **secure authentication system** built using **Node.js, Express, MongoDB, bcrypt, and JWT** to handle **User Registration, Login, and Profile Authentication**.
+
+- 👨‍💻 [**Lecture Codes**](./Week%2012/Week%2012.4/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2012/Week%2012.4/Readme.md)
+
+### 💻 [**12.5 - Pseudocode for User Authentication System**](./Week%2012/Week%2012.5/)
+
+> **`Topics Covered:`Pseudocode for User Authentication System -** 🚀 This pseudocode will help you understand the step-by-step process for implementing **User Authentication** using **Node.js, Express, MongoDB, bcrypt, and JWT**
+
+- 👨‍💻 [**Lecture Codes**](./Week%2012/Week%2012.5/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2012/Week%2012.5/Readme.md)
+
+### 💻 [**12.6 - DSA - Moore's Voting Algorithm**](./Week%2012/Week%2012.6/)
+
+> **`Topics Covered:`DSA - Moore's Voting Algorithm -** Today, we explored the **Moore's Voting Algorithm**, a highly efficient algorithm used to find the **majority element** in an array. The majority element is the one that appears more than `n/2` times in an array of size `n`.  
+
+- 👨‍💻 [**Lecture Codes**](./Week%2012/Week%2012.6/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2012/Week%2012.6/Readme.md)
 
 </details>
 

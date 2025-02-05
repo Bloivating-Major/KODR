@@ -1,4 +1,3 @@
-Here’s a **beautiful README** with proper explanations and emojis for **Week 12 - Day 4, Session 2 (Backend: Authentication System)**.  
 
 ---
 
