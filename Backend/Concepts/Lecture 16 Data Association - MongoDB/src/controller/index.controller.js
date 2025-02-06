@@ -40,7 +40,7 @@ module.exports.handleLoginController = async (req, res) => {
     const { email, password } = req.body;
 
     let user = await User.findOne({ email });
-    if (!user) return res.status(500).send("Something went wrong");
+    if (!user) return res.redirect('/');
   
     if(await bcrypt.compare(password, user.password)){
         let token = jwt.sign(
