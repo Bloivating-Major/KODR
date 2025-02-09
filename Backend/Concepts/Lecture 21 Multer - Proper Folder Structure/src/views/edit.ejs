@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit File</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        input:-webkit-autofill {
+            background-color: transparent !important;
+            -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+            -webkit-text-fill-color: white !important;
+            transition: background-color 5000s ease-in-out 0s; 
+          }         
+          textarea:-webkit-autofill {
+            background-color: transparent !important;
+            -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+            -webkit-text-fill-color: white !important;
+            transition: background-color 5000s ease-in-out 0s; 
+          }    
+    </style>
+</head>
+<body>
+    <div class="w-full h-screen bg-zinc-900 text-white p-10">
+        <div class=" w-full flex justify-end">
+        </div>
+        <h5 class="mb-5">Edit Your Post</h5>
+        <form action="/update/<%=post._id%>" method="post">
+            <textarea  placeholder="What's on your mind?" class="p-3 w-1/3 outline-none resize-none bg-transparent border border-zinc-800 rounded-md block" name="content"><%= post.content%></textarea>
+            <input class="px-3 py-2 w-40 bg-yellow-500 text-black block rounded-md mt-2" type="submit" value="Update Post">
+        </form>
+
+    </div>
+</body>
+</html>

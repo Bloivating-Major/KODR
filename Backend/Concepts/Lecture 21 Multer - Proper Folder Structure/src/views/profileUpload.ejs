@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Upload</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <div class="w-full h-screen bg-zinc-900 text-white p-10">
+        <div class="w-full flex justify-end">
+            <a class="text-blue-500" href="/">Register Page</a>
+        </div>
+        <h1 class="text-3xl mb-3">Upload Profile Picture</h1>
+        <form action="/profile/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" >
+            <input class="px-5 py-2 bg-blue-500 rounded-md hover:bg-blue-600" type="submit" value="Upload">
+        </form>
+        
+    </div>
+</body>
+</html>
