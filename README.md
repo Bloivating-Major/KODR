@@ -653,6 +653,36 @@ cd KODR
 ---
 
 
+# Week 13 - BackEnd and DSA Revision
+
+<details>
+<summary style="display: inline; font-size: 20px; font-weight: 700; cursor: pointer;" title="Click on me to Expand">Click to Expand Week 13 Details</summary>
+
+## 📚 [Week 13 - BackEnd and DSA Revision](./Week%2013/)
+
+### 💻 [**13.1 - Backend User Auth DSA Happy Number & Hashing**](./Week%2013/Week%2013.1/)
+
+> **`Topics Covered:`Backend User Auth DSA Happy Number & Hashing -** Today, we focused on **User Authentication** using **Node.js, Express, MongoDB, JWT, and Bcrypt**. 
+
+
+- 👨‍💻 [**Lecture Codes**](./Week%2013/Week%2013.1/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2013/Week%2013.1/Readme.md)
+
+### 💻 [**13.2 - Backend - User Authentication & Layouts in EJS**](./Week%2013/Week%2013.2/)
+
+> **`Topics Covered:`Backend - User Authentication & Layouts in EJS -** Today, we focused on **User Authentication** using **Node.js, Express, MongoDB, JWT, and Bcrypt**.
+
+
+- 👨‍💻 [**Lecture Codes**](./Week%2013/Week%2013.2/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2013/Week%2013.2/Readme.md)
+
+
+
+</details>
+
+---
+
+
 ## 🔥 **Live Links**
 
 This table summarizes the live demos for various tasks and features implemented during the Bootcamp.
