@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const Feed = () => {
   const [posts, setPosts] = useState([]);
+  const [user, setUser] = useState("");
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -18,7 +19,9 @@ const Feed = () => {
           authorization: "bearer " + token,
         },
       });
-      setPosts(response.data);
+      console.log(response);
+      setPosts(response.data.feed);
+      setUser(response.data.username)
     } catch (error) {
       console.error("Error fetching feed:", error);
     } finally {
@@ -44,6 +47,7 @@ const Feed = () => {
     return <h1 className="text-center text-gray-200 mt-10">Loading Feed...</h1>;
   }
 
+
   return (
     <main className="min-h-screen bg-gray-950 text-gray-200 p-6">
       {/* Link to Profile */}
@@ -53,7 +57,7 @@ const Feed = () => {
          
 
       <section className="max-w-5xl mx-auto">
-        <h1 className="text-3xl font-bold mb-6">Feed</h1>
+        <h1 className="text-3xl font-bold mb-6">Feed  {user}</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {posts.map((post) => (
             <div key={post._id} className="bg-gray-900 rounded-2xl shadow-lg p-4 ">
@@ -78,7 +82,7 @@ const Feed = () => {
                   onClick={() => handleLike(post._id)}
                   className="bg-violet-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg transition"
                 >
-                  ❤️ {post.likesCount} Likes
+                  ❤️ {post.likesCount} Likes {post.likedBy.includes(user) ? `${user}` : ""}
                 </button>
                 <span className="text-xs text-gray-400">
                   {new Date(post.createdAt).toLocaleDateString()}
