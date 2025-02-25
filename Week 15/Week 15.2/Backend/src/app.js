@@ -12,8 +12,8 @@ const feedRoute = require('./routes/index.routes');
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
-
-app.use(express.static(path.join(__dirname, "./public")));
+app.use(express.static('public/images'));
+app.use(express.static(path.join(__dirname, "/public")));
 
 app.use('/' , feedRoute);
 app.use('/users', userRoute);
