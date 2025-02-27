@@ -1,0 +1,3 @@
+- Post Model user reference
+- get all posts ()
+- We use .any method in multer
