@@ -676,11 +676,48 @@ cd KODR
 - 👨‍💻 [**Lecture Codes**](./Week%2013/Week%2013.2/)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2013/Week%2013.2/Readme.md)
 
+### 💻 [**13.5 - DSA Sorting Algorithm and Backend - Extra Security Layer**](./Week%2013/Week%2013.5/)
+
+> **`Topics Covered:`DSA Sorting Algorithm and Backend - Extra Security Layer -** Today, we implemented an **additional security layer** in our backend by using a **config file** to store essential environment variables securely.
+
+
+- 👨‍💻 [**Lecture Codes**](./Week%2013/Week%2013.5/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2013/Week%2013.5/Readme.md)
+
 
 
 </details>
 
 ---
+
+
+# Week 14 - Backend Instagram Project and DSA Revision
+
+<details>
+<summary style="display: inline; font-size: 20px; font-weight: 700; cursor: pointer;" title="Click on me to Expand">Click to Expand Week 14 Details</summary>
+
+## 📚 [Week 14 -  Backend Instagram Project and DSA Revision](./Week%2014/)
+
+### 💻 [**14.1 - DSA Merge Sort and Instagram Project Backend**](./Week%2014/Week%2014.1/)
+
+> **`Topics Covered:`DSA Merge Sort and Instagram Project Backend -** This week was all about creating a **full-stack Instagram clone** using **React (Frontend) + Express & MongoDB (Backend)**. We implemented **user authentication**, **profile management**, and a **feed system**. 
+
+
+- 👨‍💻 [**Lecture Codes**](./Week%2014/Week%2014.1/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2014/Week%2014.1/Readme.md)
+
+### 💻 [**14.5 - DSA Revision Binary Search & LeetCode Practice Problems**](./Week%2014/Week%2014.5/)
+
+> **`Topics Covered:`DSA Revision Binary Search & LeetCode Practice Problems -** Binary Search is an efficient search algorithm that works on a **sorted array**. It repeatedly divides the search interval in half until the target value is found.
+
+
+- 👨‍💻 [**Lecture Codes**](./Week%2014/Week%2014.5/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2014/Week%2014.5/Readme.md)
+
+</details>
+
+---
+
 
 
 ## 🔥 **Live Links**
