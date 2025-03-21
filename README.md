@@ -719,6 +719,34 @@ cd KODR
 ---
 
 
+# Week 19 - DSA Stack and Queue
+
+<details>
+<summary style="display: inline; font-size: 20px; font-weight: 700; cursor: pointer;" title="Click on me to Expand">Click to Expand Week 19 Details</summary>
+
+## 📚 [Week 19 -  Linked List , Queue and Stack](./Week%2019/)
+
+### 💻 [**19.1 - Linked List Question and Queue Implementation**](./Week%2019/Week%2019.1/)
+
+> **`Topics Covered:`Linked List Question and Queue Implementation -**  Topics Covered Leetcode 25 - Reverse Nodes in k-Group  Introduction to Queue  Queue Operations (enqueue, dequeue, peek, isEmpty, size, display) Queue Implementation using Linked List. 
+
+
+- 👨‍💻 [**Lecture Codes**](./Week%2019/Week%2019.1/Session%201%20DSA/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2019/Week%2019.1/Readme.md)
+
+### 💻 [**19.2 - Queue and Stack Implementation**](./Week%2019/Week%2019.2/)
+
+> **`Topics Covered:`Queue and Stack Implementation -**  Topics Covered Implementing Queue using Array, Implementing Stack using Array , then Implementing Stack using Linked List then Solved Questions of Stack and Queue.
+
+
+- 👨‍💻 [**Lecture Codes**](./Week%2019/Week%2019.2/Session%201%20DSA/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2019/Week%2019.2/Readme.md)
+
+</details>
+
+---
+
+
 
 ## 🔥 **Live Links**
 
