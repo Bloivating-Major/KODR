@@ -742,6 +742,14 @@ cd KODR
 - 👨‍💻 [**Lecture Codes**](./Week%2019/Week%2019.2/Session%201%20DSA/)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2019/Week%2019.2/Readme.md)
 
+### 💻 [**19.3 - Stack Questions**](./Week%2019/Week%2019.3/)
+
+> **`Topics Covered:`Stack Questions -** Topics Covered Next Greater Element (GFG) Smaller Element on the Left Help Classmate Problem Stock Span Problem 
+
+
+- 👨‍💻 [**Lecture Codes**](./Week%2019/Week%2019.3/Session%201%20DSA/stackQuestions.js)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2019/Week%2019.3/Readme.md)
+
 </details>
 
 ---
