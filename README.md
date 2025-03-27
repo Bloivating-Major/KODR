@@ -755,6 +755,28 @@ cd KODR
 ---
 
 
+# Week 20 - DSA Stack and Queue and Backend
+
+<details>
+<summary style="display: inline; font-size: 20px; font-weight: 700; cursor: pointer;" title="Click on me to Expand">Click to Expand Week 20 Details</summary>
+
+## 📚 [Week 20 -  DSA Stack and Queue and Backend](./Week%2020/)
+
+### 💻 [**20.4 - Google O Auth and Stack Question**](./Week%2020/Week%2020.4/)
+
+> **`Topics Covered:`Google O Auth and Stack Question -**  Today, I **integrated Google OAuth** in the backend using **Node.js, Express, Passport.js, and JWT** to allow users to log in with Google and receive a secure token.
+
+
+- 👨‍💻 [**Lecture Codes**](./Week%2020/Week%2020.4/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2019/Week%2019.1/Readme.md)
+
+
+
+</details>
+
+---
+
+
 
 ## 🔥 **Live Links**
 
