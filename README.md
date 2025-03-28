@@ -771,6 +771,14 @@ cd KODR
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2019/Week%2019.1/Readme.md)
 
 
+### 💻 [**20.5 - Tower of Hanoi and Backend Caching**](./Week%2020/Week%2020.5/)
+
+> **`Topics Covered:`Tower of Hanoi and Backend Caching -**  Today, I Learned about Tower of Hanoi and Josephus Problem and then learned about Backend Caching
+
+
+- 👨‍💻 [**Lecture Codes**](./Week%2020/Week%2020.5/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2020/Week%2020.5/Readme.md)
+
 
 </details>
 
