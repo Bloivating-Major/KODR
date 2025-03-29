@@ -779,6 +779,13 @@ cd KODR
 - 👨‍💻 [**Lecture Codes**](./Week%2020/Week%2020.5/)
 - 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2020/Week%2020.5/Readme.md)
 
+### 💻 [**20.6 - Subset Powerset Permutations**](./Week%2020/Week%2020.6/)
+
+> **`Topics Covered:`Subset Powerset Permutations -**  Today, I Learned Subsets Powerset Permutations questions and approaches to solve them.
+
+
+- 👨‍💻 [**Lecture Codes**](./Week%2020/Week%2020.5/)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2020/Week%2020.5/Readme.md)
 
 </details>
 
