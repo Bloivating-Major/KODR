@@ -791,6 +791,25 @@ cd KODR
 
 ---
 
+# Week 21 - DSA Recursion Revisit and Backend Payment Gateway
+
+<details>
+<summary style="display: inline; font-size: 20px; font-weight: 700; cursor: pointer;" title="Click on me to Expand">Click to Expand Week 21 Details</summary>
+
+## 📚 [Week 20 -  DSA Recursion Revisit and Backend Payment Gateway](./Week%2021/)
+
+### 💻 [**21.2 - Subset 2 and Phone Number and Combination Sum**](./Week%2021/Week%2021.2/)
+
+> **`Topics Covered:`Subset 2 and Phone Number and Combination Sum -**  Tackling backtracking problems where we generate unique subsets and solve the classic **Letter Combinations of a Phone Number** problem.  
+
+
+- 👨‍💻 [**Lecture Codes**](./Week%2021/Week%2021.2/Session%201%20DSA/index.js)
+- 📖 [**Notes/Slides & Articles/Blogs Link**](./Week%2021/Week%2021.2/Readme.md)
+
+</details>
+
+---
+
 
 
 ## 🔥 **Live Links**
