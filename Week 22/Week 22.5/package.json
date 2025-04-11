@@ -1,0 +1,19 @@
+{
+  "name": "week-22.5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc -b && node ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/express": "^5.0.1",
+    "@types/pg": "^8.11.11",
+    "express": "^5.1.0",
+    "pg": "^8.14.1",
+    "typescript": "^5.8.3"
+  }
+}
