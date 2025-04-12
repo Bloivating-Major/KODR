@@ -1,5 +1,8 @@
 import { Pool } from "pg";
 import express, {Request, Response} from 'express';
+import dotenv from "dotenv"
+
+dotenv.config();
 
 const app = express();
 const port = 3000;
@@ -10,17 +13,17 @@ app.use(express.json());
 
 // This is one way to do it
 // const pool = new Pool({
-    //     user : "neondb_owner",
-    //     password : "npg_neTiSD6BVyl8",
-    //     port : 5432,
-    //     host : "ep-lucky-sun-a1l50mz9-pooler.ap-southeast-1.aws.neon.tech",
-    //     database : "neondb",
-    //     ssl : true
+    //     user : "test_user",
+    //     password : "test_password",
+    //     port : 1111,
+    //     host : "test_host",
+    //     database : "test_db",
+    //     ssl : ture
     // })
     
     // This is one more way to connect
     const pool = new Pool({
-        connectionString : "postgresql://neondb_owner:npg_neTiSD6BVyl8@ep-lucky-sun-a1l50mz9-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require"
+        connectionString : process.env.DATABASE
     })
     
     pool.query('SELECT NOW()').then(res => {
